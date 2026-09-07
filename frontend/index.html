@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYUSH Smart Case-Taking Platform | SIH 26047</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  <!-- Tesseract.js Neural OCR Engine for Client-Side Real-Time Image Recognition -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-logo">🌿</div>
+      <div class="brand-text">
+        <h1 data-i18n="app_title">AYUSH Smart Case-Taking System <span class="brand-badge">SIH 26047</span></h1>
+        <p data-i18n="app_subtitle">Ministry of Ayush - Multilingual Voice-First Clinical Intake & Doctor Assistance</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <!-- 5 Regional Language Selector -->
+      <div class="lang-selector">
+        <button class="lang-btn active" data-lang="te" title="Telugu">🏛️ తెలుగు</button>
+        <button class="lang-btn" data-lang="ta" title="Tamil">🛕 தமிழ்</button>
+        <button class="lang-btn" data-lang="en" title="English">🌐 English</button>
+        <button class="lang-btn" data-lang="hi" title="Hindi">🇮🇳 हिन्दी</button>
+        <button class="lang-btn" data-lang="kn" title="Kannada">🌾 ಕನ್ನಡ</button>
+      </div>
+
+      <!-- View Switcher -->
+      <div class="mode-switcher">
+        <button class="mode-btn active" data-mode="kiosk" data-i18n="patient_kiosk">Patient Intake</button>
+        <button class="mode-btn" data-mode="doctor" data-i18n="doctor_portal">Doctor Portal</button>
+      </div>
+
+      <!-- Sarvam AI API Key Settings -->
+      <button onclick="openSarvamKeyModal()" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; border-radius: 999px; padding: 0.45rem 0.85rem; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;">
+        ⚙️ <span id="sarvamKeyStatus">Sarvam AI</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+
+    <!-- Hackathon Quick Demo Preset Bar -->
+    <div class="demo-preset-bar no-print">
+      <div class="preset-title">
+        <span>⚡ Quick Hackathon Presets:</span>
+      </div>
+      <div class="preset-btns">
+        <button class="preset-btn" onclick="loadDemoPreset('telugu_joint')">🏛️ Telugu (రమేష్ - Joint Pain)</button>
+        <button class="preset-btn" onclick="loadDemoPreset('tamil_dyspepsia')">🛕 Tamil (செல்வி - Hyperacidity)</button>
+        <button class="preset-btn" onclick="loadDemoPreset('kannada_general')">🌾 Kannada (ಕವಿತಾ - Vata)</button>
+        <button class="preset-btn" onclick="loadDemoPreset('english_standard')">🌐 English (Cervical)</button>
+        <button class="preset-btn" style="border-color: #ef4444; color: #b91c1c; background: #fef2f2; font-weight: 800;" onclick="loadDemoPreset('telugu_red_flag_emergency')">🚨 RED FLAG: Chest Pain (Telugu)</button>
+        <button class="preset-btn" style="border-color: #ef4444; color: #b91c1c; background: #fef2f2; font-weight: 800;" onclick="loadDemoPreset('tamil_red_flag_stroke')">🚨 RED FLAG: Stroke Signs (Tamil)</button>
+      </div>
+    </div>
+
+    <!-- PATIENT INTAKE KIOSK VIEW -->
+    <div id="patientKioskView">
+      <div class="kiosk-grid">
+
+        <!-- Left Column: ABHA & Demographic Registration -->
+        <div>
+          <!-- ABHA Card -->
+          <div class="kiosk-card" style="margin-bottom: 1.5rem;">
+            <div class="card-header">
+              <h3 class="card-title">🆔 <span data-i18n="abha_title">Ayushman Bharat Health Account</span></h3>
+            </div>
+            
+            <div class="input-group">
+              <label class="input-label" data-i18n="abha_placeholder">14-digit ABHA Number or Mobile</label>
+              <input type="text" id="abhaInput" class="text-input" placeholder="e.g. 98-7233-4120-9411" value="98-7233-4120-9411">
+            </div>
+
+            <button class="btn-primary" onclick="verifyAbha()">
+              🔍 <span data-i18n="verify_abha">Verify ABHA</span>
+            </button>
+            <button class="btn-secondary" onclick="continueAsGuest()" data-i18n="skip_guest">
+              Continue as Guest
+            </button>
+
+            <div id="abhaProfileCard" class="profile-card" style="display: none;">
+              <div id="abhaProfileSummary"></div>
+            </div>
+          </div>
+
+          <!-- Patient Information Summary Card -->
+          <div class="kiosk-card" style="margin-bottom: 1.5rem;">
+            <div class="card-header">
+              <h3 class="card-title">👤 Patient Information</h3>
+            </div>
+            
+            <div class="input-group">
+              <label class="input-label">Patient Full Name</label>
+              <input type="text" id="patientName" class="text-input" placeholder="Full name">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="input-group">
+                <label class="input-label">Age</label>
+                <input type="number" id="patientAge" class="text-input" placeholder="Age" value="42">
+              </div>
+              <div class="input-group">
+                <label class="input-label">Gender</label>
+                <input type="text" id="patientGender" class="text-input" placeholder="Gender" value="Male">
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="input-label">Mobile Number</label>
+              <input type="text" id="patientMobile" class="text-input" placeholder="10-digit mobile" value="9876543210">
+            </div>
+          </div>
+
+          <!-- Document Upload & OCR -->
+          <div class="kiosk-card">
+            <div class="card-header">
+              <h3 class="card-title">📑 <span data-i18n="doc_upload_title">Scan Past Records</span></h3>
+            </div>
+            <p style="font-size: 0.84rem; color: #64748b;">Upload handwritten/printed prescription slips in <strong>any Indian language</strong> for automated OCR & clinical translation.</p>
+            
+            <div id="dropzone" class="dropzone">
+              <div style="font-size: 2rem;">📷</div>
+              <div style="font-weight: 600; font-size: 0.9rem; color: #0f766e; margin-top: 0.25rem;">Click to Take Photo / Upload Slip</div>
+              <div style="font-size: 0.75rem; color: #94a3b8;">Supports Telugu, Tamil, Kannada, Hindi, English (JPG/PNG/PDF)</div>
+              <input type="file" id="docFileInput" style="display: none;" accept="image/*,.pdf">
+            </div>
+
+            <!-- Live Neural OCR Progress Bar -->
+            <div id="ocrProgressBarContainer" style="display: none; margin-top: 0.75rem; background: #e0f2fe; padding: 0.6rem; border-radius: 6px; border: 1px solid #7dd3fc;">
+              <div style="font-size: 0.78rem; font-weight: 700; color: #0369a1; display: flex; justify-content: space-between;">
+                <span id="ocrProgressStatus">🔍 Neural OCR Scanning Pixels...</span>
+                <span id="ocrProgressPercent">0%</span>
+              </div>
+              <div style="background: #bae6fd; height: 6px; border-radius: 999px; overflow: hidden; margin-top: 0.35rem;">
+                <div id="ocrProgressBarFill" style="background: #0284c7; width: 0%; height: 100%; transition: width 0.2s;"></div>
+              </div>
+            </div>
+
+            <!-- Quick Multilingual Prescription & Discharge OCR Triggers -->
+            <div style="margin-top: 0.85rem;">
+              <div style="font-size: 0.78rem; font-weight: 700; color: #0f766e; margin-bottom: 0.35rem;">⚡ Scan Prescriptions & Hospital Records:</div>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <button type="button" class="preset-btn" style="font-size: 0.74rem; background: #ecfdf5; border-color: #047857;" onclick="scanSamplePrescription('gandhi_urology')">🏥 Gandhi Hospital Urology (Narasimha Rao)</button>
+                <button type="button" class="preset-btn" style="font-size: 0.74rem;" onclick="scanSamplePrescription('telugu')">📜 Telugu Slip (రమేష్)</button>
+                <button type="button" class="preset-btn" style="font-size: 0.74rem;" onclick="scanSamplePrescription('tamil')">📜 Tamil Slip (செல்வி)</button>
+                <button type="button" class="preset-btn" style="font-size: 0.74rem;" onclick="scanSamplePrescription('kannada')">📜 Kannada Slip (ಕವಿತಾ)</button>
+                <button type="button" class="preset-btn" style="font-size: 0.74rem;" onclick="scanSamplePrescription('hindi')">📜 Hindi Slip (सुरेश)</button>
+              </div>
+            </div>
+
+            <!-- Live OCR Recognition & Translation Card -->
+            <div id="ocrLivePreview" style="display: none; margin-top: 1rem; background: #f8fafc; border: 1.5px solid #0f766e; border-radius: 8px; padding: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span class="transcript-badge" id="ocrDetectedLangBadge">Telugu (తెలుగు) OCR</span>
+                <span style="font-size: 0.75rem; color: #047857; font-weight: 700;">✅ Translated via Sarvam Mayura</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; font-size: 0.8rem;">
+                <div style="background: white; border: 1px solid #cbd5e1; padding: 0.5rem; border-radius: 6px;">
+                  <div style="font-weight: 700; color: #475569; margin-bottom: 0.25rem;">🔍 Original Scanned Text:</div>
+                  <pre id="ocrRawText" style="white-space: pre-wrap; font-family: inherit; font-size: 0.76rem; color: #0f172a; max-height: 120px; overflow-y: auto;"></pre>
+                </div>
+                <div style="background: #f0fdfa; border: 1px solid #99f6e4; padding: 0.5rem; border-radius: 6px;">
+                  <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">🌐 Clinical English Translation:</div>
+                  <pre id="ocrTranslatedText" style="white-space: pre-wrap; font-family: inherit; font-size: 0.76rem; color: #115e59; max-height: 120px; overflow-y: auto;"></pre>
+                </div>
+              </div>
+              <div id="ocrExtractedMeds" style="margin-top: 0.5rem; font-size: 0.78rem; color: #1e293b; background: white; padding: 0.5rem; border-radius: 6px; border: 1px solid #e2e8f0;"></div>
+            </div>
+
+            <div id="uploadedDocsContainer" style="margin-top: 0.75rem;"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Conversational Voice & AYUSH Clinical Questions -->
+        <div>
+          <!-- Voice Intake Hero -->
+          <div class="voice-hero">
+            <h3 style="color: #0f766e; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem;">🎙️ Sarvam AI Multilingual Voice Intake</h3>
+            <p style="font-size: 0.88rem; color: #475569;" data-i18n="voice_instruction">Press the microphone and speak your health symptoms in your regional language</p>
+
+            <div class="mic-btn-container">
+              <button id="micBtn" class="mic-btn" onclick="toggleVoiceRecording()" title="Click to Record Voice">
+                🎤
+              </button>
+            </div>
+
+            <div id="voiceStatus" class="voice-status">Tap microphone to speak in your language</div>
+
+            <div id="transcriptContainer" class="transcript-box" style="display: none;">
+              <span class="transcript-badge">Sarvam Saaras STT Transcript</span>
+              <div id="voiceTranscript" style="color: #0f172a; font-weight: 500; font-style: italic;"></div>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Clinical & AYUSH Intake -->
+          <div class="kiosk-card">
+            <div class="card-header">
+              <h3 class="card-title">🩺 <span data-i18n="socrates_title">Clinical Exploration (SOCRATES & AYUSH)</span></h3>
+            </div>
+
+            <!-- Real-time Clinical Red Flag Alert Banner -->
+            <div id="redFlagLiveAlert" class="red-flag-alert-box" style="display: none;">
+              <div class="triage-alert-header">
+                <span id="triageLiveBadge" class="triage-badge-red">🚨 CODE RED: EMERGENCY TRIAGE</span>
+                <span style="font-size: 0.78rem; font-weight: 700; color: #991b1b;">Immediate Physician Attention Required</span>
+              </div>
+              <div id="redFlagBannerText" style="font-weight: 700; color: #991b1b; font-size: 0.95rem; margin-bottom: 0.4rem;"></div>
+              <div id="redFlagDetailsList"></div>
+              <div id="redFlagActionProtocol" class="red-flag-protocol"></div>
+            </div>
+
+            <div id="questionsContainer" class="questions-container">
+              <!-- Dynamically populated localized questions -->
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 2rem; border-top: 1px solid #e2e8f0; padding-top: 1.25rem;">
+              <button class="btn-primary" style="font-size: 1.05rem; padding: 0.95rem 1.5rem; background: #0f766e;" onclick="submitPatientIntake()">
+                🚀 <span data-i18n="submit_intake">Submit Case to OPD Doctor</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- DOCTOR OPD PORTAL VIEW -->
+    <div id="doctorPortalView" style="display: none;">
+      <div class="doctor-layout">
+        
+        <!-- OPD Queue Column -->
+        <div>
+          <div class="kiosk-card">
+            <div class="card-header">
+              <h3 class="card-title">🏥 <span data-i18n="live_opd_queue">Live OPD Queue</span></h3>
+              <button class="btn-secondary" style="width: auto; padding: 0.25rem 0.65rem; font-size: 0.78rem; margin: 0;" onclick="refreshDoctorQueue()">
+                🔄 <span data-i18n="refresh_queue">Refresh</span>
+              </button>
+            </div>
+            <div id="doctorQueueList" class="queue-list">
+              <!-- Dynamically populated patient queue -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Sheet Document Column -->
+        <div id="doctorCaseSheetContainer">
+          <!-- Dynamically populated full case sheet -->
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal for Sarvam AI Key Settings -->
+  <div id="sarvamModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="color: #0f766e;">🔑 Sarvam AI API Configuration</h3>
+        <button onclick="closeSarvamKeyModal()" style="background: none; border: none; font-size: 1.25rem; cursor: pointer;">✕</button>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+        Enter your Sarvam AI Subscription Key to connect real-time Saaras STT, Bulbul TTS, and Mayura Translation. If omitted, the high-fidelity simulator is automatically active.
+      </p>
+      <div class="input-group">
+        <label class="input-label">Sarvam API Key (api-subscription-key)</label>
+        <input type="password" id="sarvamApiKeyInput" class="text-input" placeholder="Enter your key from sarvam.ai dashboard">
+      </div>
+      <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+        <button class="btn-secondary" style="width: auto; margin-top: 0;" onclick="closeSarvamKeyModal()">Cancel</button>
+        <button class="btn-primary" style="width: auto;" onclick="saveSarvamKey()">Save Key</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
