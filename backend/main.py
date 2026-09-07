@@ -335,13 +335,27 @@ def update_doctor_notes(req: DoctorUpdateNotes):
         return {"status": "success", "message": "OPD Case updated by doctor."}
     raise HTTPException(status_code=404, detail="Case record not found.")
 
-# Serve Frontend static files
+# Serve Frontend static files (supports both root and frontend/ directory)
 if FRONTEND_DIR.exists():
     app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
 
+@app.get("/styles.css")
+def serve_styles():
+    css_file = BASE_DIR / "styles.css" if (BASE_DIR / "styles.css").exists() else FRONTEND_DIR / "styles.css"
+    if css_file.exists():
+        return FileResponse(css_file, media_type="text/css")
+    raise HTTPException(status_code=404, detail="Stylesheet not found")
+
+@app.get("/app.js")
+def serve_app_js():
+    js_file = BASE_DIR / "app.js" if (BASE_DIR / "app.js").exists() else FRONTEND_DIR / "app.js"
+    if js_file.exists():
+        return FileResponse(js_file, media_type="application/javascript")
+    raise HTTPException(status_code=404, detail="JavaScript file not found")
+
 @app.get("/")
 def serve_index():
-    index_file = FRONTEND_DIR / "index.html"
+    index_file = BASE_DIR / "index.html" if (BASE_DIR / "index.html").exists() else FRONTEND_DIR / "index.html"
     if index_file.exists():
         return FileResponse(index_file)
     return {"message": "Frontend build in progress. Access /docs for API documentation."}
