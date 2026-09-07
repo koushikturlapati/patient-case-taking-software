@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# patient-case-taking-software
-=======
 # 🌿 AYUSH Smart Multilingual Case-Taking Platform
 ### Smart India Hackathon (SIH) Problem Statement 26047 | Ministry of Ayush
 
@@ -107,8 +104,8 @@ It bridges linguistic barriers across rural and semi-urban India, enabling patie
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/sih26047-ayush-casetaking.git
-cd sih26047-ayush-casetaking
+git clone https://github.com/koushikturlapati/patient-case-taking-software.git
+cd patient-case-taking-software
 ```
 
 ### 2. Install Dependencies
