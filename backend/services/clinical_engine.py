@@ -10,8 +10,10 @@ Implements:
 
 import uuid
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Any, Dict, List, Optional
+
 from backend.data.translations import CLINICAL_TERMS_MULTILINGUAL
+
 
 class ClinicalEngine:
     def __init__(self):
@@ -50,11 +52,28 @@ class ClinicalEngine:
         elif "mrudu" in koshtha:
             pitta_score += 15
 
-        # Normalize to 100%
-        total = vata_score + pitta_score + kapha_score
-        v_pct = round((vata_score / total) * 100)
-        p_pct = round((pitta_score / total) * 100)
-        k_pct = 100 - (v_pct + p_pct)
+        # Normalize to 100%. The largest-remainder method keeps the three values
+        # summing to 100 without always assigning the rounding residue to Kapha,
+        # which previously made a symptom-free intake read as Kapha dominant.
+        # Ties follow the classical Vata -> Pitta -> Kapha order so the gauge can
+        # never contradict the dominance check below.
+        dosha_order = ("vata", "pitta", "kapha")
+        raw_scores = {"vata": vata_score, "pitta": pitta_score, "kapha": kapha_score}
+        total = sum(raw_scores.values())
+        exact = {dosha: (score / total) * 100 for dosha, score in raw_scores.items()}
+        percentages = {dosha: int(value) for dosha, value in exact.items()}
+
+        residue = 100 - sum(percentages.values())
+        by_largest_remainder = sorted(
+            dosha_order,
+            key=lambda dosha: (-(exact[dosha] - percentages[dosha]), dosha_order.index(dosha)),
+        )
+        for dosha in by_largest_remainder[:residue]:
+            percentages[dosha] += 1
+
+        v_pct = percentages["vata"]
+        p_pct = percentages["pitta"]
+        k_pct = percentages["kapha"]
 
         # Primary Prakriti determination
         if v_pct >= p_pct and v_pct >= k_pct:
@@ -98,7 +117,7 @@ class ClinicalEngine:
 
     def get_localized_dashavidha(self, lang: str, prakriti_data: Dict[str, Any], patient: Dict[str, Any], responses: Dict[str, Any]) -> Dict[str, str]:
         terms = CLINICAL_TERMS_MULTILINGUAL["dashavidha"].get(lang, CLINICAL_TERMS_MULTILINGUAL["dashavidha"]["en"])
-        
+
         explanations = {
             "te": {
                 "prakriti": prakriti_data["primary_prakriti"],
@@ -161,7 +180,7 @@ class ClinicalEngine:
                 "vaya": f"{patient.get('age', 42)} Yrs (Madhyama Vayas - Pitta predominant age group)"
             }
         }
-        
+
         lang_exp = explanations.get(lang, explanations["en"])
         return {
             terms["prakriti"]: lang_exp["prakriti"],
@@ -178,7 +197,7 @@ class ClinicalEngine:
 
     def get_localized_ashtavidha(self, lang: str, prakriti_data: Dict[str, Any], responses: Dict[str, Any]) -> Dict[str, str]:
         terms = CLINICAL_TERMS_MULTILINGUAL["ashtavidha"].get(lang, CLINICAL_TERMS_MULTILINGUAL["ashtavidha"]["en"])
-        
+
         explanations = {
             "te": {
                 "nadi": f"మందం / సర్ప-గతి ({prakriti_data['dominant_dosha']} సరళి)",
@@ -231,7 +250,7 @@ class ClinicalEngine:
                 "akruti": "Antalgic gait / Mild discomfort during movement"
             }
         }
-        
+
         lang_exp = explanations.get(lang, explanations["en"])
         return {
             terms["nadi"]: lang_exp["nadi"],
@@ -308,10 +327,10 @@ class ClinicalEngine:
                     f"அவசர மருத்துவ ஆபத்து அறிகுறிகள் இல்லை."
                 ),
                 "Plan": (
-                    f"1. நேரடி நாடி மற்றும் உடல் பரிசோதனை.\n"
-                    f"2. தீபன-பாசன மூலிகைகள் பரிந்துரை.\n"
-                    f"3. வெளிப்பூச்சு தைல சிகிச்சை.\n"
-                    f"4. பிரகிருதி அடிப்படையிலான பத்திய உணவு திட்டம்."
+                    "1. நேரடி நாடி மற்றும் உடல் பரிசோதனை.\n"
+                    "2. தீபன-பாசன மூலிகைகள் பரிந்துரை.\n"
+                    "3. வெளிப்பூச்சு தைல சிகிச்சை.\n"
+                    "4. பிரகிருதி அடிப்படையிலான பத்திய உணவு திட்டம்."
                 )
             },
             "hi": {
@@ -331,10 +350,10 @@ class ClinicalEngine:
                     f"कोई आपातकालीन खतरे के संकेत नहीं।"
                 ),
                 "Plan": (
-                    f"1. आयुष नाड़ी परीक्षा एवं जोड़ों की जांच।\n"
-                    f"2. दीपन-पाचन योग (शुंठी/त्रिकटु) आम निवारण हेतु।\n"
-                    f"3. स्नेहन एवं स्वेदन (औषधीय तैल मालिश)।\n"
-                    f"4. प्रकृति अनुकूल पथ्य आहार-विहार परामर्श।"
+                    "1. आयुष नाड़ी परीक्षा एवं जोड़ों की जांच।\n"
+                    "2. दीपन-पाचन योग (शुंठी/त्रिकटु) आम निवारण हेतु।\n"
+                    "3. स्नेहन एवं स्वेदन (औषधीय तैल मालिश)।\n"
+                    "4. प्रकृति अनुकूल पथ्य आहार-विहार परामर्श।"
                 )
             },
             "kn": {
@@ -354,10 +373,10 @@ class ClinicalEngine:
                     f"ಯಾವುದೇ ತುರ್ತು ಅಪಾಯಕಾರಿ ಲಕ್ಷಣಗಳಿಲ್ಲ."
                 ),
                 "Plan": (
-                    f"1. ಆಯುಷ್ ನಾಡಿ ಪರೀಕ್ಷೆ ಮತ್ತು ದೈಹಿಕ ತಪಾಸಣೆ.\n"
-                    f"2. ದೀಪನ-ಪಾಚನ ಔಷಧಗಳು.\n"
-                    f"3. ಸ್ನೇಹನ ಮತ್ತು ಸ್ವೇದನ ಚಿಕಿತ್ಸೆ.\n"
-                    f"4. ಪ್ರಕೃತಿ ಆಧಾರಿತ ಆಹಾರ ಮತ್ತು ವಿಹಾರ ಸಲಹೆಗಳು."
+                    "1. ಆಯುಷ್ ನಾಡಿ ಪರೀಕ್ಷೆ ಮತ್ತು ದೈಹಿಕ ತಪಾಸಣೆ.\n"
+                    "2. ದೀಪನ-ಪಾಚನ ಔಷಧಗಳು.\n"
+                    "3. ಸ್ನೇಹನ ಮತ್ತು ಸ್ವೇದನ ಚಿಕಿತ್ಸೆ.\n"
+                    "4. ಪ್ರಕೃತಿ ಆಧಾರಿತ ಆಹಾರ ಮತ್ತು ವಿಹಾರ ಸಲಹೆಗಳು."
                 )
             },
             "en": {
