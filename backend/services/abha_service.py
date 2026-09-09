@@ -4,13 +4,16 @@ Ayushman Bharat Health Account (ABHA) Sandbox Integration & Consent Module
 
 import uuid
 from datetime import datetime
-from typing import Dict, Any
+from typing import Any, Dict
+
 
 class ABHAService:
     def __init__(self):
         # Mock ABHA sandbox database for hackathon demonstration
+        # Keyed by the full 14-digit ABHA number. Alternate keys (the 10-digit
+        # registered mobile) are indexed in `self.lookup_index` below.
         self.mock_profiles = {
-            "987233412094": {
+            "98723341209411": {
                 "abha_id": "98-7233-4120-9411",
                 "abha_address": "ramesh.kumar@abdm",
                 "name": "Ramesh Kumar (రమేష్ కుమార్)",
@@ -23,7 +26,7 @@ class ABHAService:
                 "district": "Visakhapatnam",
                 "pincode": "530003"
             },
-            "912345678901": {
+            "91234567890122": {
                 "abha_id": "91-2345-6789-0122",
                 "abha_address": "selvi.soundar@abdm",
                 "name": "Selvi Soundararajan (செல்வி)",
@@ -36,7 +39,7 @@ class ABHAService:
                 "district": "Madurai",
                 "pincode": "625001"
             },
-            "888877776666": {
+            "88887777666633": {
                 "abha_id": "88-8877-7766-6633",
                 "abha_address": "kavitha.gowda@abdm",
                 "name": "Kavitha Gowda (ಕವಿತಾ ಗೌಡ)",
@@ -51,12 +54,24 @@ class ABHAService:
             }
         }
 
+        # A patient may present either the ABHA number printed on their card or
+        # the mobile linked to it, so both resolve to the same profile.
+        self.lookup_index: Dict[str, Dict[str, Any]] = {}
+        for abha_number, profile in self.mock_profiles.items():
+            self.lookup_index[abha_number] = profile
+            self.lookup_index[profile["mobile"]] = profile
+
+    @staticmethod
+    def _normalize(identifier: str) -> str:
+        """Reduce a card number, ABHA address or mobile to bare digits."""
+        return "".join(ch for ch in str(identifier) if ch.isdigit())
+
     def verify_and_fetch_profile(self, identifier: str) -> Dict[str, Any]:
         """
         Verify ABHA ID / Mobile and retrieve ABDM profile
         """
-        clean_id = identifier.replace("-", "").strip()
-        profile = self.mock_profiles.get(clean_id)
+        clean_id = self._normalize(identifier)
+        profile = self.lookup_index.get(clean_id)
 
         if profile:
             consent_token = f"ABDM-CONSENT-{str(uuid.uuid4())[:8].upper()}"
