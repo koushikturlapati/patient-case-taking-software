@@ -138,29 +138,75 @@ The application includes built-in 1-click presets for instant hackathon demonstr
 ## 📁 Project Structure
 
 ```
-sih26047-ayush-casetaking/
+patient-case-taking-software/
 ├── backend/
+│   ├── config.py                   # Environment loading, CORS allow-list & API keys
 │   ├── main.py                     # FastAPI REST server & routing
 │   ├── data/
-│   │   ├── questions_data.py       # Multilingual SOCRATES & AYUSH intake questionnaire
-│   │   └── translations.py         # 5-Language UI strings & clinical terminology
+│   │   └── translations.py         # 5-Language UI strings, questionnaire & clinical terms
 │   └── services/
 │       ├── abha_service.py         # ABHA sandbox validation & consent
 │       ├── clinical_engine.py      # Dashavidha, Ashtavidha, Prakriti & SOAP synthesis
 │       ├── document_ocr.py         # Multilingual prescription & discharge summary parser
 │       ├── red_flag_detector.py    # Real-time multi-tier emergency triage model
 │       └── sarvam_service.py       # Sarvam AI STT, TTS, & Translation client
-├── frontend/
-│   ├── index.html                  # Dual Patient Kiosk & Doctor OPD Portal UI
-│   ├── app.js                      # Client logic, voice recording, Tesseract.js OCR, triage
-│   └── styles.css                  # Responsive Ayush-themed styling & strobe animations
-├── requirements.txt                # Python dependencies
-├── .gitignore                      # Git ignore rules
+├── tests/                          # Pytest suite for the clinical & API layers
+│   ├── test_api.py                 # FastAPI endpoint contract tests
+│   ├── test_clinical_engine.py     # Prakriti, Pariksha & SOAP case-sheet tests
+│   └── test_red_flag_detector.py   # Multilingual triage safety tests
+├── .github/workflows/ci.yml        # Lint + test automation on every push and PR
+├── index.html                      # Dual Patient Kiosk & Doctor OPD Portal UI
+├── app.js                          # Client logic, voice recording, Tesseract.js OCR, triage
+├── styles.css                      # Responsive Ayush-themed styling & strobe animations
+├── requirements.txt                # Python runtime dependencies
+├── requirements-dev.txt            # Test & lint dependencies
+├── .env.example                    # Template for local configuration
+├── CONTRIBUTING.md                 # Contribution workflow
+├── LICENSE                         # MIT License
 └── README.md                       # Comprehensive documentation
 ```
+
+> The static kiosk (`index.html`, `app.js`, `styles.css`) lives at the repository root so that
+> GitHub Pages can serve the offline demo directly from `main`. The FastAPI server serves the
+> same files locally, so both entry points stay in sync.
+
+---
+
+## ⚙️ Configuration
+
+Copy the template and fill in whatever you have. Every value is optional, and the platform
+degrades to its offline simulation engine when a key is absent, so the demo always runs.
+
+```bash
+cp .env.example .env
+```
+
+| Variable | Purpose | Default |
+| --- | --- | --- |
+| `SARVAM_API_KEY` | Enables live Saaras STT, Bulbul TTS and Mayura translation | _empty_ (simulation mode) |
+| `ALLOWED_ORIGINS` | Comma-separated CORS allow-list | `http://localhost:8000,http://127.0.0.1:8000,http://localhost:3000,http://127.0.0.1:3000` |
+
+---
+
+## 🧑‍💻 Development
+
+Install the test and lint tooling, then run the suite:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+ruff check .
+```
+
+Continuous integration runs the same commands against Python 3.10, 3.11 and 3.12 on every
+push and pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 ---
 
 ## 📜 License & Acknowledgments
-Built for **Smart India Hackathon (SIH) 2024/2026** under Problem Statement **26047** by the Ministry of Ayush, Government of India. Powered by [Sarvam AI](https://sarvam.ai) and [FastAPI](https://fastapi.tiangolo.com).
->>>>>>> 8a11b01 (feat: initial commit for SIH 26047 AYUSH Smart Multilingual Case-Taking Platform)
+
+Released under the [MIT License](LICENSE).
+
+Built for **Smart India Hackathon (SIH)** under Problem Statement **26047** by the Ministry of
+Ayush, Government of India. Powered by [Sarvam AI](https://sarvam.ai) and
+[FastAPI](https://fastapi.tiangolo.com).
