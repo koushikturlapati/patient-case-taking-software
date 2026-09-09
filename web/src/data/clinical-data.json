@@ -1,0 +1,972 @@
+{
+  "_do_not_edit": "Edit the Python modules under backend/ and re-run the script.",
+  "_generated_by": "scripts/export_clinical_data.py",
+  "clinicalTerms": {
+    "ashtavidha": {
+      "en": {
+        "akruti": "Akruti (Gait & Facial Expression)",
+        "druk": "Druk (Eyes & Sclera Appearance)",
+        "jihwa": "Jihwa (Tongue Appearance & Ama Coating)",
+        "mala": "Mala (Fecal Consistency & Bowel Tone)",
+        "mutra": "Mutra (Urine Character)",
+        "nadi": "Nadi (Pulse Rate & Quality)",
+        "shabda": "Shabda (Voice Clarity & Speech Tone)",
+        "sparsha": "Sparsha (Skin Texture & Temperature)"
+      },
+      "hi": {
+        "akruti": "आकृति (Akruti - शारीरिक चाल-ढाल)",
+        "druk": "दृक (Druk - नेत्र दृष्टि)",
+        "jihwa": "जिह्वा (Jihwa - जीभ का लेप)",
+        "mala": "मल (Mala - मल त्याग)",
+        "mutra": "मूत्र (Mutra - मूत्र परीक्षा)",
+        "nadi": "नाड़ी (Nadi - नाड़ी गति)",
+        "shabda": "शब्द (Shabda - वाणी व स्वर)",
+        "sparsha": "स्पर्श (Sparsha - त्वचा का स्पर्श)"
+      },
+      "kn": {
+        "akruti": "ಆಕೃತಿ (Akruti - ದೈಹಿಕ ಭಂಗಿ)",
+        "druk": "ದೃಕ್ (Druk - ಕಣ್ಣುಗಳು)",
+        "jihwa": "ಜಿಹ್ವಾ (Jihwa - ನಾಲಿಗೆ ಲೇಪನ)",
+        "mala": "ಮಲ (Mala - ಮಲ ವಿಸರ್ಜನೆ)",
+        "mutra": "ಮೂತ್ರ (Mutra - ಮೂತ್ರ ಪರೀಕ್ಷೆ)",
+        "nadi": "ನಾಡಿ (Nadi - ನಾಡಿ ಗತಿ)",
+        "shabda": "ಶಬ್ದ (Shabda - ಧ್ವನಿ / ಮಾತು)",
+        "sparsha": "ಸ್ಪರ್ಶ (Sparsha - ಚರ್ಮದ ಸ್ಪರ್ಶ)"
+      },
+      "ta": {
+        "akruti": "ஆக்ருதி (Akruti - உடல் தோற்றம்)",
+        "druk": "திருக் (Druk - கண் பார்வை)",
+        "jihwa": "ஜிஹ்வா (Jihwa - நாக்கு)",
+        "mala": "மலம் (Mala - மலக்கழிவு)",
+        "mutra": "மூத்திரம் (Mutra - சிறுநீர்)",
+        "nadi": "நாடி (Nadi - நாடித் துடிப்பு)",
+        "shabda": "சப்தம் (Shabda - பேச்சு / குரல்)",
+        "sparsha": "ஸ்பரிசம் (Sparsha - தொடு உணர்வு)"
+      },
+      "te": {
+        "akruti": "ఆకృతి (Akruti - భంగిమ / రూపం)",
+        "druk": "దృక్ (Druk - కళ్ళు / చూపు)",
+        "jihwa": "జిహ్వ (Jihwa - నాలుక పూత)",
+        "mala": "మల (Mala - మల విసర్జన)",
+        "mutra": "మూత్ర (Mutra - మూత్రం)",
+        "nadi": "నాడి (Nadi - పల్స్)",
+        "shabda": "శబ్ద (Shabda - స్వరం / మాట)",
+        "sparsha": "స్పర్శ (Sparsha - చర్మ స్పర్శ)"
+      }
+    },
+    "dashavidha": {
+      "en": {
+        "ahara_shakti": "8. Ahara Shakti (Digestive & Assimilative Capacity)",
+        "prakriti": "1. Prakriti (Constitution)",
+        "pramana": "5. Pramana (Anthropometry & Proportions)",
+        "samhanana": "4. Samhanana (Compactness & Muscle Build)",
+        "sara": "3. Sara (Tissue Essence & Vitality)",
+        "satmya": "6. Satmya (Adaptability & Habituation)",
+        "satva": "7. Satva (Mental Tone & Psychological Endurance)",
+        "vaya": "10. Vaya (Age & Chronological Stage)",
+        "vikriti": "2. Vikriti (Pathology & Dosha Vitiation)",
+        "vyayama_shakti": "9. Vyayama Shakti (Physical Work Capacity)"
+      },
+      "hi": {
+        "ahara_shakti": "8. आहार शक्ति (पाचन शक्ति व क्षुधा)",
+        "prakriti": "1. प्रकृति (शारीरिक गठन)",
+        "pramana": "5. प्रमाण (शारीरिक माप व अनुपात)",
+        "samhanana": "4. संहनन (शारीरिक बनावट व सुदृढ़ता)",
+        "sara": "3. सार (धातुगत उत्कृष्टता व बल)",
+        "satmya": "6. सात्म्य (अनुकूलता व आदतें)",
+        "satva": "7. सत्व (मानसिक बल व धैर्य)",
+        "vaya": "10. वय (आयु व जीवनकाल)",
+        "vikriti": "2. विकृति (दोष असंतुलन)",
+        "vyayama_shakti": "9. व्यायाम शक्ति (शारीरिक सहिष्णुता व बल)"
+      },
+      "kn": {
+        "ahara_shakti": "8. ಆಹಾರ ಶಕ್ತಿ (ಜೀರ್ಣ ಶಕ್ತಿ ಮತ್ತು ಹಸಿವು)",
+        "prakriti": "1. ಪ್ರಕೃತಿ (ಶಾರೀರಿಕ ಸಂರಚನೆ)",
+        "pramana": "5. ಪ್ರಮಾಣ (ದೇಹದ ಅಳತೆಗಳು)",
+        "samhanana": "4. ಸಂಹನನ (ದೇಹದ ದೃಢತೆ / ರಚನೆ)",
+        "sara": "3. ಸಾರ (ಧಾತು ಶ್ರೇಷ್ಠತೆ ಮತ್ತು ಬಲ)",
+        "satmya": "6. ಸಾತ್ಮ್ಯ (ಹೊಂದಾಣಿಕೆ ಮತ್ತು ಅಭ್ಯಾಸಗಳು)",
+        "satva": "7. ಸತ್ವ (ಮಾನಸಿಕ ಬಲ ಮತ್ತು ಧೈರ್ಯ)",
+        "vaya": "10. ವಯಸ್ಸು (ಜೀವನದ ಹಂತ)",
+        "vikriti": "2. ವಿಕೃತಿ (ದೋಷ ವೈಪರೀತ್ಯ)",
+        "vyayama_shakti": "9. ವ್ಯಾಯಾಮ ಶಕ್ತಿ (ದೈಹಿಕ ಸಹಿಷ್ಣುತೆ ಮತ್ತು ಬಲ)"
+      },
+      "ta": {
+        "ahara_shakti": "8. ஆகார சக்தி (செரிமானத் திறன் & பசி)",
+        "prakriti": "1. பிரகிருதி (உடல் அமைப்பு)",
+        "pramana": "5. பிரமாணம் (உடல் அளவீடுகள்)",
+        "samhanana": "4. சம்ஹனனம் (உடல் கட்டமைப்பு / உறுதி)",
+        "sara": "3. சாரம் (திசுக்களின் வலிமை)",
+        "satmya": "6. சாத்மியம் (பழக்கவழக்கங்கள் & சகிப்புத்தன்மை)",
+        "satva": "7. சத்வம் (மன உறுதி & பலம்)",
+        "vaya": "10. வயது (வாழ்க்கை பருவம்)",
+        "vikriti": "2. விகிருதி (தோஷ ஏற்றத்தாழ்வு)",
+        "vyayama_shakti": "9. வியாயாம சக்தி (உடற்பயிற்சி / தாங்கும் திறன்)"
+      },
+      "te": {
+        "ahara_shakti": "8. ఆహార శక్తి (జీర్ణ సామర్థ్యం & ఆకలి)",
+        "prakriti": "1. ప్రకృతి (శరీర రాజ్యాంగం)",
+        "pramana": "5. ప్రమాణ (శరీర కొలతలు / నిష్పత్తి)",
+        "samhanana": "4. సంహనన (శరీర నిర్మాణం / దృఢత్వం)",
+        "sara": "3. సార (ధాతు బలం & శ్రేష్ఠత)",
+        "satmya": "6. సాత్మ్య (అనుకూలత & అలవాట్లు)",
+        "satva": "7. సత్వ (మానసిక దృఢత్వం & ఓర్పు)",
+        "vaya": "10. వయస్సు (జీవిత దశ)",
+        "vikriti": "2. వికృతి (వ్యాధి అసమతుల్యత)",
+        "vyayama_shakti": "9. వ్యాయామ శక్తి (శారీరక బలం & శ్రమ శక్తి)"
+      }
+    }
+  },
+  "languages": {
+    "en": {
+      "code": "en-IN",
+      "flag": "🌐",
+      "name": "English",
+      "native": "English"
+    },
+    "hi": {
+      "code": "hi-IN",
+      "flag": "🇮🇳",
+      "name": "Hindi",
+      "native": "हिन्दी"
+    },
+    "kn": {
+      "code": "kn-IN",
+      "flag": "🌾",
+      "name": "Kannada",
+      "native": "ಕನ್ನಡ"
+    },
+    "ta": {
+      "code": "ta-IN",
+      "flag": "🛕",
+      "name": "Tamil",
+      "native": "தமிழ்"
+    },
+    "te": {
+      "code": "te-IN",
+      "flag": "🏛️",
+      "name": "Telugu",
+      "native": "తెలుగు"
+    }
+  },
+  "questions": [
+    {
+      "category": "chief_complaints",
+      "id": "chief_complaint",
+      "options": {
+        "en": [
+          "Joint Pain & Stiffness",
+          "Indigestion, Acidity & Gas",
+          "Chronic Cough & Breathlessness",
+          "Skin Rash & Itching",
+          "Fatigue & Dizziness",
+          "Insomnia & Stress/Anxiety"
+        ],
+        "hi": [
+          "जोड़ों का दर्द और सूजन",
+          "अपच, गैस और पेट दर्द",
+          "पुरानी खांसी और सांस फूलना",
+          "त्वचा पर खुजली और चकत्ते",
+          "थकान और कमजोरी",
+          "अनिद्रा और तनाव"
+        ],
+        "kn": [
+          "ಕೀಲು ನೋವು ಮತ್ತು ಊತ",
+          "ಅಜೀರ್ಣ, ಗ್ಯಾಸ್ಟ್ರಿಕ್ & ಹೊಟ್ಟೆನೋವು",
+          "ದೀರ್ಘಕಾಲದ ಕೆಮ್ಮು & ಶೀತ",
+          "ಚರ್ಮದ ತುರಿಕೆ & ದದ್ದು",
+          "ಆಯಾಸ ಮತ್ತು ತಲೆಸುತ್ತು",
+          "ನಿದ್ರಾಹೀನತೆ & ಆತಂಕ"
+        ],
+        "ta": [
+          "மூட்டு வலி மற்றும் வீக்கம்",
+          "செரிமானக் கோளாறு / வாயு",
+          "நீண்டகால இருமல் & சளி",
+          "தோல் அரிப்பு & தடிப்பு",
+          "தலைசுற்றல் & சோர்வு",
+          "தூக்கமின்மை & பதற்றம்"
+        ],
+        "te": [
+          "కీళ్ళ నొప్పులు & వాపు",
+          "అజీర్ణం / గ్యాస్ & కడుపునొప్పి",
+          "దీర్ఘకాలిక దగ్గు & జలుబు",
+          "చర్మ దురద & దద్దుర్లు",
+          "తల తిరగడం & నీరసం",
+          "నిద్రలేమి & ఆందోళన"
+        ]
+      },
+      "prompts": {
+        "en": "What is the primary health problem or symptom bringing you to the OPD today?",
+        "hi": "आज आप अस्पताल किस मुख्य समस्या या तकलीफ के लिए आए हैं?",
+        "kn": "ಇಂದು ನೀವು ಆಸ್ಪತ್ರೆಗೆ ಬಂದಿರುವ ಮುಖ್ಯ ತೊಂದರೆ ಅಥವಾ ಸಮಸ್ಯೆ ಏನು?",
+        "ta": "இன்று நீங்கள் மருத்துவமனைக்கு வந்ததற்கான முக்கிய காரணம் அல்லது பிரச்சனை என்ன?",
+        "te": "మీరు ఈరోజు ఆసుపత్రికి ఎందుకు వచ్చారు? ప్రధాన బాధ లేదా సమస్యను చెప్పండి."
+      }
+    },
+    {
+      "category": "socrates",
+      "id": "duration_onset",
+      "options": {
+        "en": [
+          "1-3 Days (Acute)",
+          "1-2 Weeks",
+          "1-3 Months",
+          "More than 6 Months (Chronic)"
+        ],
+        "hi": [
+          "1-3 दिन (अचानक/तीव्र)",
+          "1-2 सप्ताह",
+          "1-3 महीने",
+          "6 महीने से अधिक (दीर्घकालिक)"
+        ],
+        "kn": [
+          "1-3 ದಿನಗಳು (ತೀವ್ರ)",
+          "1-2 ವಾರಗಳು",
+          "1-3 ತಿಂಗಳುಗಳು",
+          "6 ತಿಂಗಳುಗಳಿಗಿಂತ ಹೆಚ್ಚು"
+        ],
+        "ta": [
+          "1-3 நாட்கள் (தீவிரமானது)",
+          "1-2 வாரங்கள்",
+          "1-3 மாதங்கள்",
+          "6 மாதங்களுக்கு மேல்"
+        ],
+        "te": [
+          "1-3 రోజులు (తీవ్రమైనది)",
+          "1-2 వారాలు",
+          "1-3 నెలలు",
+          "6 నెలల కంటే ఎక్కువ (దీర్ఘకాలికం)"
+        ]
+      },
+      "prompts": {
+        "en": "How long have you been experiencing these symptoms?",
+        "hi": "यह समस्या आपको कितने दिनों या महीनों से हो रही है?",
+        "kn": "ಈ ಸಮಸ್ಯೆ ನಿಮಗೆ ಎಷ್ಟು ದಿನಗಳಿಂದ ಅಥವಾ ತಿಂಗಳುಗಳಿಂದ ಇದೆ?",
+        "ta": "இந்த பிரச்சனை எத்தனை நாட்களாக அல்லது மாதங்களாக உள்ளது?",
+        "te": "ఈ సమస్య మీకు ఎన్ని రోజులుగా లేదా నెలలుగా ఉంది?"
+      }
+    },
+    {
+      "category": "socrates",
+      "id": "pain_severity",
+      "options": {
+        "en": [
+          "Mild (1-3)",
+          "Moderate (4-6)",
+          "Severe (7-8)",
+          "Very Severe / Unbearable (9-10)"
+        ],
+        "hi": [
+          "हल्का (1-3)",
+          "मध्यम (4-6)",
+          "गंभीर (7-8)",
+          "असहनीय (9-10)"
+        ],
+        "kn": [
+          "ಸೌಮ್ಯ (1-3)",
+          "ಮಧ್ಯಮ (4-6)",
+          "ತೀವ್ರ (7-8)",
+          "ಅಸಹನೀಯ (9-10)"
+        ],
+        "ta": [
+          "லேசானது (1-3)",
+          "மிதமானது (4-6)",
+          "கடுமையானது (7-8)",
+          "மிகக் கடுமையானது (9-10)"
+        ],
+        "te": [
+          "తేలికపాటి (1-3)",
+          "మధ్యస్థం (4-6)",
+          "తీవ్రమైనది (7-8)",
+          "అత్యంత తీవ్రం (9-10)"
+        ]
+      },
+      "prompts": {
+        "en": "How severe is your pain or discomfort on a scale of 1 to 10?",
+        "hi": "आपका दर्द या परेशानी कितनी तीव्र है? (1 से 10 के पैमाने पर)",
+        "kn": "ನಿಮ್ಮ ನೋವು ಅಥವಾ ತೊಂದರೆಯ ತೀವ್ರತೆ ಎಷ್ಟಿದೆ? (1 ರಿಂದ 10 ಸ್ಕೇಲ್)",
+        "ta": "உங்கள் வலி அல்லது அசௌகரியத்தின் தீவிரம் எவ்வளவு? (1 முதல் 10 வரை)",
+        "te": "మీ నొప్పి లేదా అసౌకర్యం తీవ్రత ఎంత ఉంది? (1 నుండి 10 స్కేల్)"
+      }
+    },
+    {
+      "category": "ayush_dashavidha",
+      "id": "agni_digestion",
+      "options": {
+        "en": [
+          "Samagni (Balanced appetite & normal digestion)",
+          "Mandagni (Low appetite, heavy stomach, sluggish - Kapha)",
+          "Tikshnagni (Excessive sharp hunger, hyperacidity - Pitta)",
+          "Vishamagni (Irregular/unpredictable digestion - Vata)"
+        ],
+        "hi": [
+          "समाग्नि (संतुलित भूख और सामान्य पाचन)",
+          "मंदाग्नि (कम भूख, भारीपन, मंद पाचन - कफ)",
+          "तीक्ष्णाग्नि (अत्यधिक भूख, जलन, एसिडिटी - पित्त)",
+          "विषमाग्नि (अनियमित कभी भूख कभी नहीं - वात)"
+        ],
+        "kn": [
+          "ಸಮಾಗ್ನಿ (ಸಮತೋಲಿತ ಹಸಿವು ಮತ್ತು ಉತ್ತಮ ಜೀರ್ಣಕ್ರಿಯೆ)",
+          "ಮಂದಾಗ್ನಿ (ಕಡಿಮೆ ಹಸಿವು, ಹೊಟ್ಟೆ ಭಾರ - ಕಫ)",
+          "ತೀಕ್ಷ್ಣಾಗ್ನಿ (ಅತಿಯಾದ ಹಸಿವು, ಎದೆಯುರಿ - ಪಿತ್ತ)",
+          "ವಿಷಮಾಗ್ನಿ (ಅಸ್ಥಿರವಾದ ಹಸಿವು - ವಾತ)"
+        ],
+        "ta": [
+          "சமாக்னி (சீரான பசி மற்றும் நல்ல செரிமானம்)",
+          "மந்தாக்னி (குறைந்த பசி, மந்தமான செரிமானம்)",
+          "தீக்ஷ்ணாக்னி (அதிக பசி, நெஞ்செரிச்சல்)",
+          "விஷமாக்னி (மாறிக்கொண்டே இருக்கும் பசி)"
+        ],
+        "te": [
+          "సమాగ్ని (సమతుల్య ఆకలి & మంచి జీర్ణం)",
+          "మందాగ్ని (తక్కువ ఆకలి, తిన్నది అరగదు - కఫ)",
+          "తీక్ష్ణాగ్ని (అతి ఆకలి, మంట - పిత్త)",
+          "విషమాగ్ని (ఎప్పుడూ మారుతూ ఉండే ఆకలి - వాత)"
+        ]
+      },
+      "prompts": {
+        "en": "AYUSH Agni Examination: How is your appetite and digestion?",
+        "hi": "आयुष अग्नि परीक्षा: आपकी भूख और पाचन क्रिया कैसी है?",
+        "kn": "ಆಯುಷ್ ಅಗ್ನಿ ಪರೀಕ್ಷೆ: ನಿಮ್ಮ ಹಸಿವು ಮತ್ತು ಜೀರ್ಣಕ್ರಿಯೆ ಹೇಗಿದೆ?",
+        "ta": "ஆயுஷ் அக்னி பரிசோதனை: உங்கள் பசி மற்றும் செரிமானம் எப்படி உள்ளது?",
+        "te": "ఆయుష్ అగ్ని పరీక్ష: మీ ఆకలి మరియు జీర్ణక్రియ ఎలా ఉంది?"
+      }
+    },
+    {
+      "category": "ayush_dashavidha",
+      "id": "koshtha_bowel",
+      "options": {
+        "en": [
+          "Mrudu Koshtha (Soft/easy, tendency for loose stools - Pitta)",
+          "Madhyama Koshtha (Regular, once daily, normal consistency)",
+          "Krura Koshtha (Constipated, dry, hard stools - Vata)"
+        ],
+        "hi": [
+          "मृदु कोष्ठ (आसानी से साफ / दस्त की प्रवृत्ति - पित्त)",
+          "मध्यम कोष्ठ (नियमित, दिन में एक बार सामान्य)",
+          "क्रूर कोष्ठ (कब्ज, सूखा, कठिन मल - वात)"
+        ],
+        "kn": [
+          "ಮೃದು ಕೋಷ್ಠ (ಸುಲಭವಾಗಿ ಆಗುತ್ತದೆ / ಮೃದು ಮಲ - ಪಿತ್ತ)",
+          "ಮಧ್ಯಮ ಕೋಷ್ಠ (ನಿಯಮಿತ, ದಿನಕ್ಕೆ ಒಮ್ಮೆ ಸಾಮಾನ್ಯ)",
+          "ಕ್ರೂರ ಕೋಷ್ಠ (ಮಲಬದ್ಧತೆ, ಗಟ್ಟಿ ಮಲ - ವಾತ)"
+        ],
+        "ta": [
+          "மிருது கோஷ்டம் (எளிதான மலம் கழிவு / அடிக்கடி இளகிய மலம்)",
+          "மத்தியம கோஷ்டம் (வழக்கமான சீரான குடல் இயக்கம்)",
+          "க்ரூர கோஷ்டம் (மலச்சிக்கல், கடினமான மலம்)"
+        ],
+        "te": [
+          "మృదు కోష్ఠ (తేలికగా సాఫీగా అవుతుంది / తరచూ లూజ్ మోషన్)",
+          "మధ్యమ కోష్ఠ (క్రమబద్ధంగా రోజూ ఒక్కసారి అవుతుంది)",
+          "క్రూర కోష్ఠ (మలబద్ధకం, గట్టిగా రావడం - వాత)"
+        ]
+      },
+      "prompts": {
+        "en": "AYUSH Koshtha Examination: How are your bowel movements?",
+        "hi": "आयुष कोष्ठ परीक्षा: आपका पेट साफ और मल त्याग कैसा रहता है?",
+        "kn": "ಆಯುಷ್ ಕೋಷ್ಠ ಪರೀಕ್ಷೆ: ನಿಮ್ಮ ಮಲವಿಸರ್ಜನೆ ಮತ್ತು ಕರುಳಿನ ಕ್ರಿಯೆ ಹೇಗಿದೆ?",
+        "ta": "ஆயுஷ் கோஷ்ட பரிசோதனை: உங்கள் மலம் கழித்தல் மற்றும் குடல் இயக்கம் எப்படி உள்ளது?",
+        "te": "ఆయుష్ కోష్ఠ పరీక్ష: మీ మల విసర్జన మరియు పేగుల పనితీరు ఎలా ఉంది?"
+      }
+    },
+    {
+      "category": "ayush_dashavidha",
+      "id": "nidra_sleep",
+      "options": {
+        "en": [
+          "Deep & Sound Sleep (7-8 hours restful)",
+          "Disturbed / Frequent awakenings (Vata)",
+          "Difficulty falling asleep / Insomnia (Pitta/Vata)",
+          "Excessive sleepiness / Lethargy (Kapha)"
+        ],
+        "hi": [
+          "गहरी और आरामदायक नींद (7-8 घंटे)",
+          "बार-बार टूटने वाली नींद (वात)",
+          "नींद न आना / अनिद्रा (पित्त/वात)",
+          "अत्यधिक नींद और सुस्ती (कफ)"
+        ],
+        "kn": [
+          "ಗಾಢ ಮತ್ತು ನೆಮ್ಮದಿಯ ನಿದ್ರೆ (7-8 ಗಂಟೆಗಳು)",
+          "ಮಧ್ಯೆ ಮಧ್ಯೆ ಎಚ್ಚರವಾಗುವ ನಿದ್ರೆ (ವಾತ)",
+          "ನಿದ್ರೆ ಬಾರದಿರುವುದು (ಪಿತ್ತ/ವಾತ)",
+          "ಅತಿಯಾದ ನಿದ್ರೆ ಮತ್ತು ಆಲಸ್ಯ (ಕಫ)"
+        ],
+        "ta": [
+          "ஆழ்ந்த நிம்மதியான தூக்கம் (7-8 மணிநேரம்)",
+          "இடையிடையே விழிப்பு வரும் தூக்கம்",
+          "தூக்கமின்மை / தள்ளிப்போகும் தூக்கம்",
+          "அதிக தூக்கம் மற்றும் பகல் சோர்வு"
+        ],
+        "te": [
+          "గాఢమైన నిద్ర (7-8 గంటలు సుఖంగా)",
+          "చెల్లాచెదురైన నిద్ర / మధ్యలో మెలకువ రావడం",
+          "నిద్ర పట్టకపోవడం (ఇన్సోమ్నియా - వాత/పిత్త)",
+          "అతినిద్ర మరియు నిరంతర బద్ధకం (కఫ)"
+        ]
+      },
+      "prompts": {
+        "en": "AYUSH Nidra Examination: How is your sleep pattern and restfulness?",
+        "hi": "आपकी नींद और मानसिक शांति कैसी रहती है?",
+        "kn": "ನಿಮ್ಮ ನಿದ್ರೆ ಮತ್ತು ಮಾನಸಿಕ ವಿಶ್ರಾಂತಿ ಹೇಗಿದೆ?",
+        "ta": "உங்கள் தூக்கம் மற்றும் தினசரி சோர்வு நிலை எப்படி உள்ளது?",
+        "te": "మీ నిద్ర ఎలా ఉంది మరియు రోజువారీ అలసట ఎలా ఉంది?"
+      }
+    },
+    {
+      "category": "ayush_prakriti",
+      "id": "prakriti_vihara",
+      "options": {
+        "en": [
+          "Intolerant to cold/wind, prefers warmth, dry skin (Vata Predominant)",
+          "Intolerant to heat, sweats easily, irritable in sun (Pitta Predominant)",
+          "Intolerant to cold/damp, heavy build, slow digestion (Kapha Predominant)",
+          "Well-balanced in all seasons (Sama Prakriti)"
+        ],
+        "hi": [
+          "सर्दी और ठंडी हवा बर्दाश्त नहीं, गर्मी पसंद (वात प्रधान)",
+          "गर्मी और धूप बर्दाश्त नहीं, पसीना ज्यादा (पित्त प्रधान)",
+          "ठंड और नमी से कफ/वजन बढ़ता है (कफ प्रधान)",
+          "सभी मौसम आसानी से अनुकूल (सम प्रकृति)"
+        ],
+        "kn": [
+          "ಚಳಿ ತಡೆಯಲು ಆಗಲ್ಲ, ಬೆಚ್ಚಗಿರುವುದು ಇಷ್ಟ (ವಾತ)",
+          "ಶಾಖ ತಡೆಯಲು ಆಗಲ್ಲ, ಅತಿಯಾದ ಬೆವರು (ಪಿತ್ತ)",
+          "ಚಳಿ ಮತ್ತು ತೇವಾಂಶದಿಂದ ತೂಕ ಹೆಚ್ಚಳ (ಕಫ)",
+          "ಎಲ್ಲಾ ಹವಾಮಾನವನ್ನು ಸುಲಭವಾಗಿ ತಡೆದುಕೊಳ್ಳುತ್ತೇನೆ (ಸಮ)"
+        ],
+        "ta": [
+          "குளிரை தாங்க முடியாது, வெதுவெதுப்பு பிடிக்கும் (வாதம்)",
+          "வெப்பத்தை தாங்க முடியாது, அதிக வியர்வை (பித்தம்)",
+          "ஈரப்பதம் மற்றும் குளிர் ஒத்துக்கொள்ளாது (கபம்)",
+          "எல்லா காலநிலைகளையும் சமமாக தாங்குவேன் (சமம்)"
+        ],
+        "te": [
+          "చలి అస్సలు పడదు, వేడి ఇష్టం (వాత ప్రధానం)",
+          "వేడి అస్సలు పడదు, చల్లదనం ఇష్టం, ఎక్కువ చెమట (పిత్త ప్రధానం)",
+          "చలి మరియు వర్షం పడదు, బరువు తేలికగా పెరుగుతాను (కఫ ప్రధానం)",
+          "అన్ని వాతావరణాలూ సమానంగా తట్టుకుంటాను (సమ ప్రకృతి)"
+        ]
+      },
+      "prompts": {
+        "en": "Ayush Constitution: How does your body react to climate and temperature?",
+        "hi": "मौसम के बदलाव पर आपका शरीर कैसा महसूस करता है?",
+        "kn": "ಹವಾಮಾನ ಬದಲಾವಣೆಗೆ ನಿಮ್ಮ ದೇಹ ಹೇಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ?",
+        "ta": "வானிலை மாற்றங்களுக்கு உங்கள் உடல் எவ்வாறு எதிர்வினையாற்றுகிறது?",
+        "te": "వాతావరణ మార్పులకు మీ శరీరం ఎలా ప్రతిస్పందిస్తుంది?"
+      }
+    }
+  ],
+  "redFlagPatterns": {
+    "ANAPHYLAXIS_SEVERE_ALLERGY": {
+      "clinical_risk": "Severe Anaphylactic Shock / Acute Laryngeal Edema",
+      "keywords": {
+        "en": [
+          "throat tightness",
+          "lip and tongue swelling",
+          "angioedema",
+          "anaphylaxis",
+          "severe drug reaction",
+          "stridor"
+        ],
+        "hi": [
+          "गले में घुटन",
+          "होंठ-चेहरे पर भारी सूजन और सांस न आना",
+          "गंभीर एलर्जी झटका"
+        ],
+        "kn": [
+          "ಗಂಟಲು ಕಟ್ಟುವಿಕೆ",
+          "ತುಟಿ ಊತ ಮತ್ತು ಉಸಿರಾಟದ ತೊಂದರೆ",
+          "ತೀವ್ರ ಅಲರ್ಜಿ"
+        ],
+        "ta": [
+          "தொண்டை அடைப்பு",
+          "உதடு வீக்கம் மற்றும் மூச்சுத் திணறல்",
+          "கடுமையான அலர்ஜி"
+        ],
+        "te": [
+          "గొంతు పట్టేయడం",
+          "పెదవులు వాపు ఊపిరి ఆడకపోవడం",
+          "మందు పడక శరీరం అంతా దద్దుర్లు"
+        ]
+      },
+      "level": "RED",
+      "recommended_action": "🚨 Immediate Intramuscular Epinephrine (Adrenaline 1:1000 0.5mg), IV Corticosteroids, Antihistamines, and Airway support.",
+      "severity": "CRITICAL",
+      "system": "Immunological / Systemic"
+    },
+    "CARDIO_RESPIRATORY": {
+      "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+      "keywords": {
+        "en": [
+          "chest pain",
+          "angina",
+          "crushing chest pressure",
+          "shortness of breath",
+          "breathlessness",
+          "dyspnea",
+          "coughing blood",
+          "hemoptysis",
+          "radiating pain to left arm"
+        ],
+        "hi": [
+          "सीने में दर्द",
+          "छाती में तेज दर्द",
+          "सांस फूलना",
+          "सांस लेने में भारी तकलीफ",
+          "खांसी में खून आना",
+          "दम घुटना"
+        ],
+        "kn": [
+          "ಎದೆ ನೋವು",
+          "ಉಸಿರಾಟದ ತೊಂದರೆ",
+          "ಉಸಿರು ಕಟ್ಟುವಿಕೆ",
+          "ರಕ್ತ ಕೆಮ್ಮು",
+          "ಹೃದಯದ ತೊಂದರೆ"
+        ],
+        "ta": [
+          "மார்பு வலி",
+          "நெஞ்சு வலி",
+          "மூச்சுத் திணறல்",
+          "மூச்சு விட முடியவில்லை",
+          "ரத்த இருமல்",
+          "இதய அடைப்பு"
+        ],
+        "te": [
+          "గుండె నొప్పి",
+          "ఛాతీలో నొప్పి",
+          "గుండెల్లో మంట లేదా భారం",
+          "ఊపిరి ఆడట్లేదు",
+          "ఆయాసం",
+          "రక్తం దగ్గు",
+          "శ్వాస తీసుకోవడంలో తీవ్రమైన ఇబ్బంది"
+        ]
+      },
+      "level": "RED",
+      "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+      "severity": "CRITICAL",
+      "system": "Cardiorespiratory System"
+    },
+    "GASTROINTESTINAL_BLEED": {
+      "clinical_risk": "Upper GI Bleed / Peptic Ulcer Perforation / Acute Surgical Abdomen",
+      "keywords": {
+        "en": [
+          "vomiting blood",
+          "hematemesis",
+          "black tarry stools",
+          "melena",
+          "acute rigid abdomen",
+          "peritonitis"
+        ],
+        "hi": [
+          "खून की उल्टी",
+          "काला बदबूदार मल",
+          "पेट में असहनीय तेज दर्द और कड़ापन"
+        ],
+        "kn": [
+          "ರಕ್ತ ವಾಂತಿ",
+          "ಕಪ್ಪು ಮಲ",
+          "ತೀವ್ರ ಹೊಟ್ಟೆನೋವು"
+        ],
+        "ta": [
+          "ரத்த வாந்தி",
+          "கருப்பு மலம்",
+          "வயிற்றில் கடுமையான தாங்கமுடியாத வலி"
+        ],
+        "te": [
+          "రక్తం వాంతులు",
+          "నల్లటి మల విసర్జన",
+          "కడుపు బిర్రబిగిసి విపరీతమైన నొప్పి"
+        ]
+      },
+      "level": "RED",
+      "recommended_action": "🚨 Urgent Surgical/Gastroenterology Triage! NPO (Nil per oral), IV Fluids, Cross-match blood, and emergency endoscopy.",
+      "severity": "CRITICAL",
+      "system": "Gastrointestinal System"
+    },
+    "HIGH_PAIN_SEVERITY": {
+      "clinical_risk": "Acute Severe Pain Crisis requiring rapid analgesia before routine intake",
+      "keywords": {
+        "en": [
+          "9-10",
+          "unbearable pain",
+          "very severe pain",
+          "excruciating",
+          "10/10"
+        ],
+        "hi": [
+          "असहनीय दर्द",
+          "9-10",
+          "बेहद तेज दर्द"
+        ],
+        "kn": [
+          "ಅಸಹನೀಯ",
+          "9-10",
+          "ತಡೆಯಲಾರದ ನೋವು"
+        ],
+        "ta": [
+          "மிகக் கடுமையானது",
+          "9-10",
+          "தாங்க முடியாத வலி"
+        ],
+        "te": [
+          "అత్యంత తీవ్రం",
+          "9-10",
+          "తట్టుకోలేనంత నొప్పి",
+          "తీవ్రమైన నొప్పి"
+        ]
+      },
+      "level": "YELLOW",
+      "recommended_action": "⚠️ Fast-track OPD consultation within 15 minutes. Administer immediate pain relief / soothing formulation.",
+      "severity": "HIGH_URGENCY",
+      "system": "Acute Symptom Distress"
+    },
+    "NEUROLOGICAL_STROKE": {
+      "clinical_risk": "Acute Ischemic Stroke / Intracranial Hemorrhage / Status Epilepticus",
+      "keywords": {
+        "en": [
+          "stroke",
+          "sudden weakness",
+          "facial drooping",
+          "slurred speech",
+          "loss of consciousness",
+          "syncope",
+          "seizure",
+          "thunderclap headache",
+          "hemiparesis"
+        ],
+        "hi": [
+          "लकवा",
+          "पक्षाघात",
+          "अचानक हाथ पैर कमजोर",
+          "बोली लड़खड़ाना",
+          "बेहोशी",
+          "मिर्गी का दौरा",
+          "अचानक तेज असहनीय सिरदर्द"
+        ],
+        "kn": [
+          "ಪಾರ್ಶ್ವವಾಯು",
+          "ಕೈ ಕಾಲು ಸ್ವಾಧೀನ ಕಳೆದುಕೊಳ್ಳುವುದು",
+          "ಮಾತು ತೊದಲುವಿಕೆ",
+          "ಮೂರ್ಛೆ",
+          "ಫಿಟ್ಸ್",
+          "ತೀವ್ರ ತಲೆನೋವು"
+        ],
+        "ta": [
+          "பக்கவாதம்",
+          "கை கால் செயலிழப்பு",
+          "பேச்சு குளறுதல்",
+          "மயக்கம்",
+          "வலிப்பு",
+          "திடீர் பார்வை இழப்பு"
+        ],
+        "te": [
+          "పక్షవాతం",
+          "కాలు చెయ్యి పడిపోవడం",
+          "మాట తడబడటం",
+          "స్పృహ తప్పిపోవడం",
+          "మూర్ఛ",
+          "ఒక్కసారిగా కంటిచూపు పోవడం",
+          "తీవ్రమైన తలనొప్పి"
+        ]
+      },
+      "level": "RED",
+      "recommended_action": "🚨 Code Stroke Protocol! Immediate Non-contrast Brain CT scan, NIHSS assessment, airway protection, and Neurologist consultation within Golden Hour.",
+      "severity": "CRITICAL",
+      "system": "Central Nervous System / Neurovascular"
+    },
+    "UROLOGICAL_HEMORRHAGE": {
+      "clinical_risk": "Active Urological Bleed / Bladder Tamponade / Acute Obstructive Uropathy / Urosepsis",
+      "keywords": {
+        "en": [
+          "gross hematuria with clots",
+          "continuous blood in urine",
+          "acute urinary retention",
+          "anuria",
+          "severe flank pain with high fever",
+          "severe urological bleed"
+        ],
+        "hi": [
+          "पेशाब में खून आना",
+          "पेशाब में खून के थक्के",
+          "पेशाब बिल्कुल रुक जाना",
+          "तीव्र पेट/कमर दर्द बुखार के साथ"
+        ],
+        "kn": [
+          "ಮೂತ್ರದಲ್ಲಿ ರಕ್ತ",
+          "ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆ",
+          "ಮೂತ್ರ ಕಟ್ಟುವುದು",
+          "ತೀವ್ರ ಕಿಡ್ನಿ ನೋವು"
+        ],
+        "ta": [
+          "சிறுநீரில் ரத்தம்",
+          "ரத்தக் கட்டிகள் சிறுநீரில்",
+          "சிறுநீர் அடைப்பு",
+          "கடுமையான இடுப்பு வலி"
+        ],
+        "te": [
+          "మూత్రంలో రక్తం గడ్డలు",
+          "ఎర్రటి మూత్రం ఎక్కువగా రావడం",
+          "మూత్రం అసలు రాకపోవడం",
+          "విపరీతమైన నడుము నొప్పి జ్వరం"
+        ]
+      },
+      "level": "RED",
+      "recommended_action": "🚨 Urgent Urologist Evaluation! 3-way Foley catheter continuous bladder irrigation, Stat CBC, Sr. Creatinine, and emergency ultrasound.",
+      "severity": "CRITICAL",
+      "system": "Urological & Nephrological System"
+    }
+  },
+  "uiStrings": {
+    "en": {
+      "abha_id_label": "ABHA ID",
+      "abha_placeholder": "Enter 14-digit ABHA Number or Mobile",
+      "abha_title": "Ayushman Bharat Health Account (ABHA)",
+      "age_gender_label": "Age / Gender",
+      "app_subtitle": "SIH 26047 - Multilingual Patient Intake & Doctor Assistance Platform",
+      "app_title": "AYUSH Smart Case-Taking System",
+      "approve_prescription": "✅ Approve & Finalize Prescription",
+      "ashtavidha_section": "🔍 Ashtavidha Pariksha (8-Fold Clinical Pointers)",
+      "ayush_title": "AYUSH Dashavidha & Ashtavidha Assessment",
+      "back": "Previous",
+      "case_sheet_heading": "MINISTRY OF AYUSH - GOVERNMENT OPD",
+      "case_sheet_subheading": "SIH 26047 AI-Assisted Clinical Case Sheet | ABHA Integrated",
+      "case_submitted": "Intake completed successfully! Your OPD Token is: ",
+      "chief_complaint_section": "🗣️ Chief Complaint & Patient Voice Intake",
+      "chief_complaints_title": "What is your main health concern?",
+      "completed": "Completed",
+      "dashavidha_section": "📋 Dashavidha Pariksha (10-Fold AYUSH Examination)",
+      "doc_upload_title": "Upload Past Prescriptions / Lab Reports",
+      "doctor_actions": "👨‍⚕️ Medical Officer Direct Actions",
+      "doctor_portal": "Doctor OPD Dashboard",
+      "dominant_dosha": "Dominant Vitiation",
+      "history_timeline_section": "📂 Historical Medical Timeline (OCR Processed)",
+      "intake_lang_label": "Intake Language",
+      "listening": "Listening to your voice...",
+      "live_opd_queue": "Live OPD Queue",
+      "next": "Next Step",
+      "patient_kiosk": "Patient Intake Kiosk",
+      "patient_label": "Patient Name",
+      "prakriti_diag": "Constitution Diagnosis",
+      "prakriti_section": "🌿 AYUSH Prakriti Assessment & Dosha Balance",
+      "prakriti_title": "Prakriti & Dosha Constitution",
+      "primary_symptoms": "Primary Reported Symptoms:",
+      "print_case": "🖨️ Print / Export Case PDF",
+      "processing": "Processing with Sarvam AI...",
+      "refresh_queue": "Refresh",
+      "select_language": "Select Your Language",
+      "skip_guest": "Continue as Walk-in / Guest",
+      "soap_a": "A - Clinical AYUSH Assessment",
+      "soap_o": "O - Objective & Examination",
+      "soap_p": "P - Prescribed Treatment Plan & Ahara/Vihara Advisory",
+      "soap_s": "S - Subjective History",
+      "soap_section": "🩺 Physician Structured SOAP Case Formulation",
+      "socrates_title": "Symptom Exploration (SOCRATES Clinical Framework)",
+      "speak": "Listen Prompt",
+      "submit_intake": "Submit Case to OPD Doctor",
+      "verify_abha": "Verify ABHA",
+      "voice_instruction": "Press the microphone and speak your health symptoms in your language",
+      "waiting_doctor": "Waiting for Doctor"
+    },
+    "hi": {
+      "abha_id_label": "आभा आईडी (ABHA)",
+      "abha_placeholder": "14 अंकों का आभा नंबर या मोबाइल नंबर दर्ज करें",
+      "abha_title": "आयुष्मान भारत हेल्थ अकाउंट (ABHA)",
+      "age_gender_label": "आयु / लिंग",
+      "app_subtitle": "SIH 26047 - बहुभाषी रोगी इतिहास एवं चिकित्सक सहायता प्रणाली",
+      "app_title": "आयुष स्मार्ट केस-टेकिंग सिस्टम",
+      "approve_prescription": "✅ अनुमोदित करें और पर्चा भेजें",
+      "ashtavidha_section": "🔍 अष्टविध परीक्षा (8-चरणीय नैदानिक संकेत)",
+      "ayush_title": "आयुष दशविध एवं अष्टविध परीक्षा विवरण",
+      "back": "पीछे",
+      "case_sheet_heading": "आयुष मंत्रालय - सरकारी ओपीडी",
+      "case_sheet_subheading": "SIH 26047 AI-सहायक नैदानिक केस शीट | ABHA एकीकृत",
+      "case_submitted": "आपका पंजीकरण सफल रहा! टोकन नंबर: ",
+      "chief_complaint_section": "🗣️ मुख्य समस्या एवं रोगी आवाज रिकॉर्डिंग",
+      "chief_complaints_title": "आपकी मुख्य समस्या क्या है?",
+      "completed": "परामर्श पूर्ण",
+      "dashavidha_section": "📋 दशविध परीक्षा (10-चरणीय आयुष परीक्षण)",
+      "doc_upload_title": "पुराने पर्चे / लैब रिपोर्ट अपलोड करें",
+      "doctor_actions": "👨‍⚕️ चिकित्सक की सीधी कार्रवाइयां",
+      "doctor_portal": "चिकित्सक ओपीडी डैशबोर्ड (Doctor Portal)",
+      "dominant_dosha": "प्रमुख दोष असंतुलन",
+      "history_timeline_section": "📂 पुराने मेडिकल रिकॉर्ड की समयरेखा (OCR)",
+      "intake_lang_label": "इंटेक भाषा",
+      "listening": "सुन रहे हैं...",
+      "live_opd_queue": "लाइव ओपीडी कतार",
+      "next": "आगे बढ़ें",
+      "patient_kiosk": "रोगी इंटेक कियोस्क (Patient Intake)",
+      "patient_label": "रोगी का नाम",
+      "prakriti_diag": "शारीरिक प्रकृति निदान",
+      "prakriti_section": "🌿 आयुष प्रकृति निर्धारण एवं दोष संतुलन",
+      "prakriti_title": "प्रकृति एवं दोष विश्लेषण (Prakriti)",
+      "primary_symptoms": "रोगी द्वारा बताए गए मुख्य लक्षण:",
+      "print_case": "🖨️ केस शीट प्रिंट / PDF",
+      "processing": "सर्वम AI द्वारा प्रोसेस किया जा रहा है...",
+      "refresh_queue": "रिफ्रेश",
+      "select_language": "कृपया अपनी भाषा चुनें",
+      "skip_guest": "अतिथि के रूप में जारी रखें (Continue as Guest)",
+      "soap_a": "A - आयुष रोग एवं दोष निदान (Assessment)",
+      "soap_o": "O - नैदानिक परीक्षण एवं आंकड़े (Objective)",
+      "soap_p": "P - उपचार योजना एवं आहार-विहार परामर्श (Plan)",
+      "soap_s": "S - रोगी का मौखिक विवरण (Subjective)",
+      "soap_section": "🩺 चिकित्सक संरचित SOAP केस विवरण",
+      "socrates_title": "लक्षणों का विवरण (SOCRATES फ्रेमवर्क)",
+      "speak": "आवाज सुनें",
+      "submit_intake": "ओपीडी डॉक्टर को केस भेजें",
+      "verify_abha": "सत्यापित करें (Verify)",
+      "voice_instruction": "माइक बटन दबाएं और अपनी स्वास्थ्य समस्या अपनी भाषा में बताएं",
+      "waiting_doctor": "चिकित्सक की प्रतीक्षा"
+    },
+    "kn": {
+      "abha_id_label": "ABHA ಗುರುತಿನ ಸಂಖ್ಯೆ",
+      "abha_placeholder": "14 ಅಂಕಿಯ ABHA ಸಂಖ್ಯೆ ಅಥವಾ ಮೊಬೈಲ್ ನಮೂದಿಸಿ",
+      "abha_title": "ಆಯುಷ್ಮಾನ್ ಭಾರತ್ ಆರೋಗ್ಯ ಖಾತೆ (ABHA)",
+      "age_gender_label": "ವಯಸ್ಸು / ಲಿಂಗ",
+      "app_subtitle": "SIH 26047 - ಬಹುಭಾಷಾ ರೋಗಿ ಇತಿಹಾಸ & ವೈದ್ಯರ ಸಹಾಯಕ ವೇದಿಕೆ",
+      "app_title": "ಆಯುಷ್ ಸ್ಮಾರ್ಟ್ ಕೇಸ್-ಟೇಕಿಂಗ್ ವ್ಯವಸ್ಥೆ",
+      "approve_prescription": "✅ ಅನುಮೋದಿಸಿ ಮತ್ತು ಔಷಧ ಚೀಟಿ ಕಳುಹಿಸಿ",
+      "ashtavidha_section": "🔍 ಅಷ್ಟವಿಧ ಪರೀಕ್ಷೆ (8 ವೈದ್ಯಕೀಯ ಸೂಚಕಗಳು)",
+      "ayush_title": "ಆಯುಷ್ ದಶವಿಧ & ಅಷ್ಟವಿಧ ಪರೀಕ್ಷೆ ವಿವರಗಳು",
+      "back": "ಹಿಂದೆ",
+      "case_sheet_heading": "ಆಯುಷ್ ಸಚಿವಾಲಯ - ಸರ್ಕಾರಿ OPD",
+      "case_sheet_subheading": "SIH 26047 AI-ಸಹಾಯಿತ ವೈದ್ಯಕೀಯ ಕೇಸ್ ಶೀಟ್ | ABHA ಸಂಯೋಜನೆ",
+      "case_submitted": "ನಿಮ್ಮ ನಮೂದು ಯಶಸ್ವಿಯಾಗಿದೆ! ಟೋಕನ್ ಸಂಖ್ಯೆ: ",
+      "chief_complaint_section": "🗣️ ಮುಖ್ಯ ಸಮಸ್ಯೆ & ರೋಗಿಯ ಧ್ವನಿ ದಾಖಲೆ",
+      "chief_complaints_title": "ನಿಮ್ಮ ಮುಖ್ಯ ಆರೋಗ್ಯ ಸಮಸ್ಯೆ ಏನು?",
+      "completed": "ಪೂರ್ಣಗೊಂಡಿದೆ",
+      "dashavidha_section": "📋 ದಶವಿಧ ಪರೀಕ್ಷೆ (10 ಹಂತದ ಆಯುಷ್ ತಪಾಸಣೆ)",
+      "doc_upload_title": "ಹಳೆಯ ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ / ಲ್ಯಾಬ್ ವರದಿಗಳನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+      "doctor_actions": "👨‍⚕️ ವೈದ್ಯರ ನೇರ ಕ್ರಮಗಳು",
+      "doctor_portal": "ವೈದ್ಯರ OPD ಪೋರ್ಟಲ್ (Doctor Portal)",
+      "dominant_dosha": "ಪ್ರಮುಖ ದೋಷ ವೈಪರೀತ್ಯ",
+      "history_timeline_section": "📂 ಹಿಂದಿನ ವೈದ್ಯಕೀಯ ದಾಖಲೆಗಳ ಕಾಲಾನುಕ್ರಮ (OCR)",
+      "intake_lang_label": "ದಾಖಲಾತಿ ಭಾಷೆ",
+      "listening": "ಕೇಳಿಸಿಕೊಳ್ಳುತ್ತಿದ್ದೇವೆ...",
+      "live_opd_queue": "ನೇರ OPD ಸರದಿ",
+      "next": "ಮುಂದೆ",
+      "patient_kiosk": "ರೋಗಿ ನೋಂದಣಿ ಕಿಯೋಸ್ಕ್ (Patient Intake)",
+      "patient_label": "ರೋಗಿಯ ಹೆಸರು",
+      "prakriti_diag": "ದೇಹದ ಪ್ರಕೃತಿ ರೋಗನಿರ್ಣಯ",
+      "prakriti_section": "🌿 ಆಯುಷ್ ಪ್ರಕೃತಿ ಮೌಲ್ಯಮಾಪನ & ದೋಷ ಸಮತೋಲನ",
+      "prakriti_title": "ಪ್ರಕೃತಿ ಮತ್ತು ದೋಷ ವಿಶ್ಲೇಷಣೆ (Prakriti)",
+      "primary_symptoms": "ರೋಗಿ ತಿಳಿಸಿದ ಮುಖ್ಯ ಲಕ್ಷಣಗಳು:",
+      "print_case": "🖨️ ಕೇಸ್ ಶೀಟ್ ಪ್ರಿಂಟ್ / PDF",
+      "processing": "ಸರ್ವಮ್ AI ಮೂಲಕ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ...",
+      "refresh_queue": "ನವೀಕರಿಸಿ",
+      "select_language": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "skip_guest": "ಅತಿಥಿಯಾಗಿ ಮುಂದುವರಿಯಿರಿ (Continue as Guest)",
+      "soap_a": "A - ಆಯುಷ್ ರೋಗ ಮೌಲ್ಯಮಾಪನ (Assessment)",
+      "soap_o": "O - ತಪಾಸಣೆ ಮತ್ತು ಪರೀಕ್ಷೆಗಳು (Objective)",
+      "soap_p": "P - ಚಿಕಿತ್ಸಾ ಯೋಜನೆ ಮತ್ತು ಆಹಾರ ಸಲಹೆ (Plan)",
+      "soap_s": "S - ರೋಗಿಯ ವಿವರಣೆ (Subjective)",
+      "soap_section": "🩺 ವೈದ್ಯರ ರಚನಾತ್ಮಕ SOAP ವರದಿ",
+      "socrates_title": "ರೋಗಲಕ್ಷಣಗಳ ವಿವರಣೆ (SOCRATES)",
+      "speak": "ಧ್ವನಿ ಆಲಿಸಿ",
+      "submit_intake": "ವೈದ್ಯರಿಗೆ ವಿವರಗಳನ್ನು ಸಲ್ಲಿಸಿ",
+      "verify_abha": "ಪರಿಶೀಲಿಸಿ (Verify)",
+      "voice_instruction": "ಮೈಕ್ರೊಫೋನ್ ಒತ್ತಿ ನಿಮ್ಮ ಆರೋಗ್ಯದ ತೊಂದರೆಯನ್ನು ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ ಮಾತನಾಡಿ",
+      "waiting_doctor": "ವೈದ್ಯರಿಗಾಗಿ ಕಾಯುತ್ತಿದ್ದಾರೆ"
+    },
+    "ta": {
+      "abha_id_label": "ABHA அடையாள எண்",
+      "abha_placeholder": "14 இலக்க ABHA எண் அல்லது மொபைல் எண்",
+      "abha_title": "ஆயுஷ்மான் பாரத் சுகாதார கணக்கு (ABHA)",
+      "age_gender_label": "வயது / பாலினம்",
+      "app_subtitle": "SIH 26047 - பலமொழி நோயாளி வரலாறு & மருத்துவர் உதவி அமைப்பு",
+      "app_title": "ஆயுஷ் ஸ்மார்ட் கேஸ்-டேக்கிங் தளம்",
+      "approve_prescription": "✅ ஒப்புதல் அளித்து மருந்து சீட்டை அனுப்பவும்",
+      "ashtavidha_section": "🔍 அஷ்டவித பரிசோதனை (8 மருத்துவ குறிகாட்டிகள்)",
+      "ayush_title": "ஆயுஷ் தசவித & அஷ்டவித பரிசோதனை விவரங்கள்",
+      "back": "பின்செல்",
+      "case_sheet_heading": "ஆயுஷ் அமைச்சகம் - அரசு மருத்துவமனை OPD",
+      "case_sheet_subheading": "SIH 26047 AI-உதவி மருத்துவ குறிப்பு | ABHA ஒருங்கிணைப்பு",
+      "case_submitted": "உங்கள் பதிவு வெற்றிகரமாக முடிந்தது! டோக்கன் எண்: ",
+      "chief_complaint_section": "🗣️ முக்கிய பிரச்சனை & நோயாளி குரல் பதிவு",
+      "chief_complaints_title": "உங்கள் முக்கிய பிரச்சனை என்ன?",
+      "completed": "முடிக்கப்பட்டது",
+      "dashavidha_section": "📋 தசவித பரிசோதனை (10 வகையான ஆயுஷ் ஆய்வு)",
+      "doc_upload_title": "பழைய மருத்துவ சீட்டு / ஆய்வக அறிக்கைகளை பதிவேற்றவும்",
+      "doctor_actions": "👨‍⚕️ மருத்துவரின் நேரடி நடவடிக்கைகள்",
+      "doctor_portal": "மருத்துவர் OPD தளம் (Doctor Portal)",
+      "dominant_dosha": "முதன்மை தோஷ ஏற்றத்தாழ்வு",
+      "history_timeline_section": "📂 முந்தைய மருத்துவ பதிவுகளின் காலவரிசை (OCR)",
+      "intake_lang_label": "பதிவு மொழி",
+      "listening": "கேட்கிறது...",
+      "live_opd_queue": "நேரடி OPD வரிசை",
+      "next": "அடுத்து",
+      "patient_kiosk": "நோயாளி பதிவு மையம் (Patient Intake)",
+      "patient_label": "நோயாளி பெயர்",
+      "prakriti_diag": "உடல் பிரகிருதி கண்டறிதல்",
+      "prakriti_section": "🌿 ஆயுஷ் பிரகிருதி மதிப்பீடு & தோஷ நிலை",
+      "prakriti_title": "உடல் பிரகிருதி மதிப்பீடு (Prakriti)",
+      "primary_symptoms": "நோயாளி கூறிய அறிகுறிகள்:",
+      "print_case": "🖨️ மருத்துவ குறிப்பை அச்சிட / PDF",
+      "processing": "சர்வம் AI மூலம் பகுப்பாய்வு செய்யப்படுகிறது...",
+      "refresh_queue": "புதுப்பி",
+      "select_language": "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
+      "skip_guest": "விருந்தினராக தொடரவும் (Continue as Guest)",
+      "soap_a": "A - ஆயுஷ் மருத்துவ மதிப்பீடு (Assessment)",
+      "soap_o": "O - புறநிலை & பரிசோதனை முடிவுகள் (Objective)",
+      "soap_p": "P - சிகிச்சை திட்டம் & உணவு ஆலோசனை (Plan)",
+      "soap_s": "S - நோயாளி விவரித்த வரலாறு (Subjective)",
+      "soap_section": "🩺 மருத்துவரின் கட்டமைக்கப்பட்ட SOAP அறிக்கை",
+      "socrates_title": "அறிகுறிகளின் விவரங்கள் (SOCRATES)",
+      "speak": "குரல் கேட்க",
+      "submit_intake": "விவரங்களை மருத்துவரிடம் சமர்ப்பிக்கவும்",
+      "verify_abha": "சரிபார்க்கவும் (Verify)",
+      "voice_instruction": "மைக் பொத்தானை அழுத்தி உங்கள் உடல்நலப் பிரச்சனையை உங்கள் மொழியில் பேசுங்கள்",
+      "waiting_doctor": "மருத்துவருக்காக காத்திருக்கிறது"
+    },
+    "te": {
+      "abha_id_label": "ABHA గుర్తింపు సంఖ్య",
+      "abha_placeholder": "14 అంకెల ABHA నంబర్ లేదా మొబైల్ నంబర్",
+      "abha_title": "ఆయుష్మాన్ భారత్ హెల్త్ ఖాతా (ABHA)",
+      "age_gender_label": "వయస్సు / లింగం",
+      "app_subtitle": "SIH 26047 - బహుభాషా రోగి చరిత్ర & డాక్టర్ సహాయక వేదిక",
+      "app_title": "ఆయుష్ స్మార్ట్ కేస్-టేకింగ్ సిస్టమ్",
+      "approve_prescription": "✅ ఆమోదించి మందులు పంపండి",
+      "ashtavidha_section": "🔍 అష్టవిధ పరీక్ష (8 రకాల క్లినికల్ సూచికలు)",
+      "ayush_title": "ఆయుష్ దశవిధ & అష్టవిధ పరీక్ష విచారణ",
+      "back": "వెనుకకు",
+      "case_sheet_heading": "ఆయుష్ మంత్రిత్వ శాఖ - ప్రభుత్వ ఆసుపత్రి OPD",
+      "case_sheet_subheading": "SIH 26047 AI-సహాయక క్లినికల్ కేస్ షీట్ | ABHA అనుసంధానం",
+      "case_submitted": "మీ కేస్ విజయవంతంగా నమోదు చేయబడింది! టోకెన్ నంబర్: ",
+      "chief_complaint_section": "🗣️ ప్రధాన సమస్య & రోగి వాయిస్ రికార్డింగ్",
+      "chief_complaints_title": "మీ ప్రధాన సమస్య ఏమిటి?",
+      "completed": "పూర్తయింది",
+      "dashavidha_section": "📋 దశవిధ పరీక్ష (10 రకాల ఆయుష్ పరీక్ష)",
+      "doc_upload_title": "గత ప్రిస్క్రిప్షన్ / ల్యాబ్ నివేదికలను అప్‌లోడ్ చేయండి",
+      "doctor_actions": "👨‍⚕️ వైద్యుల ప్రత్యక్ష చర్యలు",
+      "doctor_portal": "వైద్యుల OPD పోర్టల్ (Doctor Portal)",
+      "dominant_dosha": "ప్రధాన దోష అసమతుల్యత",
+      "history_timeline_section": "📂 గత వైద్య నివేదికల కాలక్రమం (OCR)",
+      "intake_lang_label": "ఇంటేక్ భాష",
+      "listening": "మీ మాటలు వింటున్నాము...",
+      "live_opd_queue": "ప్రత్యక్ష OPD క్యూ",
+      "next": "తరువాత",
+      "patient_kiosk": "రోగి కియోస్క్ (Patient Intake)",
+      "patient_label": "రోగి పేరు",
+      "prakriti_diag": "శరీర ప్రకృతి నిర్ధారణ",
+      "prakriti_section": "🌿 ఆయుష్ ప్రకృతి నిర్ధారణ & దోష సమతుల్యత",
+      "prakriti_title": "శరీర ప్రకృతి విశ్లేషణ (Prakriti)",
+      "primary_symptoms": "రోగి స్వయంగా చెప్పిన బాధ:",
+      "print_case": "🖨️ కేస్ షీట్ ప్రింట్ / PDF",
+      "processing": "సర్వం AI ద్వారా విశ్లేషిస్తున్నాము...",
+      "refresh_queue": "తాజాకరించు",
+      "select_language": "దయచేసి మీ భాషను ఎంచుకోండి",
+      "skip_guest": "అతిథిగా కొనసాగించండి (Continue as Guest)",
+      "soap_a": "A - ఆయుష్ క్లినికల్ నిర్ధారణ (రోగ & దోష అంచనా)",
+      "soap_o": "O - ఆబ్జెక్టివ్ & పరీక్ష (ల్యాబ్ & ప్రకృతి కొలతలు)",
+      "soap_p": "P - చికిత్సా ప్రణాళిక & ఆహార-విహార సూచనలు",
+      "soap_s": "S - సబ్జెక్టివ్ హిస్టరీ (రోగి చెప్పిన వివరాలు)",
+      "soap_section": "🩺 వైద్యుల నిర్మాణాత్మక SOAP కేస్ నివేదిక",
+      "socrates_title": "లక్షణాల వివరాలు (SOCRATES)",
+      "speak": "వాయిస్ వినండి",
+      "submit_intake": "కేస్ వివరాలను వైద్యునికి పంపండి",
+      "verify_abha": "ధృవీకరించండి (Verify)",
+      "voice_instruction": "మైక్రోఫోన్ బటన్ నొక్కి మీ సమస్యను మీ స్వంత మాటల్లో చెప్పండి",
+      "waiting_doctor": "వైద్యుల కోసం వేచి ఉంది"
+    }
+  }
+}

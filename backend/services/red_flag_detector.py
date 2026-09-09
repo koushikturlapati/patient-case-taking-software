@@ -18,12 +18,12 @@ class RedFlagDetector:
                 "keywords": {
                     "te": ["గుండె నొప్పి", "ఛాతీలో నొప్పి", "గుండెల్లో మంట లేదా భారం", "ఊపిరి ఆడట్లేదు", "ఆయాసం", "రక్తం దగ్గు", "శ్వాస తీసుకోవడంలో తీవ్రమైన ఇబ్బంది"],
                     "ta": ["மார்பு வலி", "நெஞ்சு வலி", "மூச்சுத் திணறல்", "மூச்சு விட முடியவில்லை", "ரத்த இருமல்", "இதய அடைப்பு"],
-                    "kn": ["ಎದೆ ನೋವು", "ಉಸಿರಾಟದ ತೊಂದರೆ", "ಉಸಿರು ಕಟ್ಟುವಿಕೆ", "ರಕ್ತ ಕೆಮ್ಮು", "ಹೃದಯದ ತೊಂದರೆ"],
                     "hi": ["सीने में दर्द", "छाती में तेज दर्द", "सांस फूलना", "सांस लेने में भारी तकलीफ", "खांसी में खून आना", "दम घुटना"],
+                    "kn": ["ಎದೆ ನೋವು", "ಎದೆಬಡಿತ", "ಉಸಿರಾಟದ ತೊಂದರೆ", "ಉಸಿರಾಟ ತೊಂದರೆ", "ರಕ್ತ ಕೆಮ್ಮುವುದು", "ಉಸಿರು ಕಟ್ಟುವುದು"],
                     "en": ["chest pain", "angina", "crushing chest pressure", "shortness of breath", "breathlessness", "dyspnea", "coughing blood", "hemoptysis", "radiating pain to left arm"]
                 },
                 "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
-                "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review."
+                "recommended_action": "CRITICAL EMERGENCY ALERT: Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review."
             },
             "NEUROLOGICAL_STROKE": {
                 "system": "Central Nervous System / Neurovascular",
@@ -37,7 +37,7 @@ class RedFlagDetector:
                     "en": ["stroke", "sudden weakness", "facial drooping", "slurred speech", "loss of consciousness", "syncope", "seizure", "thunderclap headache", "hemiparesis"]
                 },
                 "clinical_risk": "Acute Ischemic Stroke / Intracranial Hemorrhage / Status Epilepticus",
-                "recommended_action": "🚨 Code Stroke Protocol! Immediate Non-contrast Brain CT scan, NIHSS assessment, airway protection, and Neurologist consultation within Golden Hour."
+                "recommended_action": "CODE STROKE PROTOCOL: Immediate Non-contrast Brain CT scan, NIHSS assessment, airway protection, and Neurologist consultation within Golden Hour."
             },
             "UROLOGICAL_HEMORRHAGE": {
                 "system": "Urological & Nephrological System",
@@ -51,7 +51,7 @@ class RedFlagDetector:
                     "en": ["gross hematuria with clots", "continuous blood in urine", "acute urinary retention", "anuria", "severe flank pain with high fever", "severe urological bleed"]
                 },
                 "clinical_risk": "Active Urological Bleed / Bladder Tamponade / Acute Obstructive Uropathy / Urosepsis",
-                "recommended_action": "🚨 Urgent Urologist Evaluation! 3-way Foley catheter continuous bladder irrigation, Stat CBC, Sr. Creatinine, and emergency ultrasound."
+                "recommended_action": "URGENT UROLOGIST EVALUATION: 3-way Foley catheter continuous bladder irrigation, Stat CBC, Sr. Creatinine, and emergency ultrasound."
             },
             "GASTROINTESTINAL_BLEED": {
                 "system": "Gastrointestinal System",
@@ -65,7 +65,7 @@ class RedFlagDetector:
                     "en": ["vomiting blood", "hematemesis", "black tarry stools", "melena", "acute rigid abdomen", "peritonitis"]
                 },
                 "clinical_risk": "Upper GI Bleed / Peptic Ulcer Perforation / Acute Surgical Abdomen",
-                "recommended_action": "🚨 Urgent Surgical/Gastroenterology Triage! NPO (Nil per oral), IV Fluids, Cross-match blood, and emergency endoscopy."
+                "recommended_action": "URGENT SURGICAL TRIAGE: NPO (Nil per oral), IV Fluids, Cross-match blood, and emergency endoscopy."
             },
             "ANAPHYLAXIS_SEVERE_ALLERGY": {
                 "system": "Immunological / Systemic",
@@ -79,7 +79,7 @@ class RedFlagDetector:
                     "en": ["throat tightness", "lip and tongue swelling", "angioedema", "anaphylaxis", "severe drug reaction", "stridor"]
                 },
                 "clinical_risk": "Severe Anaphylactic Shock / Acute Laryngeal Edema",
-                "recommended_action": "🚨 Immediate Intramuscular Epinephrine (Adrenaline 1:1000 0.5mg), IV Corticosteroids, Antihistamines, and Airway support."
+                "recommended_action": "IMMEDIATE ALLERGY ACTION: Intramuscular Epinephrine (Adrenaline 1:1000 0.5mg), IV Corticosteroids, Antihistamines, and Airway support."
             },
             "HIGH_PAIN_SEVERITY": {
                 "system": "Acute Symptom Distress",
@@ -93,7 +93,7 @@ class RedFlagDetector:
                     "en": ["9-10", "unbearable pain", "very severe pain", "excruciating", "10/10"]
                 },
                 "clinical_risk": "Acute Severe Pain Crisis requiring rapid analgesia before routine intake",
-                "recommended_action": "⚠️ Fast-track OPD consultation within 15 minutes. Administer immediate pain relief / soothing formulation."
+                "recommended_action": "PRIORITY FAST-TRACK: Fast-track OPD consultation within 15 minutes. Administer immediate pain relief / soothing formulation."
             }
         }
 
@@ -159,7 +159,7 @@ class RedFlagDetector:
                         "matched_keyword": "Post TURBT Hematuria in Hospital Records",
                         "language_detected": "EN",
                         "clinical_risk": "Hematuria under evaluation with history of Papillary Urothelial Ca",
-                        "recommended_action": "⚠️ Close urological surveillance required; ensure repeat cystoscopy follow-up and monitoring of renal labs."
+                        "recommended_action": "Close urological surveillance required; ensure repeat cystoscopy follow-up and monitoring of renal labs."
                     })
                     if highest_severity != "RED":
                         highest_severity = "YELLOW"
@@ -168,18 +168,36 @@ class RedFlagDetector:
         if highest_severity == "RED":
             triage_category = "Priority / Urgent Attention (Red)"
             triage_badge_color = "#dc2626"
-            triage_banner_text = "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!"
-            ayush_safety_guideline = "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization."
+            triage_banner_text = "CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!"
+            ayush_safety_guideline = "Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization."
         elif highest_severity == "YELLOW":
             triage_category = "High Discomfort / Fast-Track (Yellow)"
             triage_badge_color = "#ca8a04"
-            triage_banner_text = "⚠️ HIGH PRIORITY OPD: Patient requires expedited clinical attention within 15 minutes."
-            ayush_safety_guideline = "⚠️ Monitor vitals closely. Initiate symptomatic pacifying measures (Shamana) alongside diagnostic evaluation."
+            triage_banner_text = "HIGH PRIORITY OPD: Patient requires expedited clinical attention within 15 minutes."
+            ayush_safety_guideline = "Monitor vitals closely. Initiate symptomatic pacifying measures (Shamana) alongside diagnostic evaluation."
         else:
             triage_category = "Standard OPD (Green)"
             triage_badge_color = "#16a34a"
-            triage_banner_text = "✅ Routine OPD Case: No acute emergency red flags detected."
-            ayush_safety_guideline = "🌿 Safe for comprehensive AYUSH intake, Dashavidha Pariksha, and holistic Panchakarma/Shamana therapy."
+            triage_banner_text = "Routine OPD Case: No acute emergency red flags detected."
+            ayush_safety_guideline = "Safe for comprehensive AYUSH intake, Dashavidha Pariksha, and holistic Panchakarma/Shamana therapy."
+
+        return {
+            "triage_level": highest_severity,
+            "triage_category": triage_category,
+            "triage_badge_color": triage_badge_color,
+            "is_emergency": is_emergency,
+            "triage_banner_text": triage_banner_text,
+            "ayush_safety_guideline": ayush_safety_guideline,
+            "total_red_flags_count": len(detected_flags),
+            "detected_red_flags": detected_flags if detected_flags else [{
+                "code": "NO_RED_FLAGS",
+                "system": "All Organ Systems Stable",
+                "severity": "NORMAL",
+                "matched_keyword": "None",
+                "clinical_risk": "No acute life-threatening triggers detected",
+                "recommended_action": "Proceed with standard out-patient AYUSH consultation"
+            }]
+        }
 
         return {
             "triage_level": highest_severity,

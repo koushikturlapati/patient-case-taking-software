@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AYUSH case-taking">
+  <rect width="512" height="512" rx="96" fill="#0a6544"/>
+  <path d="M256 400V232" stroke="#d5f5e3" stroke-width="26" stroke-linecap="round"/>
+  <path d="M256 248c0-62 44-116 106-128 6 66-38 122-106 128z" fill="#6fd8ae"/>
+  <path d="M256 288c0-54-38-101-92-112-5 58 33 107 92 112z" fill="#aeead0"/>
+</svg>

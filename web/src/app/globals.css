@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens for an OPD kiosk used in rural and semi-urban clinics.
+ *
+ * Three constraints drive the choices below: patients are often elderly, the
+ * screen is frequently in bright daylight or a dim corridor, and the person
+ * tapping may be using it for the first time. So the base type is larger than
+ * a typical web app, contrast targets WCAG AA at minimum, and touch targets
+ * never drop below 44px.
+ */
+@theme {
+  --color-bark-50: #f6f7f5;
+  --color-bark-100: #e7eae5;
+  --color-bark-200: #cfd6cb;
+  --color-bark-400: #8b9a86;
+  --color-bark-600: #4a5647;
+  --color-bark-800: #2b332a;
+  --color-bark-900: #1a1f19;
+
+  /* Ayush green, darkened until body text on white clears AA. */
+  --color-leaf-50: #eefbf4;
+  --color-leaf-100: #d5f5e3;
+  --color-leaf-200: #aeead0;
+  --color-leaf-300: #6fd8ae;
+  --color-leaf-500: #16a06a;
+  --color-leaf-600: #0d7f53;
+  --color-leaf-700: #0a6544;
+  --color-leaf-800: #0a5038;
+  --color-leaf-900: #08422f;
+
+  /* Turmeric, reserved for the fast-track tier and warnings. */
+  --color-turmeric-50: #fffaeb;
+  --color-turmeric-100: #fdf0c8;
+  --color-turmeric-300: #f7cf5a;
+  --color-turmeric-600: #b7791f;
+  --color-turmeric-700: #92600f;
+  --color-turmeric-900: #5c3d0a;
+
+  /* Reserved exclusively for Code Red. Never decorative. */
+  --color-alert-50: #fef2f2;
+  --color-alert-100: #fee2e2;
+  --color-alert-300: #fca5a5;
+  --color-alert-600: #dc2626;
+  --color-alert-700: #b91c1c;
+  --color-alert-900: #7f1d1d;
+
+  --color-vata: #7c6bd6;
+  --color-pitta: #d97706;
+  --color-kapha: #0e8f8f;
+
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  --radius-card: 0.875rem;
+}
+
+:root {
+  --background: var(--color-bark-50);
+  --foreground: var(--color-bark-900);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  /* Indic scripts have tall ascenders and deep descenders; extra leading keeps
+     Telugu and Kannada from clipping against tight line boxes. */
+  text-rendering: optimizeLegibility;
+}
+
+/* Every interactive element stays reachable by keyboard, including on the
+   touchscreen kiosk where staff may attach a physical keyboard. */
+:focus-visible {
+  outline: 3px solid var(--color-leaf-600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Code Red pulse. Deliberately slow: a fast strobe is a seizure risk and reads
+   as decoration rather than alarm. */
+@keyframes alert-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(220 38 38 / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgb(220 38 38 / 0);
+  }
+}
+
+.animate-alert-pulse {
+  animation: alert-pulse 2s ease-out infinite;
+}
+
+@keyframes mic-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-mic-ring {
+  animation: mic-ring 1.8s ease-out infinite;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    font-size: 11pt;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}
