@@ -60,7 +60,7 @@ UI_STRINGS = {
         "back": "వెనుకకు",
         "speak": "వాయిస్ వినండి",
         "prakriti_title": "శరీర ప్రకృతి విశ్లేషణ (Prakriti)",
-        
+
         # Doctor Portal Specifics
         "live_opd_queue": "ప్రత్యక్ష OPD క్యూ",
         "refresh_queue": "తాజాకరించు",
@@ -112,7 +112,7 @@ UI_STRINGS = {
         "back": "பின்செல்",
         "speak": "குரல் கேட்க",
         "prakriti_title": "உடல் பிரகிருதி மதிப்பீடு (Prakriti)",
-        
+
         # Doctor Portal Specifics
         "live_opd_queue": "நேரடி OPD வரிசை",
         "refresh_queue": "புதுப்பி",
@@ -164,7 +164,7 @@ UI_STRINGS = {
         "back": "Previous",
         "speak": "Listen Prompt",
         "prakriti_title": "Prakriti & Dosha Constitution",
-        
+
         # Doctor Portal Specifics
         "live_opd_queue": "Live OPD Queue",
         "refresh_queue": "Refresh",
@@ -216,7 +216,7 @@ UI_STRINGS = {
         "back": "पीछे",
         "speak": "आवाज सुनें",
         "prakriti_title": "प्रकृति एवं दोष विश्लेषण (Prakriti)",
-        
+
         # Doctor Portal Specifics
         "live_opd_queue": "लाइव ओपीडी कतार",
         "refresh_queue": "रिफ्रेश",
@@ -268,7 +268,7 @@ UI_STRINGS = {
         "back": "ಹಿಂದೆ",
         "speak": "ಧ್ವನಿ ಆಲಿಸಿ",
         "prakriti_title": "ಪ್ರಕೃತಿ ಮತ್ತು ದೋಷ ವಿಶ್ಲೇಷಣೆ (Prakriti)",
-        
+
         # Doctor Portal Specifics
         "live_opd_queue": "ನೇರ OPD ಸರದಿ",
         "refresh_queue": "ನವೀಕರಿಸಿ",
