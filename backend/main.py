@@ -2,21 +2,23 @@
 FastAPI Main Application for SIH 26047 - Multilingual AYUSH Case Taking & Prescription OCR
 """
 
-import os
-import asyncio
 from pathlib import Path
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Body
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, JSONResponse
-from pydantic import BaseModel
-from typing import Dict, Any, List, Optional
+from typing import Any, Dict, List, Optional
 
-from backend.data.translations import LANGUAGES, UI_STRINGS, CLINICAL_QUESTIONS
-from backend.services.sarvam_service import sarvam_client, LANGUAGE_MAP
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+
+# Imported first so `.env` is loaded before the service singletons below read
+# their credentials at import time.
+from backend.config import get_allowed_origins
+from backend.data.translations import CLINICAL_QUESTIONS, LANGUAGES, UI_STRINGS
+from backend.services.abha_service import abha_service
 from backend.services.clinical_engine import clinical_engine
 from backend.services.document_ocr import doc_ocr_service
-from backend.services.abha_service import abha_service
+from backend.services.sarvam_service import sarvam_client
 
 app = FastAPI(
     title="SIH 26047 - Multilingual AYUSH Case-Taking Platform",
@@ -26,10 +28,10 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
 )
 
 # In-memory store for active OPD cases during hospital session
@@ -287,7 +289,7 @@ def detect_red_flags_endpoint(req: RedFlagCheckRequest):
 
 @app.post("/api/intake/submit")
 def submit_patient_intake(intake: IntakeSubmitRequest):
-    case_sheet = clinical_engine.generate_case_sheet(intake.dict())
+    case_sheet = clinical_engine.generate_case_sheet(intake.model_dump())
     token = case_sheet["token_number"]
     OPD_CASES_DB[token] = case_sheet
 

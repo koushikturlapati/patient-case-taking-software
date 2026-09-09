@@ -3,9 +3,11 @@ Multilingual Document OCR & Clinical Translation Engine
 Supports Optical Character Recognition and Translation for Prescriptions and Hospital Discharge Summaries
 """
 
-from datetime import datetime, timedelta
-from typing import Dict, Any, List, Optional
+from datetime import datetime
+from typing import Any, Dict, List, Optional
+
 from backend.services.sarvam_service import sarvam_client
+
 
 class DocumentOCRService:
     def __init__(self):
@@ -170,7 +172,7 @@ class DocumentOCRService:
 
         # Determine language and preset based on filename or OCR text
         raw_text_lower = (raw_text_override or "").lower()
-        
+
         if any(k in raw_text_lower or k in fname_lower for k in ["gandhi", "urology", "turbt", "narasimha", "scopy", "hematuria"]):
             preset_key = "gandhi_urology"
         elif any(c in (raw_text_override or "") for c in "అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశషసహళక్షఱ") or "telugu" in fname_lower or "te" in fname_lower:

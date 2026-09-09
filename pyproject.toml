@@ -1,0 +1,20 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+exclude = [".git", "__pycache__", "build", "dist", ".venv", "venv"]
+
+[tool.ruff.lint]
+# The PEP 585/604 typing sweep (UP) is deliberately left out of this pass so the
+# correctness rules stay reviewable; it is tracked as separate follow-up work.
+select = ["E", "F", "W", "I", "B"]
+ignore = [
+    # The clinical corpora are long multilingual literals that stay readable on one line.
+    "E501",
+    # `Depends(...)`, `File(...)` and `Form(...)` in defaults are the FastAPI idiom.
+    "B008",
+]
