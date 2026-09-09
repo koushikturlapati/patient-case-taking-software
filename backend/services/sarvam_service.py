@@ -9,10 +9,9 @@ Includes automated high-fidelity simulated fallback if no API key is provided or
 """
 
 import os
-import json
-import base64
+from typing import Any, Dict, Optional
+
 import httpx
-from typing import Dict, Any, Optional
 
 # Supported Sarvam language codes
 LANGUAGE_MAP = {

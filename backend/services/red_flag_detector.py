@@ -4,7 +4,8 @@ Implements real-time clinical safety scoring across Telugu, Tamil, Kannada, Hind
 Detects life-threatening emergencies, cardiorespiratory distress, neurological signs, gross hematuria, and severe acute pain.
 """
 
-from typing import Dict, Any, List, Optional
+from typing import Any, Dict, List, Optional
+
 
 class RedFlagDetector:
     def __init__(self):
@@ -138,7 +139,7 @@ class RedFlagDetector:
                         }
                         if not any(f["code"] == code for f in detected_flags):
                             detected_flags.append(flag_entry)
-                        
+
                         if category["level"] == "RED":
                             highest_severity = "RED"
                             is_emergency = True
