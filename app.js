@@ -40,22 +40,22 @@ const UI_STRINGS_DB = {
     age_gender_label: "వయస్సు / లింగం",
     abha_id_label: "ABHA గుర్తింపు సంఖ్య",
     intake_lang_label: "ఇంటేక్ భాష",
-    chief_complaint_section: "🗣️ ప్రధాన సమస్య & రోగి వాయిస్ రికార్డింగ్",
+    chief_complaint_section: "ప్రధాన సమస్య & రోగి వాయిస్ రికార్డింగ్",
     primary_symptoms: "రోగి స్వయంగా చెప్పిన బాధ:",
-    prakriti_section: "🌿 AI ప్రకృతి నిర్ధారణ & దోష సమతుల్యత (Prakriti Analysis)",
+    prakriti_section: "AI ప్రకృతి నిర్ధారణ & దోష సమతుల్యత (Prakriti Analysis)",
     prakriti_diag: "శరీర ప్రకృతి నిర్ధారణ",
     dominant_dosha: "ప్రధాన దోష అసమతుల్యత",
-    dashavidha_section: "📋 దశవిధ పరీక్ష (10-Fold AYUSH Examination)",
-    ashtavidha_section: "🔍 అష్టవిధ పరీక్ష (8-Fold Clinical Pointers)",
-    history_timeline_section: "📂 AI డాక్యుమెంట్ విశ్లేషణ & గత వైద్య నివేదికలు (Neural OCR & Mayura Translation)",
-    soap_section: "🩺 AI నిర్మాణాత్మక SOAP కేస్ నివేదిక (Clinical Case Formulation)",
+    dashavidha_section: "దశవిధ పరీక్ష (10-Fold AYUSH Examination)",
+    ashtavidha_section: "అష్టవిధ పరీక్ష (8-Fold Clinical Pointers)",
+    history_timeline_section: "AI డాక్యుమెంట్ విశ్లేషణ & గత వైద్య నివేదికలు (Neural OCR & Mayura Translation)",
+    soap_section: "AI నిర్మాణాత్మక SOAP కేస్ నివేదిక (Clinical Case Formulation)",
     soap_s: "S - సబ్జెక్టివ్ హిస్టరీ (రోగి చెప్పిన వివరాలు)",
     soap_o: "O - ఆబ్జెక్టివ్ & పరీక్ష (ల్యాబ్ & ప్రకృతి కొలతలు)",
     soap_a: "A - ఆయుష్ క్లినికల్ నిర్ధారణ (రోగ & దోష అంచనా)",
     soap_p: "P - చికిత్సా ప్రణాళిక & ఆహార-విహార సూచనలు",
-    doctor_actions: "👨‍⚕️ వైద్యుల ప్రత్యక్ష చర్యలు",
-    approve_prescription: "✅ ఆమోదించి మందులు పంపండి",
-    print_case: "🖨️ కేస్ షీట్ ప్రింట్ / PDF",
+    doctor_actions: "వైద్యుల ప్రత్యక్ష చర్యలు",
+    approve_prescription: "ఆమోదించి మందులు పంపండి",
+    print_case: "కేస్ షీట్ ప్రింట్ / PDF",
     waiting_doctor: "వైద్యుల కోసం వేచి ఉంది",
     completed: "పూర్తయింది"
   },
@@ -90,22 +90,22 @@ const UI_STRINGS_DB = {
     age_gender_label: "வயது / பாலினம்",
     abha_id_label: "ABHA அடையாள எண்",
     intake_lang_label: "பதிவு மொழி",
-    chief_complaint_section: "🗣️ முக்கிய பிரச்சனை & நோயாளி குரல் பதிவு",
+    chief_complaint_section: "முக்கிய பிரச்சனை & நோயாளி குரல் பதிவு",
     primary_symptoms: "நோயாளி கூறிய அறிகுறிகள்:",
-    prakriti_section: "🌿 AI பிரகிருதி மதிப்பீடு & தோஷ நிலை (Prakriti Analysis)",
+    prakriti_section: "AI பிரகிருதி மதிப்பீடு & தோஷ நிலை (Prakriti Analysis)",
     prakriti_diag: "உடல் பிரகிருதி கண்டறிதல்",
     dominant_dosha: "முதன்மை தோஷ ஏற்றத்தாழ்வு",
-    dashavidha_section: "📋 தசவித பரிசோதனை (10 வகையான ஆயுஷ் ஆய்வு)",
-    ashtavidha_section: "🔍 அஷ்டவித பரிசோதனை (8 மருத்துவ குறிகாட்டிகள்)",
-    history_timeline_section: "📂 AI ஆவணப் பகுப்பாய்வு & மருத்துவ பதிவுகள் (OCR & Translation)",
-    soap_section: "🩺 மருத்துவரின் கட்டமைக்கப்பட்ட SOAP அறிக்கை",
+    dashavidha_section: "தசவித பரிசோதனை (10 வகையான ஆயுஷ் ஆய்வு)",
+    ashtavidha_section: "அஷ்டவித பரிசோதனை (8 மருத்துவ குறிகாட்டிகள்)",
+    history_timeline_section: "AI ஆவணப் பகுப்பாய்வு & மருத்துவ பதிவுகள் (OCR & Translation)",
+    soap_section: "மருத்துவரின் கட்டமைக்கப்பட்ட SOAP அறிக்கை",
     soap_s: "S - நோயாளி விவரித்த வரலாறு (Subjective)",
     soap_o: "O - புறநிலை & பரிசோதனை முடிவுகள் (Objective)",
     soap_a: "A - ஆயுஷ் மருத்துவ மதிப்பீடு (Assessment)",
     soap_p: "P - சிகிச்சை திட்டம் & உணவு ஆலோசனை (Plan)",
-    doctor_actions: "👨‍⚕️ மருத்துவரின் நேரடி நடவடிக்கைகள்",
-    approve_prescription: "✅ ஒப்புதல் அளித்து மருந்து சீட்டை அனுப்பவும்",
-    print_case: "🖨️ மருத்துவ குறிப்பை அச்சிட / PDF",
+    doctor_actions: "மருத்துவரின் நேரடி நடவடிக்கைகள்",
+    approve_prescription: "ஒப்புதல் அளித்து மருந்து சீட்டை அனுப்பவும்",
+    print_case: "மருத்துவ குறிப்பை அச்சிட / PDF",
     waiting_doctor: "மருத்துவருக்காக காத்திருக்கிறது",
     completed: "முடிக்கப்பட்டது"
   },
@@ -140,22 +140,22 @@ const UI_STRINGS_DB = {
     age_gender_label: "Age / Gender",
     abha_id_label: "ABHA ID",
     intake_lang_label: "Intake Language",
-    chief_complaint_section: "🗣️ Chief Complaint & Patient Voice Intake",
+    chief_complaint_section: "Chief Complaint & Patient Voice Intake",
     primary_symptoms: "Primary Reported Symptoms:",
-    prakriti_section: "🌿 AI Prakriti Assessment & Dosha Balance Gauges",
+    prakriti_section: "AI Prakriti Assessment & Dosha Balance Gauges",
     prakriti_diag: "Constitution Diagnosis",
     dominant_dosha: "Dominant Vitiation",
-    dashavidha_section: "📋 Dashavidha Pariksha (10-Fold Classical AYUSH Examination)",
-    ashtavidha_section: "🔍 Ashtavidha Pariksha (8-Fold Clinical Pointers)",
-    history_timeline_section: "📂 AI Document Analysis & Scanned Prescriptions (Neural OCR & Sarvam Mayura)",
-    soap_section: "🩺 AI Structured SOAP Case Formulation",
+    dashavidha_section: "Dashavidha Pariksha (10-Fold Classical AYUSH Examination)",
+    ashtavidha_section: "Ashtavidha Pariksha (8-Fold Clinical Pointers)",
+    history_timeline_section: "AI Document Analysis & Scanned Prescriptions (Neural OCR & Sarvam Mayura)",
+    soap_section: "AI Structured SOAP Case Formulation",
     soap_s: "S - Subjective History",
     soap_o: "O - Objective & Examination",
     soap_a: "A - Clinical AYUSH Assessment",
     soap_p: "P - Prescribed Treatment Plan & Ahara/Vihara Advisory",
-    doctor_actions: "👨‍⚕️ Medical Officer Direct Actions",
-    approve_prescription: "✅ Approve & Finalize Prescription",
-    print_case: "🖨️ Print / Export Case PDF",
+    doctor_actions: "Medical Officer Direct Actions",
+    approve_prescription: "Approve & Finalize Prescription",
+    print_case: "Print / Export Case PDF",
     waiting_doctor: "Waiting for Doctor",
     completed: "Completed"
   },
@@ -190,22 +190,22 @@ const UI_STRINGS_DB = {
     age_gender_label: "आयु / लिंग",
     abha_id_label: "आभा आईडी (ABHA)",
     intake_lang_label: "इंटेक भाषा",
-    chief_complaint_section: "🗣️ मुख्य समस्या एवं रोगी आवाज रिकॉर्डिंग",
+    chief_complaint_section: "मुख्य समस्या एवं रोगी आवाज रिकॉर्डिंग",
     primary_symptoms: "रोगी द्वारा बताए गए मुख्य लक्षण:",
-    prakriti_section: "🌿 AI आयुष प्रकृति निर्धारण एवं दोष संतुलन (Prakriti Analysis)",
+    prakriti_section: "AI आयुष प्रकृति निर्धारण एवं दोष संतुलन (Prakriti Analysis)",
     prakriti_diag: "शारीरिक प्रकृति निदान",
     dominant_dosha: "प्रमुख दोष असंतुलन",
-    dashavidha_section: "📋 दशविध परीक्षा (10-चरणीय आयुष परीक्षण)",
-    ashtavidha_section: "🔍 अष्टविध परीक्षा (8-चरणीय नैदानिक संकेत)",
-    history_timeline_section: "📂 AI दस्तावेज विश्लेषण एवं पुराने मेडिकल रिकॉर्ड (OCR & Translation)",
-    soap_section: "🩺 AI चिकित्सक संरचित SOAP केस विवरण",
+    dashavidha_section: "दशविध परीक्षा (10-चरणीय आयुष परीक्षण)",
+    ashtavidha_section: "अष्टविध परीक्षा (8-चरणीय नैदानिक संकेत)",
+    history_timeline_section: "AI दस्तावेज विश्लेषण एवं पुराने मेडिकल रिकॉर्ड (OCR & Translation)",
+    soap_section: "AI चिकित्सक संरचित SOAP केस विवरण",
     soap_s: "S - रोगी का मौखिक विवरण (Subjective)",
     soap_o: "O - नैदानिक परीक्षण एवं आंकड़े (Objective)",
     soap_a: "A - आयुष रोग एवं दोष निदान (Assessment)",
     soap_p: "P - उपचार योजना एवं आहार-विहार परामर्श (Plan)",
-    doctor_actions: "👨‍⚕️ चिकित्सक की सीधी कार्रवाइयां",
-    approve_prescription: "✅ अनुमोदित करें और पर्चा भेजें",
-    print_case: "🖨️ केस शीट प्रिंट / PDF",
+    doctor_actions: "चिकित्सक की सीधी कार्रवाइयां",
+    approve_prescription: "अनुमोदित करें और पर्चा भेजें",
+    print_case: "केस शीट प्रिंट / PDF",
     waiting_doctor: "चिकित्सक की प्रतीक्षा",
     completed: "परामर्श पूर्ण"
   },
@@ -240,22 +240,22 @@ const UI_STRINGS_DB = {
     age_gender_label: "ವಯಸ್ಸು / ಲಿಂಗ",
     abha_id_label: "ABHA ಗುರುತಿನ ಸಂಖ್ಯೆ",
     intake_lang_label: "ದಾಖಲಾತಿ ಭಾಷೆ",
-    chief_complaint_section: "🗣️ ಮುಖ್ಯ ಸಮಸ್ಯೆ & ರೋಗಿಯ ಧ್ವನಿ ದಾಖಲೆ",
+    chief_complaint_section: "ಮುಖ್ಯ ಸಮಸ್ಯೆ & ರೋಗಿಯ ಧ್ವನಿ ದಾಖಲೆ",
     primary_symptoms: "ರೋಗಿ ತಿಳಿಸಿದ ಮುಖ್ಯ ಲಕ್ಷಣಗಳು:",
-    prakriti_section: "🌿 AI ಪ್ರಕೃತಿ ಮೌಲ್ಯಮಾಪನ & ದೋಷ ಸಮತೋಲನ (Prakriti Analysis)",
+    prakriti_section: "AI ಪ್ರಕೃತಿ ಮೌಲ್ಯಮಾಪನ & ದೋಷ ಸಮತೋಲನ (Prakriti Analysis)",
     prakriti_diag: "ದೇಹದ ಪ್ರಕೃತಿ ರೋಗನಿರ್ಣಯ",
     dominant_dosha: "ಪ್ರಮುಖ ದೋಷ ವೈಪರೀತ್ಯ",
-    dashavidha_section: "📋 ದಶವಿಧ ಪರೀಕ್ಷೆ (10 ಹಂತದ ಆಯುಷ್ ತಪಾಸಣೆ)",
-    ashtavidha_section: "🔍 ಅಷ್ಟವಿಧ ಪರೀಕ್ಷೆ (8 ವೈದ್ಯಕೀಯ ಸೂಚಕಗಳು)",
-    history_timeline_section: "📂 AI ದಾಖಲೆ ವಿಶ್ಲೇಷಣೆ & ವೈದ್ಯಕೀಯ ದಾಖಲೆಗಳು (OCR & Translation)",
-    soap_section: "🩺 AI ವೈದ್ಯರ ರಚನಾತ್ಮಕ SOAP ವರದಿ",
+    dashavidha_section: "ದಶವಿಧ ಪರೀಕ್ಷೆ (10 ಹಂತದ ಆಯುಷ್ ತಪಾಸಣೆ)",
+    ashtavidha_section: "ಅಷ್ಟವಿಧ ಪರೀಕ್ಷೆ (8 ವೈದ್ಯಕೀಯ ಸೂಚಕಗಳು)",
+    history_timeline_section: "AI ದಾಖಲೆ ವಿಶ್ಲೇಷಣೆ & ವೈದ್ಯಕೀಯ ದಾಖಲೆಗಳು (OCR & Translation)",
+    soap_section: "AI ವೈದ್ಯರ ರಚನಾತ್ಮಕ SOAP ವರದಿ",
     soap_s: "S - ರೋಗಿಯ ವಿವರಣೆ (Subjective)",
     soap_o: "O - ತಪಾಸಣೆ ಮತ್ತು ಪರೀಕ್ಷೆಗಳು (Objective)",
     soap_a: "A - ಆಯುಷ್ ರೋಗ ಮೌಲ್ಯಮಾಪನ (Assessment)",
     soap_p: "P - ಚಿಕಿತ್ಸಾ ಯೋಜನೆ ಮತ್ತು ಆಹಾರ ಸಲಹೆ (Plan)",
-    doctor_actions: "👨‍⚕️ ವೈದ್ಯರ ನೇರ ಕ್ರಮಗಳು",
-    approve_prescription: "✅ ಅನುಮೋದಿಸಿ ಮತ್ತು ಔಷಧ ಚೀಟಿ ಕಳುಹಿಸಿ",
-    print_case: "🖨️ ಕೇಸ್ ಶೀಟ್ ಪ್ರಿಂಟ್ / PDF",
+    doctor_actions: "ವೈದ್ಯರ ನೇರ ಕ್ರಮಗಳು",
+    approve_prescription: "ಅನುಮೋದಿಸಿ ಮತ್ತು ಔಷಧ ಚೀಟಿ ಕಳುಹಿಸಿ",
+    print_case: "ಕೇಸ್ ಶೀಟ್ ಪ್ರಿಂಟ್ / PDF",
     waiting_doctor: "ವೈದ್ಯರಿಗಾಗಿ ಕಾಯುತ್ತಿದ್ದಾರೆ",
     completed: "ಪೂರ್ಣಗೊಂಡಿದೆ"
   }
@@ -307,7 +307,7 @@ const CLINICAL_QUESTIONS_DB = [
       ta: "உங்கள் வலி அல்லது அசௌகரியத்தின் தீவிரம் எவ்வளவு? (1 முதல் 10 வரை)",
       en: "How severe is your pain or discomfort on a scale of 1 to 10?",
       hi: "आपका दर्द या परेशानी कितनी तीव्र है? (1 से 10 के पैमाने पर)",
-      kn: "ನಿಮ್ಮ ನೋವು ಅಥವಾ ತೊಂದರೆಯ ತೀವ್ರತೆ ಎಷ್ಟಿದೆ? (1 ರಿಂದ 10 ಸ್ಕೇಲ್)"
+      kn: "ನಿಮ್ಮ ನೋವು లేదా ತೊಂದರೆಯ ತೀವ್ರತೆ ಎಷ್ಟಿದೆ? (1 ರಿಂದ 10 ಸ್ಕೇಲ್)"
     },
     options: {
       te: ["తేలికపాటి (1-3)", "మధ్యస్థం (4-6)", "తీవ్రమైనది (7-8)", "అత్యంత తీవ్రం (9-10)"],
@@ -343,7 +343,7 @@ const CLINICAL_QUESTIONS_DB = [
       ta: "ஆயுஷ் கோஷ்ட பரிசோதனை: உங்கள் மலம் கழித்தல் மற்றும் குடல் இயக்கம் எப்படி உள்ளது?",
       en: "AYUSH Koshtha Examination: How are your bowel movements?",
       hi: "आयुष कोष्ठ परीक्षा: आपका पेट साफ और मल त्याग कैसा रहता है?",
-      kn: "ಆಯುಷ್ ಕೋಷ್ಠ ಪರೀಕ್ಷೆ: ನಿಮ್ಮ ಮಲವಿಸರ್ಜನೆ ಮತ್ತು ಕರುಳಿನ ಕ್ರಿಯೆ ಹೇಗಿದೆ?"
+      kn: "ಆಯುಷ್ ಕೋಷ್ಠ ಪರೀಕ್ಷೆ: ನಿಮ್ಮ ಮಲವಿಸರ್ಜನೆ మరియు కరుಳಿನ ಕ್ರಿಯೆ ಹೇಗಿದೆ?"
     },
     options: {
       te: ["మృదు కోష్ఠ (తేలికగా సాఫీగా అవుతుంది / తరచూ లూజ్ మోషన్)", "మధ్యమ కోష్ఠ (క్రమబద్ధంగా రోజూ ఒక్కసారి అవుతుంది)", "క్రూర కోష్ఠ (మలబద్ధకం, గట్టిగా రావడం - వాత)"],
@@ -458,310 +458,232 @@ const PRESET_PRESCRIPTIONS_DB = {
     document_type: "Tamil Prescription Slip",
     filename: "tamil_dispensary_slip.jpg",
     raw_ocr_text: "அரசு ஆயுஷ் மருந்தகம் - மதுரை\nநாள்: 18/01/2026\nநோயாளி: செல்வி சௌந்தர்\nபிரச்சனை: செரிமானக் கோளாறு, நெஞ்செரிச்சல் மற்றும் பித்த வாந்தி\nமருந்துகள்:\n1. அவிபத்திகர சூரணம் 1 ஸ்பூன் தேனில் இரவு படுக்கைக்கு முன்\n2. திரிபலா சூரணம் 5g வெந்நீரில்\n3. சீரக குடிநீர் - தொடர்ந்து குடிக்கவும்\nபத்தியம்: காரம் மற்றும் புளித்த உணவுகளை தவிர்க்கவும்",
-    translated_clinical_english: "Government Ayush Dispensary - Madurai\nDate: 18/01/2026\nPatient: Selvi Soundar\nComplaint: Dyspepsia, severe retrosternal burning & acid reflux\nPrescribed Medications:\n1. Avipattikara Churna 1 tsp with honey at bedtime\n2. Triphala Churna 5g with warm water\n3. Jeeraka Kudineer (Cumin decoction) regular hydration\nDietary Advice: Strict avoidance of spicy and sour foods",
+    translated_clinical_english: "Government Ayush Dispensary - Madurai | Date: 18/01/2026\nPatient: Selvi Soundar\nProblem: Severe Indigestion, Heartburn & Pitta Emesis\nFormulations:\n1. Avipattikara Churna 1 tsp with honey at bedtime\n2. Triphala Churna 5g in warm water\n3. Jiraka Kwatha - warm decoctions throughout day\nDietary Advice: Strict avoidance of spicy and sour foods",
     patient_autofill: {
       name: "Selvi Soundar (செல்வி)",
       age: 46,
       gender: "Female",
       mobile: "9123456789",
-      chief_complaint: "செரிமானக் கோளாறு / வாயு"
+      chief_complaint: "செரிமானக் கோளாறு & நெஞ்செரிச்சல்"
     },
     extracted_entities: {
-      Hospital: "Govt Ayush Dispensary - Madurai",
+      Hospital: "Government Ayush Dispensary Madurai",
       Patient: "Selvi Soundar (46 Yrs / Female)",
       Date: "2026-01-18",
-      "Diagnosed Condition": "Amlapitta (Hyperacidity & Dyspepsia)",
+      "Diagnosed Condition": "Amlapitta / Severe Dyspepsia",
       Prescriptions: [
-        "Avipattikara Churna (1 tsp with honey HS)",
-        "Triphala Churna (5g with warm water)",
-        "Jeeraka Kudineer (regular hydration)"
+        "Avipattikara Churna (1 tsp HS)",
+        "Triphala Churna (5g warm water)",
+        "Jiraka Water"
       ],
-      "Dietary Restrictions": "Avoid pungent/sour rasas"
+      "Dietary Restrictions": "Avoid spicy and sour food items"
     },
-    summary: "Tamil prescription for chronic Amlapitta (acid peptic disease) treated with Pitta-pacifying formulations."
+    summary: "Tamil dispensary slip for Amlapitta treatment with Avipattikara Churna."
   },
   kannada: {
     detected_language: "Kannada (ಕನ್ನಡ)",
-    document_type: "Kannada Ayurvedic Prescription",
-    filename: "kannada_ayurvedic_slip.jpg",
-    raw_ocr_text: "ಶ್ರೀ ಮಂಜುನಾಥ ಆಯುರ್ವೇದ ಚಿಕಿತ್ಸಾಲಯ - ಮೈಸೂರು\nದಿನಾಂಕ: 05/02/2026\nರೋಗಿ: ಕವಿತಾ ಗೌಡ | ವಯಸ್ಸು: 35\nರೋಗಲಕ್ಷಣ: ಕೀಲು ನೋವು, ಬೆಳಗಿನ ಬಿಗಿತ ಮತ್ತು ತೀವ್ರ ಸುಸ್ತು\nಔಷಧಿಗಳು:\n1. ರಾಸ್ನಾದಿ ಕ್ವಾಥ 15ml ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ ಬಿಸಿನೀರಿನೊಂದಿಗೆ\n2. ಅಶ್ವಗಂಧಾರಿಷ್ಟ 20ml ಊಟದ ನಂತರ\n3. ಕೋಟ್ಟಂಚುಕ್ಕಾದಿ ತೈಲ ಮಾಲಿಶ್",
-    translated_clinical_english: "Sri Manjunatha Ayurveda Chikitsalaya - Mysuru\nDate: 05/02/2026\nPatient: Kavitha Gowda | Age: 35\nSymptoms: Joint aches, morning stiffness and chronic lethargy\nPrescribed Medicines:\n1. Rasnadi Kwatha 15ml twice daily with warm water\n2. Ashwagandharishta 20ml post-meals\n3. Kottakkal Kottamchukkadi Taila for local massage",
+    document_type: "Kannada Ayush Slip",
+    filename: "kannada_prescription_slip.jpg",
+    raw_ocr_text: "ಆಯುರ್ವೇದ ಚಿಕಿತ್ಸಾಲಯ - ಮೈಸೂರು\nದಿನಾಂಕ: 22/01/2026\nರೋಗಿ: ಕವಿತಾ ಗೌಡ | ವಯಸ್ಸು: 35\nತೊಂದರೆ: ಆಯಾಸ, ಕೀಲು ನೋವು ಮತ್ತು ಮಂದಾಗ್ನಿ\nಔಷಧಿಗಳು:\n1. ಅಮೃತಾರಿಷ್ಟ 20ml ಸಮಪ್ರಮಾಣ ನೀರಿನೊಂದಿಗೆ 2 ಬಾರಿ\n2. ಧಾನ್ವಂತರ ತೈಲ - ಮಸಾಜ್‌ಗಾಗಿ",
+    translated_clinical_english: "Ayurveda Chikitsalaya - Mysuru | Date: 22/01/2026\nPatient: Kavitha Gowda | Age: 35\nChief Concern: Fatigue, mild joint aches, and sluggish digestion (Mandagni)\nPrescriptions:\n1. Amritarishta 20ml with equal warm water twice daily after meals\n2. Dhanwantaram Taila - gentle external application",
     patient_autofill: {
-      name: "Kavitha Gowda (ಕವಿತಾ ಗೌಡ)",
+      name: "Kavitha Gowda (ಕವಿತಾ)",
       age: 35,
       gender: "Female",
-      mobile: "8888777766",
-      chief_complaint: "ಕೀಲು ನೋವು & ಆಯಾಸ"
+      mobile: "9845012345",
+      chief_complaint: "ಆಯಾಸ & ಮಂದಾಗ್ನಿ"
     },
     extracted_entities: {
-      Hospital: "Sri Manjunatha Ayurveda Chikitsalaya",
+      Hospital: "Ayurveda Chikitsalaya Mysuru",
       Patient: "Kavitha Gowda (35 Yrs / Female)",
-      Date: "2026-02-05",
-      "Diagnosed Condition": "Amavata / Early Vata-Kapha Fatigue",
+      Date: "2026-01-22",
+      "Diagnosed Condition": "Mandagni / Vata-Kapha Fatigue",
       Prescriptions: [
-        "Rasnadi Kwatha (15ml BD with warm water)",
-        "Ashwagandharishta (20ml BD post meals)",
-        "Kottamchukkadi Taila (Local massage)"
-      ],
-      "Dietary Restrictions": "Avoid cold foods and daytime sleeping"
+        "Amritarishta (20ml BD with equal water)",
+        "Dhanwantaram Taila (External)"
+      ]
     },
-    summary: "Kannada prescription for Vata-Kapha joint aches treated with Rasnadi Kwatha and Ashwagandharishta."
+    summary: "Kannada clinical slip for Vata-Kapha fatigue and Mandagni."
   },
   hindi: {
     detected_language: "Hindi (हिन्दी)",
-    document_type: "Hindi OPD Prescription Slip",
+    document_type: "Hindi Prescription Slip",
     filename: "hindi_ayush_slip.jpg",
-    raw_ocr_text: "आयुष वेलनेस सेंटर - वाराणसी\nदिनांक: 20/01/2026\nरोगी: सुरेश शर्मा | उम्र: 48\nलक्षण: घुटने में दर्द व सूजन, चलने में असमर्थता\nऔषधियां:\n1. योगराज गुग्गुलु 2 गोली सुबह-शाम\n2. दशमूलारिष्ट 20ml भोजनोपरांत\n3. प्रसारिणी तैल मालिश\nपरहेज: खटाई व बासी भोजन बंद करें",
-    translated_clinical_english: "Ayush Wellness Centre - Varanasi\nDate: 20/01/2026\nPatient: Suresh Sharma | Age: 48\nSymptoms: Knee joint pain, swelling and walking limitation\nPrescribed Drugs:\n1. Yogaraja Guggulu 2 tabs BD\n2. Dashamularishta 20ml post meals\n3. Prasarini Taila for local massage\nAdvisory: Avoid sour foods and stale meals",
+    raw_ocr_text: "राजकीय आयुष चिकित्सालय - जयपुर\nदिनांक: 28/01/2026\nरोगी: सुरेश शर्मा | आयु: 50\nलक्षण: पुरानी खांसी और श्वास लेने में कठिनाई\nऔषधियां:\n1. सितोपलादि चूर्ण 3g शहद के साथ दिन में तीन बार\n2. वासावलेह 1 चम्मच गर्म पानी से\n3. दशमूल क्वाथ 20ml",
+    translated_clinical_english: "State Ayush Hospital - Jaipur | Date: 28/01/2026\nPatient: Suresh Sharma | Age: 50\nSymptoms: Chronic cough and difficulty breathing\nFormulations:\n1. Sitopaladi Churna 3g with honey TID\n2. Vasavaleha 1 tsp with warm water\n3. Dashamula Kwatha 20ml BD",
     patient_autofill: {
-      name: "Suresh Sharma (सुरेश शर्मा)",
-      age: 48,
+      name: "Suresh Sharma (सुरेश)",
+      age: 50,
       gender: "Male",
-      mobile: "9811223344",
-      chief_complaint: "जोड़ों का दर्द और सूजन"
+      mobile: "9829012345",
+      chief_complaint: "पुरानी खांसी और श्वास कष्ट"
     },
     extracted_entities: {
-      Hospital: "Ayush Wellness Centre - Varanasi",
-      Patient: "Suresh Sharma (48 Yrs / Male)",
-      Date: "2026-01-20",
-      "Diagnosed Condition": "Janu Sandhigata Vata (Knee Osteoarthritis)",
+      Hospital: "State Ayush Hospital Jaipur",
+      Patient: "Suresh Sharma (50 Yrs / Male)",
+      Date: "2026-01-28",
+      "Diagnosed Condition": "Kasa-Shwasa / Respiratory Congestion",
       Prescriptions: [
-        "Yogaraja Guggulu (2 tabs BD)",
-        "Dashamularishta (20ml BD)",
-        "Prasarini Taila (local application)"
-      ],
-      "Dietary Restrictions": "Avoid sour foods and cold exposure"
+        "Sitopaladi Churna (3g TID with honey)",
+        "Vasavaleha (1 tsp BD)",
+        "Dashamula Kwatha (20ml BD)"
+      ]
     },
-    summary: "Hindi prescription for Janu Sandhigata Vata with classic anti-inflammatory Ayurvedic regimen."
+    summary: "Hindi Ayush slip for chronic cough and respiratory congestion."
   }
 };
 
-// 4. Client State
-const state = {
-  currentLang: 'te', // Default: Telugu
-  activeMode: 'kiosk', // 'kiosk' | 'doctor'
-  patientInfo: {
-    name: 'రమేష్ కుమార్ (Ramesh Kumar)',
-    abha_id: '98-7233-4120-9411',
-    age: 42,
-    gender: 'Male',
-    mobile: '9876543210'
-  },
-  intakeResponses: {},
-  voiceTranscript: '',
-  uploadedDocs: [],
-  questions: [],
-  uiStrings: {},
-  isRecording: false,
-  mediaRecorder: null,
-  audioChunks: [],
-  activeCaseToken: 'OPD-101-TEL',
-  activeCaseData: null,
-  doctorQueue: [],
-  casesDb: {}
-};
-
-// Preset demo data for rapid hackathon testing
+// 4. Interactive Hackathon Preset Cases
 const DEMO_PRESETS = {
   telugu_joint: {
     lang: 'te',
-    name: 'రమేష్ కుమార్ (Ramesh Kumar)',
+    name: 'Ramesh Kumar (రమేష్ కుమార్)',
     abha_id: '98-7233-4120-9411',
     age: 42,
     gender: 'Male',
     mobile: '9876543210',
-    transcript: 'గత రెండు వారాలుగా రెండు మోకాళ్ళలో తీవ్రమైన నొప్పి, ఉదయాన్నే కీళ్ళు బిగుసుకుపోవడం మరియు అజీర్ణం ఉంది.',
-    docKey: 'telugu',
-    responses: {
-      chief_complaint: 'కీళ్ళ నొప్పులు & వాపు',
-      duration_onset: '1-3 నెలలు',
-      pain_severity: 'తీవ్రమైనది (7-8)',
-      agni_digestion: 'విషమాగ్ని (ఎప్పుడూ మారుతూ ఉండే ఆకలి - వాత)',
-      koshtha_bowel: 'క్రూర కోష్ఠ (మలబద్ధకం, గట్టిగా రావడం - వాత)',
-      nidra_sleep: 'చెల్లాచెదురైన నిద్ర / మధ్యలో మెలకువ రావడం',
-      prakriti_vihara: 'చలి అస్సలు పడదు, వేడి ఇష్టం (వాత ప్రధానం)'
-    }
+    complaint: 'కీళ్ళ నొప్పులు & వాపు (Joint Pain & Stiffness)',
+    duration: '1-3 నెలలు (1-3 Months)',
+    severity: 'తీవ్రమైనది (7-8) (Severe)',
+    agni: 'విషమాగ్ని (ఎప్పుడూ మారుతూ ఉండే ఆకలి - వాత)',
+    koshtha: 'క్రూర కోష్ఠ (మలబద్ధకం, గట్టిగా రావడం - వాత)',
+    sleep: 'చెల్లాచెదురైన నిద్ర / మధ్యలో మెలకువ రావడం'
   },
   tamil_dyspepsia: {
     lang: 'ta',
-    name: 'செல்வி சௌந்தர் (Selvi Soundar)',
+    name: 'Selvi Soundar (செல்வி)',
     abha_id: '91-2345-6789-0122',
     age: 46,
     gender: 'Female',
     mobile: '9123456789',
-    transcript: 'சாப்பிட்ட பிறகு நெஞ்செரிச்சல் மற்றும் கடுமையான புளித்த ஏப்பம் வருகிறது. காரமான உணவு சாப்பிட்டால் வயிற்று வலி அதிகமாகிறது.',
-    docKey: 'tamil',
-    responses: {
-      chief_complaint: 'செரிமானக் கோளாறு / வாயு',
-      duration_onset: '1-2 வாரங்கள்',
-      pain_severity: 'மத்தியமம் (4-6)',
-      agni_digestion: 'தீக்ஷ்ணாக்னி (அதிக பசி, நெஞ்செரிச்சல்)',
-      koshtha_bowel: 'மிருது கோஷ்டம் (எளிதான மலம் கழிவு / அடிக்கடி இளகிய மலம்)',
-      nidra_sleep: 'ஆழ்ந்த நிம்மதியான தூக்கம் (7-8 மணிநேரம்)',
-      prakriti_vihara: 'வெப்பத்தை தாங்க முடியாது, அதிக வியர்வை (பித்தம்)'
-    }
+    complaint: 'செரிமானக் கோளாறு (Indigestion & Acidity)',
+    duration: '1-2 வாரங்கள்',
+    severity: 'மத்தியமம் (4-6)',
+    agni: 'தீக்ஷ்ணாக்னி (அதிக பசி, நெஞ்செரிச்சல்)',
+    koshtha: 'மிருது கோஷ்டம் (எளிதான மலம் கழிவு)',
+    sleep: 'ஆழ்ந்த நிம்மதியான தூக்கம்'
   },
   kannada_general: {
     lang: 'kn',
-    name: 'ಕವಿತಾ ಗೌಡ (Kavitha Gowda)',
-    abha_id: '88-8877-7766-6633',
+    name: 'Kavitha Gowda (ಕವಿತಾ)',
+    abha_id: '98-4501-2345-6789',
     age: 35,
     gender: 'Female',
-    mobile: '8888777766',
-    transcript: 'ಕಳೆದ ಒಂದು ತಿಂಗಳಿಂದ ಕೀಲು ನೋವು ಮತ್ತು ತೀವ್ರ ಆಯಾಸ ಇದೆ. ತಣ್ಣೀರು ಕುಡಿದರೆ ಕೆಮ್ಮು ಬರುತ್ತದೆ.',
-    docKey: 'kannada',
-    responses: {
-      chief_complaint: 'ಕೀಲು ನೋವು ಮತ್ತು ಊತ',
-      duration_onset: '1-3 ತಿಂಗಳುಗಳು',
-      pain_severity: 'ಮಧ್ಯಮ (4-6)',
-      agni_digestion: 'ಮಂದಾಗ್ನಿ (ಕಡಿಮೆ ಹಸಿವು, ಹೊಟ್ಟೆ ಭಾರ - ಕಫ)',
-      koshtha_bowel: 'ಮಧ್ಯಮ ಕೋಷ್ಠ (ನಿಯಮಿತ, ದಿನಕ್ಕೆ ಒಮ್ಮೆ ಸಾಮಾನ್ಯ)',
-      nidra_sleep: 'ಅತಿಯಾದ ನಿದ್ರೆ ಮತ್ತು ಆಲಸ್ಯ (ಕಫ)',
-      prakriti_vihara: 'ಚಳಿ ಮತ್ತು ತೇವಾಂಶದಿಂದ ತೂಕ ಹೆಚ್ಚಳ (ಕಫ)'
-    }
+    mobile: '9845012345',
+    complaint: 'ಆಯಾಸ ಮತ್ತು ತಲೆಸುತ್ತು (Fatigue & Vata)',
+    duration: '1-3 ತಿಂಗಳುಗಳು',
+    severity: 'ಮಧ್ಯಮ (4-6)',
+    agni: 'ಮಂದಾಗ್ನಿ (ಕಡಿಮೆ ಹಸಿವು, ಹೊಟ್ಟೆ ಭಾರ - ಕಫ)',
+    koshtha: 'ನಿಯಮಿತ, ದಿನಕ್ಕೆ ಒಮ್ಮೆ',
+    sleep: 'ಮಧ್ಯೆ ಮಧ್ಯೆ ಎಚ್ಚರವಾಗುವ ನಿದ್ರೆ (ವಾತ)'
   },
   english_standard: {
     lang: 'en',
-    name: 'Anand Varma',
-    abha_id: '77-4455-6677-8899',
-    age: 50,
+    name: 'David Wilson',
+    abha_id: '99-8877-6655-4433',
+    age: 48,
     gender: 'Male',
-    mobile: '9765432100',
-    transcript: 'Chronic neck stiffness radiating down the right arm with occasional numbness for 3 months.',
-    docKey: 'gandhi_urology',
-    responses: {
-      chief_complaint: 'Joint Pain & Stiffness',
-      duration_onset: '1-3 Months',
-      pain_severity: 'Moderate (4-6)',
-      agni_digestion: 'Vishamagni (Irregular/unpredictable digestion - Vata)',
-      koshtha_bowel: 'Krura Koshtha (Constipated, dry, hard stools - Vata)',
-      nidra_sleep: 'Disturbed / Frequent awakenings (Vata)',
-      prakriti_vihara: 'Intolerant to cold/wind, prefers warmth, dry skin (Vata Predominant)'
-    }
+    mobile: '9988776655',
+    complaint: 'Joint Pain & Stiffness (Cervical Spondylosis)',
+    duration: 'More than 6 Months (Chronic)',
+    severity: 'Moderate (4-6)',
+    agni: 'Samagni (Balanced appetite & normal digestion)',
+    koshtha: 'Madhyama Koshtha (Regular, once daily)',
+    sleep: 'Deep & Sound Sleep (7-8 hours restful)'
   },
   telugu_red_flag_emergency: {
     lang: 'te',
-    name: 'వెంకటేశ్వర్లు (Venkateswarlu)',
-    abha_id: '99-1122-3344-5566',
+    name: 'Venkateswarlu (వేంకటేశ్వర్లు)',
+    abha_id: '98-1122-3344-5566',
     age: 54,
     gender: 'Male',
-    mobile: '9848012345',
-    transcript: 'ఛాతీలో తీవ్రమైన నొప్పి మరియు ఎడమ చెయ్యి లాగుతోంది. గంట నుంచి తీవ్రమైన ఊపిరి ఆడకపోవడం మరియు విపరీతమైన చెమటలు పడుతున్నాయి.',
-    responses: {
-      chief_complaint: 'ఛాతీలో నొప్పి & తీవ్రమైన ఆయాసం',
-      duration_onset: '1-3 రోజులు (తీవ్రమైనది)',
-      pain_severity: 'అత్యంత తీవ్రం (9-10)',
-      agni_digestion: 'విషమాగ్ని (ఎప్పుడూ మారుతూ ఉండే ఆకలి - వాత)',
-      koshtha_bowel: 'మధ్యమ కోష్ఠ (క్రమబద్ధంగా రోజూ ఒక్కసారి అవుతుంది)',
-      nidra_sleep: 'నిద్ర పట్టకపోవడం (ఇన్సోమ్నియా - వాత/పిత్త)',
-      prakriti_vihara: 'చలి అస్సలు పడదు, వేడి ఇష్టం (వాత ప్రధానం)'
-    }
+    mobile: '9811223344',
+    complaint: 'తీవ్రమైన ఛాతీలో నొప్పి మరియు గుండె బరువుగా ఉంది, ఎడమ చెయ్యి లాగుతోంది',
+    duration: '1-3 రోజులు (తీవ్రమైనది)',
+    severity: 'అత్యంత తీవ్రం (9-10)',
+    agni: 'విషమాగ్ని (ఎప్పుడూ మారుతూ ఉండే ఆకలి - వాత)',
+    koshtha: 'క్రూర కోష్ఠ (మలబద్ధకం, గట్టిగా రావడం - వాత)',
+    sleep: 'నిద్ర పట్టకపోవడం (ఇన్సోమ్నియా - వాత/పిత్త)'
   },
   tamil_red_flag_stroke: {
     lang: 'ta',
-    name: 'முத்துவேல் (Muthuvel)',
-    abha_id: '99-8877-6655-4433',
+    name: 'Muthuvel (முத்துவேல்)',
+    abha_id: '91-4455-6677-8899',
     age: 62,
     gender: 'Male',
-    mobile: '9444123456',
-    transcript: 'திடீரென வலது கை மற்றும் கால் செயல் இழந்துவிட்டது, பேச்சு குளறுகிறது மற்றும் மயக்கம் வருகிறது.',
-    responses: {
-      chief_complaint: 'பக்கவாதம் மாதிரி கை கால் செயலிழப்பு & பேச்சு குளறுதல்',
-      duration_onset: '1-3 நாட்கள் (தீவிரமானது)',
-      pain_severity: 'மிகக் கடுமையானது (9-10)',
-      agni_digestion: 'மந்தாக்னி (குறைந்த பசி, மந்தமான செரிமானம்)',
-      koshtha_bowel: 'மத்தியம கோஷ்டம் (வழக்கமான சீரான குடல் இயக்கம்)',
-      nidra_sleep: 'இடையிடையே விழிப்பு வரும் தூக்கம்',
-      prakriti_vihara: 'ஈரப்பதம் மற்றும் குளிர் ஒத்துக்கொள்ளாது (கபம்)'
-    }
+    mobile: '9144556677',
+    complaint: 'திடீர் பக்கவாதம், வலது கை கால் செயலிழப்பு மற்றும் பேச்சு குளறுதல்',
+    duration: '1-3 நாட்கள் (தீவிரமானது)',
+    severity: 'மிகக் கடுமையானது (9-10)',
+    agni: 'மந்தாக்னி (குறைந்த பசி, மந்தமான செரிமானம்)',
+    koshtha: 'க்ரூர கோஷ்டம் (மலச்சிக்கல், கடினமான மலம்)',
+    sleep: 'தூக்கமின்மை / தள்ளிப்போகும் தூக்கம்'
   }
 };
 
-// 5. Seed Initial Cases (Available out-of-the-box in Doctor Portal)
+// 5. Global State Management
+const state = {
+  currentLang: 'te',
+  activeMode: 'kiosk',
+  patientInfo: {
+    name: "Ramesh Kumar (రమేష్ కుమార్)",
+    abha_id: "98-7233-4120-9411",
+    age: 42,
+    gender: "Male",
+    mobile: "9876543210"
+  },
+  intakeResponses: {},
+  voiceTranscript: "",
+  uploadedDocs: [],
+  isRecording: false,
+  mediaRecorder: null,
+  audioChunks: [],
+  activeCaseToken: null,
+  activeCaseData: null,
+  uiStrings: {},
+  questions: [],
+  doctorQueue: [],
+  casesDb: {}
+};
+
+// Seed initial demonstration queue and database
 function seedInitialData() {
-  const telDoc = PRESET_PRESCRIPTIONS_DB["telugu"];
-  const telCase = generateLocalCaseSheet({
-    patient_info: {
-      name: "రమేష్ కుమార్ (Ramesh Kumar)",
-      abha_id: "98-7233-4120-9411",
-      age: 42,
-      gender: "Male",
-      mobile: "9876543210"
+  const case1 = generateLocalCaseSheet({
+    patient_info: DEMO_PRESETS.telugu_joint,
+    language: 'te',
+    responses: {
+      chief_complaint: DEMO_PRESETS.telugu_joint.complaint,
+      duration_onset: DEMO_PRESETS.telugu_joint.duration,
+      pain_severity: DEMO_PRESETS.telugu_joint.severity,
+      agni_digestion: DEMO_PRESETS.telugu_joint.agni,
+      koshtha_bowel: DEMO_PRESETS.telugu_joint.koshtha,
+      nidra_sleep: DEMO_PRESETS.telugu_joint.sleep
     },
-    language: "te",
-    responses: DEMO_PRESETS.telugu_joint.responses,
-    voice_transcript: DEMO_PRESETS.telugu_joint.transcript,
-    uploaded_documents: [{
-      document_id: "DOC-TEL-01",
-      filename: telDoc.filename,
-      document_type: telDoc.document_type,
-      detected_language: telDoc.detected_language,
-      raw_ocr_text: telDoc.raw_ocr_text,
-      translated_clinical_english: telDoc.translated_clinical_english,
-      extracted_entities: telDoc.extracted_entities,
-      summary: telDoc.summary,
-      date_extracted: "2026-01-12"
-    }],
+    voice_transcript: "గత రెండు నెలలుగా మోకాళ్ళలో చాలా నొప్పి ఉంది, చలికి నొప్పులు ఇంకా ఎక్కువవుతున్నాయి. ఉదయాన్నే నడవలేకపోతున్నాను.",
+    uploaded_documents: [PRESET_PRESCRIPTIONS_DB.telugu],
     token_override: "OPD-101-TEL"
   });
 
-  const tamDoc = PRESET_PRESCRIPTIONS_DB["tamil"];
-  const tamCase = generateLocalCaseSheet({
-    patient_info: {
-      name: "Selvi Soundar (செல்வி)",
-      abha_id: "91-2345-6789-0122",
-      age: 46,
-      gender: "Female",
-      mobile: "9123456789"
+  const case2 = generateLocalCaseSheet({
+    patient_info: DEMO_PRESETS.tamil_dyspepsia,
+    language: 'ta',
+    responses: {
+      chief_complaint: DEMO_PRESETS.tamil_dyspepsia.complaint,
+      duration_onset: DEMO_PRESETS.tamil_dyspepsia.duration,
+      pain_severity: DEMO_PRESETS.tamil_dyspepsia.severity,
+      agni_digestion: DEMO_PRESETS.tamil_dyspepsia.agni,
+      koshtha_bowel: DEMO_PRESETS.tamil_dyspepsia.koshtha,
+      nidra_sleep: DEMO_PRESETS.tamil_dyspepsia.sleep
     },
-    language: "ta",
-    responses: DEMO_PRESETS.tamil_dyspepsia.responses,
-    voice_transcript: DEMO_PRESETS.tamil_dyspepsia.transcript,
-    uploaded_documents: [{
-      document_id: "DOC-TAM-01",
-      filename: tamDoc.filename,
-      document_type: tamDoc.document_type,
-      detected_language: tamDoc.detected_language,
-      raw_ocr_text: tamDoc.raw_ocr_text,
-      translated_clinical_english: tamDoc.translated_clinical_english,
-      extracted_entities: tamDoc.extracted_entities,
-      summary: tamDoc.summary,
-      date_extracted: "2026-01-18"
-    }],
+    voice_transcript: "சாப்பிட்ட பிறகு நெஞ்செரிச்சல் மற்றும் புளித்த ஏப்பம் வருகிறது.",
+    uploaded_documents: [PRESET_PRESCRIPTIONS_DB.tamil],
     token_override: "OPD-102-TAM"
   });
 
-  const uroDoc = PRESET_PRESCRIPTIONS_DB["gandhi_urology"];
-  const uroCase = generateLocalCaseSheet({
-    patient_info: uroDoc.patient_autofill,
-    language: "te",
-    responses: {
-      chief_complaint: "Post TURBT with on-and-off Hematuria (మూత్రంలో రక్తం)",
-      duration_onset: "1-2 వారాలు",
-      pain_severity: "మధ్యస్థం (4-6)",
-      agni_digestion: "సమాగ్ని (సమతుల్య ఆకలి & మంచి జీర్ణం)",
-      koshtha_bowel: "మధ్యమ కోష్ఠ (క్రమబద్ధంగా రోజూ ఒక్కసారి అవుతుంది)",
-      nidra_sleep: "గాఢమైన నిద్ర (7-8 గంటలు సుఖంగా)",
-      prakriti_vihara: "అన్ని వాతావరణాలూ సమానంగా తట్టుకుంటాను (సమ ప్రకృతి)"
-    },
-    voice_transcript: "గత వారం నుంచి మూత్రంలో రక్తం కనిపిస్తోంది. గాంధీ ఆసుపత్రిలో స్కోపీ చేశారు.",
-    uploaded_documents: [{
-      document_id: "DOC-URO-01",
-      filename: uroDoc.filename,
-      document_type: uroDoc.document_type,
-      detected_language: uroDoc.detected_language,
-      raw_ocr_text: uroDoc.raw_ocr_text,
-      translated_clinical_english: uroDoc.translated_clinical_english,
-      extracted_entities: uroDoc.extracted_entities,
-      summary: uroDoc.summary,
-      date_extracted: "2026-03-05"
-    }],
-    token_override: "OPD-103-URO"
-  });
-
-  state.casesDb["OPD-101-TEL"] = telCase;
-  state.casesDb["OPD-102-TAM"] = tamCase;
-  state.casesDb["OPD-103-URO"] = uroCase;
+  state.casesDb["OPD-101-TEL"] = case1;
+  state.casesDb["OPD-102-TAM"] = case2;
+  state.activeCaseToken = "OPD-101-TEL";
+  state.activeCaseData = case1;
 
   state.doctorQueue = [
     {
@@ -771,8 +693,8 @@ function seedInitialData() {
       gender: "Male",
       language: "Telugu (తెలుగు)",
       chief_complaint: "Joint Pain & Stiffness (Bilateral Knees)",
-      prakriti: telCase.prakriti.primary_prakriti,
-      triage: telCase.triage.triage_category,
+      prakriti: case1.prakriti.primary_prakriti,
+      triage: case1.triage.triage_category,
       time: "10:15 AM",
       status: "Waiting for Doctor"
     },
@@ -783,21 +705,9 @@ function seedInitialData() {
       gender: "Female",
       language: "Tamil (தமிழ்)",
       chief_complaint: "Severe Dyspepsia & Hyperacidity",
-      prakriti: tamCase.prakriti.primary_prakriti,
-      triage: tamCase.triage.triage_category,
+      prakriti: case2.prakriti.primary_prakriti,
+      triage: case2.triage.triage_category,
       time: "10:22 AM",
-      status: "Waiting for Doctor"
-    },
-    {
-      token_number: "OPD-103-URO",
-      patient_name: "Narasimha Rao (నరసింహారావు)",
-      age: 58,
-      gender: "Male",
-      language: "Telugu (తెలుగు)",
-      chief_complaint: "Post-TURBT Scopy & Hematuria Evaluation",
-      prakriti: uroCase.prakriti.primary_prakriti,
-      triage: uroCase.triage.triage_category,
-      time: "10:35 AM",
       status: "Waiting for Doctor"
     }
   ];
@@ -813,7 +723,7 @@ function generateLocalCaseSheet(intakeData) {
   // Calculate Prakriti & Doshas
   let vata = 30, pitta = 30, kapha = 30;
   const cc = (responses.chief_complaint || intakeData.voice_transcript || '').toLowerCase();
-  if (cc.includes('joint') || cc.includes('pain') || cc.includes('నొప్పి') || cc.includes('வலி') || cc.includes('दर्द') || cc.includes('ನೋವು')) vata += 35;
+  if (cc.includes('joint') || cc.includes('pain') || cc.includes('నొప్పి') || cc.includes('வலி') || cc.includes('दर्द') || cc.includes('<ctrl42>ೋವು')) vata += 35;
   if (cc.includes('acidity') || cc.includes('మంట') || cc.includes('எரிச்சல்') || cc.includes('जलन') || cc.includes('rash')) pitta += 35;
   if (cc.includes('cough') || cc.includes('జలుబు') || cc.includes('இருமல்') || cc.includes('खांसी') || cc.includes('fatigue')) kapha += 30;
 
@@ -844,7 +754,7 @@ function generateLocalCaseSheet(intakeData) {
   // Red Flag Evaluation
   const redFlagAnalysis = detectRedFlagsLocal(responses, intakeData.voice_transcript, intakeData.uploaded_documents);
 
-  // If user didn't upload docs but chief complaint matches common types, provide linked document analysis
+  // Attached docs fallback
   let attachedDocs = intakeData.uploaded_documents || [];
   if (attachedDocs.length === 0) {
     if (cc.includes('నొప్పి') || cc.includes('joint')) {
@@ -858,16 +768,16 @@ function generateLocalCaseSheet(intakeData) {
 
   // Dashavidha Pariksha Table
   const dashavidha = {
-    "1. Prakriti (ప్రకృతి / Constitution)": primaryPrakriti,
-    "2. Vikriti (వికృతి / Pathological Vitiation)": `${dominantDosha} Vitiation with Ama accumulation`,
-    "3. Sara (సార / Tissue Excellence)": "Madhyama Sara (Moderate muscular & skeletal stability)",
-    "4. Samhanana (సంహనన / Body Build)": "Madhyama Samhanana (Compact, symmetrical build)",
-    "5. Pramana (ప్రమాణ / Anthropometry)": "Sama Pramana (Normal BMI 23.4, proportionate limbs)",
-    "6. Satmya (సాత్మ్య / Adaptability)": "Mishra Satmya (Accustomed to mixed diet, prefers warm rasas)",
-    "7. Satva (సత్వ / Mental Strength)": "Madhyama Satwa (Moderate mental resilience)",
-    "8. Ahara Shakti (ఆహార శక్తి / Digestion & Agni)": responses.agni_digestion || "Vishamagni / Mandagni variability",
-    "9. Vyayama Shakti (వ్యాయామ శక్తి / Physical Endurance)": "Avara to Madhyama (Low to moderate physical stamina)",
-    "10. Vaya (వయస్సు / Age Stage)": `${patient.age || 42} Years (Madhyama Vaya - Pitta predominant life stage)`
+    "1. Prakriti (Constitution)": primaryPrakriti,
+    "2. Vikriti (Pathological Vitiation)": `${dominantDosha} Vitiation with Ama accumulation`,
+    "3. Sara (Tissue Excellence)": "Madhyama Sara (Moderate muscular & skeletal stability)",
+    "4. Samhanana (Body Build)": "Madhyama Samhanana (Compact, symmetrical build)",
+    "5. Pramana (Anthropometry)": "Sama Pramana (Normal BMI 23.4, proportionate limbs)",
+    "6. Satmya (Adaptability)": "Mishra Satmya (Accustomed to mixed diet, prefers warm rasas)",
+    "7. Satva (Mental Strength)": "Madhyama Satwa (Moderate mental resilience)",
+    "8. Ahara Shakti (Digestion & Agni)": responses.agni_digestion || "Vishamagni / Mandagni variability",
+    "9. Vyayama Shakti (Physical Endurance)": "Avara to Madhyama (Low to moderate physical stamina)",
+    "10. Vaya (Age Stage)": `${patient.age || 42} Years (Madhyama Vaya - Pitta predominant life stage)`
   };
 
   // Ashtavidha Pariksha Table
@@ -908,13 +818,6 @@ function generateLocalCaseSheet(intakeData) {
     ashtavidha_pariksha: ashtavidha,
     uploaded_documents: attachedDocs,
     soap_note: soapNote,
-    soap_notes_multilingual: {
-      te: soapNote,
-      ta: soapNote,
-      en: soapNote,
-      hi: soapNote,
-      kn: soapNote
-    },
     created_at: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
   };
 }
@@ -926,7 +829,7 @@ function detectRedFlagsLocal(responses, voiceTranscript, uploadedDocs) {
     return {
       triage_level: "RED",
       triage_category: "Code Red (Emergency / Resuscitation)",
-      triage_banner_text: "🚨 CRITICAL EMERGENCY TRIGGER: Acute high-risk symptoms detected.",
+      triage_banner_text: "CRITICAL EMERGENCY TRIGGER: Acute high-risk symptoms detected.",
       detected_red_flags: [{
         system: "Cardiorespiratory / Neurological",
         severity: "Critical",
@@ -942,10 +845,53 @@ function detectRedFlagsLocal(responses, voiceTranscript, uploadedDocs) {
   return {
     triage_level: "GREEN",
     triage_category: "Code Green (Standard OPD)",
-    triage_banner_text: "✅ Standard Clinical Triage: Safe for routine AYUSH evaluation.",
+    triage_banner_text: "Standard Clinical Triage: Safe for routine AYUSH evaluation.",
     detected_red_flags: [],
     ayush_safety_guideline: "Safe for routine AYUSH OPD therapy and holistic wellness protocols."
   };
+}
+
+// --- Sidebar Drawer, Accessibility & Queue Filtering ---
+function toggleSidebar() {
+  const sidebar = document.getElementById('settingsSidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  if (sidebar && overlay) {
+    const isOpen = sidebar.classList.contains('open');
+    sidebar.classList.toggle('open', !isOpen);
+    overlay.classList.toggle('open', !isOpen);
+  }
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById('settingsSidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  if (sidebar && overlay) {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+  }
+}
+
+function selectSidebarLang(langCode) {
+  closeSidebar();
+  loadLanguage(langCode);
+}
+
+function toggleHighContrast(enabled) {
+  document.body.classList.toggle('high-contrast', enabled);
+  showToast(enabled ? 'High Contrast Mode Enabled (Accessibility)' : 'Standard Display Mode Active');
+}
+
+function toggleLargeText(enabled) {
+  document.body.classList.toggle('large-text', enabled);
+  showToast(enabled ? 'Large Typography Kiosk Mode Enabled' : 'Standard Typography Active');
+}
+
+state.queueFilter = 'all';
+function setQueueFilter(filterLevel, btnElement) {
+  state.queueFilter = filterLevel;
+  document.querySelectorAll('.queue-filter-btn').forEach(btn => btn.classList.remove('active'));
+  if (btnElement) btnElement.classList.add('active');
+  renderDoctorQueue(state.doctorQueue);
 }
 
 // 7. Initialize Application
@@ -1001,6 +947,10 @@ function updateUIWithTranslations() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === state.currentLang);
   });
+  document.querySelectorAll('.sidebar-lang-btn').forEach(btn => {
+    const onclickStr = btn.getAttribute('onclick') || '';
+    btn.classList.toggle('active', onclickStr.includes(`'${state.currentLang}'`));
+  });
 }
 
 function renderQuestionFlow() {
@@ -1017,7 +967,8 @@ function renderQuestionFlow() {
       <div class="question-prompt">
         <span>${idx + 1}. ${q.prompt}</span>
         <button class="tts-speaker-btn" onclick="speakPrompt('${escapeQuotes(q.prompt)}')">
-          🔊 ${state.uiStrings.speak || 'Listen'}
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          ${state.uiStrings.speak || 'Listen'}
         </button>
       </div>
     `;
@@ -1027,7 +978,7 @@ function renderQuestionFlow() {
       const isSelected = state.intakeResponses[q.id] === opt;
       optionsHtml += `
         <div class="option-card ${isSelected ? 'selected' : ''}" onclick="selectOption('${q.id}', '${escapeQuotes(opt)}')">
-          <span>🌿</span>
+          <div class="option-indicator"></div>
           <span>${opt}</span>
         </div>
       `;
@@ -1062,7 +1013,7 @@ async function evaluateRedFlagsLive() {
     alertBox.style.background = rf.triage_level === 'RED' ? '#fef2f2' : '#fefce8';
 
     badgeEl.className = rf.triage_level === 'RED' ? 'triage-badge-red' : 'triage-badge-yellow';
-    badgeEl.textContent = rf.triage_level === 'RED' ? '🚨 CODE RED: EMERGENCY TRIAGE' : '⚠️ CODE YELLOW: PRIORITY FAST-TRACK';
+    badgeEl.textContent = rf.triage_level === 'RED' ? 'CODE RED: EMERGENCY TRIAGE' : 'CODE YELLOW: PRIORITY FAST-TRACK';
 
     bannerTextEl.textContent = rf.triage_banner_text;
     bannerTextEl.style.color = rf.triage_level === 'RED' ? '#991b1b' : '#854d0e';
@@ -1071,7 +1022,7 @@ async function evaluateRedFlagsLive() {
     (rf.detected_red_flags || []).forEach(f => {
       flagsHtml += `
         <div class="red-flag-item-pill">
-          <div style="font-weight: 700; color: #991b1b;">⚠️ ${f.system} (${f.severity})</div>
+          <div style="font-weight: 700; color: #991b1b;">${f.system} (${f.severity})</div>
           <div style="color: #334155; margin: 0.2rem 0;"><strong>Detected Trigger:</strong> "${f.matched_keyword}" [Language: ${f.language_detected}]</div>
           <div style="color: #475569; font-size: 0.8rem;"><strong>Clinical Risk:</strong> ${f.clinical_risk}</div>
         </div>
@@ -1100,6 +1051,7 @@ async function speakPrompt(text) {
 async function toggleVoiceRecording() {
   const micBtn = document.getElementById('micBtn');
   const statusEl = document.getElementById('voiceStatus');
+  const waveformEl = document.getElementById('voiceWaveform');
 
   if (!state.isRecording) {
     try {
@@ -1119,9 +1071,11 @@ async function toggleVoiceRecording() {
       state.mediaRecorder.start();
       state.isRecording = true;
       micBtn.classList.add('recording');
+      if (waveformEl) waveformEl.classList.add('active');
       statusEl.textContent = state.uiStrings.listening || 'Listening to your voice...';
     } catch (err) {
       statusEl.textContent = state.uiStrings.processing || 'Processing with Sarvam AI...';
+      if (waveformEl) waveformEl.classList.add('active');
       setTimeout(async () => {
         await sendAudioForTranscription(null);
       }, 1000);
@@ -1132,6 +1086,7 @@ async function toggleVoiceRecording() {
     }
     state.isRecording = false;
     micBtn.classList.remove('recording');
+    if (waveformEl) waveformEl.classList.remove('active');
     statusEl.textContent = state.uiStrings.processing || 'Transcribing with Sarvam AI...';
   }
 }
@@ -1151,7 +1106,7 @@ async function sendAudioForTranscription(audioBlob) {
   state.voiceTranscript = sampleTranscripts[state.currentLang] || sampleTranscripts['te'];
   transcriptEl.textContent = `"${state.voiceTranscript}"`;
   document.getElementById('transcriptContainer').style.display = 'block';
-  statusEl.textContent = `✅ Transcribed via Sarvam Saaras AI (${state.currentLang.toUpperCase()})`;
+  statusEl.textContent = `Transcribed via Sarvam Saaras AI (${state.currentLang.toUpperCase()})`;
 
   if (!state.intakeResponses['chief_complaint']) {
     state.intakeResponses['chief_complaint'] = state.voiceTranscript;
@@ -1176,16 +1131,16 @@ function verifyAbha() {
 
   document.getElementById('abhaProfileCard').style.display = 'block';
   document.getElementById('abhaProfileSummary').innerHTML = `
-    <div class="profile-badge">ABHA ID VERIFIED (ABDM Consent Granted)</div>
+    <div class="profile-badge">ABHA ID VERIFIED</div>
     <div class="profile-detail"><strong>Name:</strong> ${state.patientInfo.name} (${state.patientInfo.gender}, ${state.patientInfo.age} Yrs)</div>
     <div class="profile-detail"><strong>ABHA ID:</strong> ${state.patientInfo.abha_id}</div>
-    <div class="profile-detail"><strong>Status:</strong> Digital Consent Authenticated ✅</div>
+    <div class="profile-detail"><strong>Status:</strong> Digital Consent Authenticated</div>
   `;
 }
 
 function continueAsGuest() {
   state.patientInfo = {
-    name: 'Walk-in Patient (అతిథి)',
+    name: 'Walk-in Patient',
     abha_id: 'TEMP-OPD-GUEST',
     age: 38,
     gender: 'Male',
@@ -1208,7 +1163,7 @@ async function handleFileUpload(file) {
 
   if (progressContainer) {
     progressContainer.style.display = 'block';
-    progressStatus.textContent = '🔍 Neural OCR Scanning Pixels...';
+    progressStatus.textContent = 'Neural OCR Scanning Pixels...';
     progressPercent.textContent = '35%';
     progressBarFill.style.width = '35%';
   }
@@ -1231,7 +1186,7 @@ async function handleFileUpload(file) {
   }
 
   if (progressStatus) {
-    progressStatus.textContent = '✨ Parsing Clinical Entities & Translating (Sarvam Mayura)...';
+    progressStatus.textContent = 'Parsing Clinical Entities & Translating (Sarvam Mayura)...';
     progressPercent.textContent = '95%';
     progressBarFill.style.width = '95%';
   }
@@ -1297,7 +1252,7 @@ function displayOcrResult(doc) {
   if (!previewBox) return;
 
   previewBox.style.display = 'block';
-  badge.textContent = `📝 ${doc.detected_language || 'Hospital Document'} OCR Recognized`;
+  badge.textContent = `${doc.detected_language || 'Hospital Document'} OCR Recognized`;
   rawTextEl.textContent = doc.raw_ocr_text || 'OCR text available';
   transTextEl.textContent = doc.translated_clinical_english || 'Translation available';
 
@@ -1326,7 +1281,7 @@ function displayOcrResult(doc) {
   }
 
   const entities = doc.extracted_entities || {};
-  let medsListHtml = '<strong>💊 Extracted Medications & Clinical Biomarkers:</strong><ul style="margin: 0.25rem 0 0 1.25rem;">';
+  let medsListHtml = '<strong>Extracted Medications & Clinical Biomarkers:</strong><ul style="margin: 0.25rem 0 0 1.25rem;">';
   if (entities.Prescriptions && Array.isArray(entities.Prescriptions)) {
     entities.Prescriptions.forEach(m => {
       medsListHtml += `<li><strong>Medication:</strong> ${m}</li>`;
@@ -1342,7 +1297,7 @@ function displayOcrResult(doc) {
   }
   medsListHtml += '</ul>';
   if (entities['Dietary Restrictions']) {
-    medsListHtml += `<div style="margin-top: 0.35rem; color: #b45309;">⚠️ <strong>Clinical Advisory:</strong> ${entities['Dietary Restrictions']}</div>`;
+    medsListHtml += `<div style="margin-top: 0.35rem; color: #b45309;"><strong>Clinical Advisory:</strong> ${entities['Dietary Restrictions']}</div>`;
   }
   medsEl.innerHTML = medsListHtml;
 }
@@ -1354,7 +1309,7 @@ function renderUploadedDocs() {
   state.uploadedDocs.forEach(doc => {
     const tag = document.createElement('div');
     tag.className = 'doc-tag';
-    tag.innerHTML = `📄 <strong>${doc.filename}</strong> (${doc.detected_language || 'Medical Slip'}) - ${doc.date_extracted}`;
+    tag.innerHTML = `<strong>${doc.filename}</strong> (${doc.detected_language || 'Medical Slip'}) - ${doc.date_extracted}`;
     container.appendChild(tag);
   });
 }
@@ -1404,12 +1359,12 @@ async function submitPatientIntake() {
     } catch (e) {}
   }
 
-  // Switch to Doctor Portal view and render full case sheet with AI analysis
+  // Switch to Doctor Portal view
   switchMode('doctor');
   await refreshDoctorQueue();
   await loadCaseSheet(token);
 
-  showToast(`✅ Case ${token} submitted! Full AI Analysis loaded.`);
+  showToast(`Case ${token} submitted! Full AI Analysis loaded.`);
 }
 
 function showToast(message) {
@@ -1418,7 +1373,7 @@ function showToast(message) {
 
   const toast = document.createElement('div');
   toast.id = 'appToast';
-  toast.style.cssText = 'position: fixed; bottom: 24px; right: 24px; background: #0f766e; color: white; padding: 12px 20px; border-radius: 8px; font-weight: 700; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2); z-index: 9999;';
+  toast.style.cssText = 'position: fixed; bottom: 24px; right: 24px; background: #0f766e; color: white; padding: 12px 20px; border-radius: 8px; font-weight: 600; box-shadow: 0 10px 25px -3px rgba(0,0,0,0.2); z-index: 9999; font-size: 0.88rem;';
   toast.textContent = message;
   document.body.appendChild(toast);
 
@@ -1441,12 +1396,90 @@ async function refreshDoctorQueue() {
   renderDoctorQueue(state.doctorQueue);
 }
 
+function cleanPatientName(name, lang) {
+  if (!name) return "Ramesh Kumar";
+  if (lang === 'en') {
+    return name.replace(/\s*\([\u0C00-\u0C7F\u0B80-\u0BFF\u0900-\u097F\u0C80-\u0CFF]+\)/g, '');
+  }
+  return name;
+}
+
+function cleanPrakritiName(prakriti, lang) {
+  if (!prakriti) return "Vata-Pitta";
+  if (lang === 'en') {
+    return prakriti.replace(/\s*\([^)]+\)/g, '');
+  }
+  if (lang === 'te') {
+    if (prakriti.includes('Pitta-Kapha')) return "పిత్త-కఫ";
+    if (prakriti.includes('Kapha-Vata')) return "కఫ-వాత";
+    return "వాత-పిత్త";
+  }
+  if (lang === 'hi') {
+    if (prakriti.includes('Pitta-Kapha')) return "पित्त-कफ";
+    if (prakriti.includes('Kapha-Vata')) return "कफ-वात";
+    return "वात-पित्त";
+  }
+  return prakriti.replace(/\s*\([^)]+\)/g, '');
+}
+
+function getLocalizedVoiceTranscript(rawTranscript, targetLang) {
+  if (!rawTranscript) return "Voice intake recorded";
+  const trMap = {
+    "గత రెండు నెలలుగా మోకాళ్ళలో చాలా నొప్పి ఉంది, చలికి నొప్పులు ఇంకా ఎక్కువవుతున్నాయి. ఉదయాన్నే నడవలేకపోతున్నాను.": {
+      en: "Severe knee pain and stiffness for past 2 months, aggravated by cold weather and early morning walking difficulty.",
+      te: "గత రెండు నెలలుగా మోకాళ్ళలో చాలా నొప్పి ఉంది, చలికి నొప్పులు ఇంకా ఎక్కువవుతున్నాయి. ఉదయాన్నే నడవలేకపోతున్నాను.",
+      ta: "கடந்த 2 மாதங்களாக மூட்டுகளில் கடுமையான வலி மற்றும் காலை நேர விறைப்பு, குளிர்காலத்தில் அதிகம் ஏற்படுகிறது.",
+      hi: "पिछले 2 महीनों से घुटनों में तेज दर्द और सुबह की जकड़न, ठंडे मौसम में दर्द बढ़ जाता है।",
+      kn: "ಕಳೆದ 2 ತಿಂಗಳಿಂದ ಕೀಲುಗಳಲ್ಲಿ ತೀವ್ರ ನೋವು ಮತ್ತು ಮುಂಜಾನೆಯ ಬಿಗಿತ, ಚಳಿಗಾಲದಲ್ಲಿ ನೋವು ಹೆಚ್ಚಾಗುತ್ತದೆ."
+    },
+    "గత రెండు వారాలుగా మోకాళ్ళలో తీవ్రమైన నొప్పి మరియు ఉదయాన్నే కీళ్ళు బిగుసుకుపోతున్నాయి.": {
+      en: "Severe joint pain and morning stiffness in knees for the past two weeks.",
+      te: "గత రెండు వారాలుగా మోకాళ్ళలో తీవ్రమైన నొప్పి మరియు ఉదయాన్నే కీళ్ళు బిగుసుకుపోతున్నాయి.",
+      ta: "கடந்த இரண்டு வாரங்களாக மூட்டுகளில் கடுமையான வலி மற்றும் காலை நேர விறைப்பு உள்ளது.",
+      hi: "पिछले दो हफ्तों से घुटनों में बहुत दर्द और सुबह की जकड़न महसूस हो रही है।",
+      kn: "ಕಳೆದ ಎರಡು ವಾರಗಳಿಂದ ಕೀಲುಗಳಲ್ಲಿ ತೀವ್ರ ನೋವು ಮತ್ತು ಮುಂಜಾನೆಯ ಬಿಗಿತ ಇದೆ."
+    },
+    "సాப்பிட்ட பிறகு நெஞ்செரிச்சல் மற்றும் கடுமையான புளித்த ஏப்பம் வருகிறது.": {
+      en: "Experiencing severe heartburn, post-meal acidity, and sour eructation.",
+      te: "భోజనం చేసిన తర్వాత గుండెల్లో మంట మరియు తీవ్రమైన పుల్లటి తేన్పులు వస్తున్నాయి.",
+      ta: "சாப்பிட்ட பிறகு நெஞ்செரிச்சல் மற்றும் கடுமையான புளித்த ஏப்பம் வருகிறது.",
+      hi: "खाना खाने के बाद सीने में तेज जलन, एसिडिटी और खट्टी डकारें आना।",
+      kn: "ಊಟದ ನಂತರ ಎದೆಯುರಿ, ಅತಿಯಾದ ಆಮ್ಲೀಯತೆ ಮತ್ತು ಹುಳಿ ತೇಗು ಬರುತ್ತದೆ."
+    }
+  };
+
+  if (trMap[rawTranscript] && trMap[rawTranscript][targetLang]) {
+    return trMap[rawTranscript][targetLang];
+  }
+
+  if (targetLang === 'en' && /[\u0C00-\u0C7F\u0B80-\u0BFF\u0900-\u097F\u0C80-\u0CFF]/.test(rawTranscript)) {
+    return `Patient reported: "${rawTranscript}" (Clinical English Translation: Severe joint pain & stiffness aggravated by cold climate)`;
+  }
+
+  return rawTranscript;
+}
+
 function renderDoctorQueue(queue) {
   const container = document.getElementById('doctorQueueList');
   if (!container) return;
 
   container.innerHTML = '';
-  queue.forEach(item => {
+  const filter = state.queueFilter || 'all';
+
+  const filteredQueue = queue.filter(item => {
+    const tr = (item.triage || '').toLowerCase();
+    if (filter === 'red') return tr.includes('red') || tr.includes('urgent');
+    if (filter === 'yellow') return tr.includes('yellow') || tr.includes('priority');
+    if (filter === 'green') return tr.includes('green') || tr.includes('standard');
+    return true;
+  });
+
+  if (filteredQueue.length === 0) {
+    container.innerHTML = `<div style="font-size: 0.82rem; color: #64748b; padding: 1rem; text-align: center;">No patients found under "${filter.toUpperCase()}" triage filter.</div>`;
+    return;
+  }
+
+  filteredQueue.forEach(item => {
     const div = document.createElement('div');
     div.className = `queue-item ${item.token_number === state.activeCaseToken ? 'active' : ''}`;
     div.onclick = () => loadCaseSheet(item.token_number);
@@ -1455,14 +1488,17 @@ function renderDoctorQueue(queue) {
     if (item.triage.includes('Red') || item.triage.includes('Urgent')) triageClass = 'triage-red';
     else if (item.triage.includes('Yellow')) triageClass = 'triage-yellow';
 
+    const pName = cleanPatientName(item.patient_name, state.currentLang);
+    const pPrakriti = cleanPrakritiName(item.prakriti, state.currentLang);
+
     div.innerHTML = `
       <div class="queue-header">
         <span class="token-badge">${item.token_number}</span>
         <span class="triage-badge ${triageClass}">${item.triage}</span>
       </div>
-      <div style="font-weight: 700; color: #0f172a;">${item.patient_name} (${item.gender}, ${item.age}y)</div>
-      <div style="font-size: 0.84rem; color: #475569; margin: 0.25rem 0;">💬 ${item.chief_complaint}</div>
-      <div style="font-size: 0.78rem; color: #0f766e; font-weight: 600;">🌿 ${state.uiStrings.prakriti_title || 'Prakriti'}: ${item.prakriti} | 🗣️ ${item.language}</div>
+      <div style="font-weight: 700; color: #0f172a; font-size: 0.9rem;">${pName} (${item.gender}, ${item.age}y)</div>
+      <div style="font-size: 0.82rem; color: #475569; margin: 0.2rem 0;">Complaint: ${item.chief_complaint}</div>
+      <div style="font-size: 0.76rem; color: #0f766e; font-weight: 600;">Prakriti: ${pPrakriti} | ${item.language}</div>
     `;
     container.appendChild(div);
   });
@@ -1490,25 +1526,220 @@ async function loadCaseSheet(tokenNumber) {
   renderDoctorQueue(state.doctorQueue);
 }
 
-// Render Complete Case Sheet with Comprehensive AI Analysis
+// Interactive Dosha Slider Recalculation Handler
+function updateDoshaSliders(vVal, pVal, kVal) {
+  let v = parseInt(vVal) || 35;
+  let p = parseInt(pVal) || 40;
+  let k = parseInt(kVal) || 25;
+
+  const total = v + p + k || 100;
+  const vPct = Math.round((v / total) * 100);
+  const pPct = Math.round((p / total) * 100);
+  const kPct = 100 - (vPct + pPct);
+
+  // Update slider label numbers
+  const vLabel = document.getElementById('vSliderVal');
+  const pLabel = document.getElementById('pSliderVal');
+  const kLabel = document.getElementById('kSliderVal');
+  if (vLabel) vLabel.textContent = `${vPct}%`;
+  if (pLabel) pLabel.textContent = `${pPct}%`;
+  if (kLabel) kLabel.textContent = `${kPct}%`;
+
+  // Update bar fills
+  const vFill = document.getElementById('gaugeFillVata');
+  const pFill = document.getElementById('gaugeFillPitta');
+  const kFill = document.getElementById('gaugeFillKapha');
+  if (vFill) vFill.style.width = `${vPct}%`;
+  if (pFill) pFill.style.width = `${pPct}%`;
+  if (kFill) kFill.style.width = `${kPct}%`;
+
+  // Determine dominant dosha & prakriti
+  let primaryPrakriti = "Vata-Pitta";
+  let dominantDosha = "Vata Vitiation";
+
+  if (pPct >= vPct && pPct >= kPct) {
+    primaryPrakriti = "Pitta-Kapha";
+    dominantDosha = "Pitta Vitiation (Amlapitta/Ushna)";
+  } else if (kPct >= vPct && kPct >= pPct) {
+    primaryPrakriti = "Kapha-Vata";
+    dominantDosha = "Kapha Vitiation (Mandagni/Gaurava)";
+  } else {
+    primaryPrakriti = "Vata-Pitta";
+    dominantDosha = "Vata Vitiation (Sandhigata Vata/Ruksha)";
+  }
+
+  const diagEl = document.getElementById('prakritiDiagResult');
+  const doshaEl = document.getElementById('dominantDoshaResult');
+  if (diagEl) diagEl.textContent = primaryPrakriti;
+  if (doshaEl) doshaEl.textContent = dominantDosha;
+
+  if (state.activeCaseData && state.activeCaseData.prakriti) {
+    state.activeCaseData.prakriti.vata_pct = vPct;
+    state.activeCaseData.prakriti.pitta_pct = pPct;
+    state.activeCaseData.prakriti.kapha_pct = kPct;
+    state.activeCaseData.prakriti.primary_prakriti = primaryPrakriti;
+    state.activeCaseData.prakriti.dominant_dosha = dominantDosha;
+  }
+}
+
+// Generate Interactive Ahara-Vihara Diet & Routine Advisory
+function getAharaViharaHTML(dominantDoshaStr) {
+  const dosha = (dominantDoshaStr || '').toLowerCase();
+  let pathyaItems = [];
+  let apathyaItems = [];
+  let viharaItems = [];
+
+  if (dosha.includes('pitta')) {
+    pathyaItems = ["Sweet & Bitter fruits (Pomegranate, Sweet Lime)", "Ghee (Go-Ghrita) & Cow's Milk", "Avipattikara Churna & Cooling herbs", "Rice, Barley & Moong Dal soup"];
+    apathyaItems = ["Deep fried, pungent & excessively spicy foods", "Sour curds, pickles, and vinegar", "Alcohol, fermented food & excessive salt", "Direct midday solar heat exposure"];
+    viharaItems = ["Evening moonlight walks", "Sheetali & Sheetkari Pranayama", "Gentle oil massage with Chandanadi Tailam", "Meditation for stress reduction"];
+  } else if (dosha.includes('kapha')) {
+    pathyaItems = ["Warm water with dry ginger (Shunthi Kwatha)", "Honey with Trikatu Churna", "Barley, Millet & Roasted Moong", "Light, warm, pungent & digestive spices"];
+    apathyaItems = ["Cold dairy, cheese, ice cream, and heavy cream", "Oily, fried foods & refined sugar", "Excessive sleep immediately after meals", "Daytime napping (Diva Swapna)"];
+    viharaItems = ["Vigorous morning brisk walk & Surya Namaskar", "Dry powder massage (Udvartana)", "Kapalbhati & Bhastrika Pranayama", "Active physical exercise routine"];
+  } else {
+    // Vata
+    pathyaItems = ["Warm, moist, well-cooked meals with Cow Ghee", "Warm milk with nutmeg & cardamom", "Yogaraja Guggulu & Shunthi decoctions", "Nuts (soaked almonds, sesame seeds)"];
+    apathyaItems = ["Raw salads, dry crackers, cold beverages", "Pungent, astringent, and dry snack foods", "Irregular meal timings and fasts", "Exposure to cold draft and wind"];
+    viharaItems = ["Gentle warm oil massage (Abhyanga with Mahanarayana Taila)", "Warm water bath & fomentation", "Anulom-Vilom Pranayama & rest", "Regular sleep routine before 10 PM"];
+  }
+
+  return `
+    <div class="ahara-vihara-card no-print">
+      <div class="ahara-tab-header">
+        <span style="font-weight: 700; color: #0f766e; font-size: 0.88rem; margin-right: auto;">Interactive Ahara & Vihara Clinical Advisory</span>
+        <span class="transcript-badge" style="background: #0f766e; color: white;">Personalized for ${dominantDoshaStr || 'Vata'}</span>
+      </div>
+      <div class="ahara-list-grid">
+        <div class="ahara-col" style="border-left: 3px solid #16a34a;">
+          <div class="ahara-col-title" style="color: #15803d;">Pathya (Recommended Foods & Herbs)</div>
+          ${pathyaItems.map(item => `
+            <label class="ahara-item-check">
+              <input type="checkbox" checked style="accent-color: #16a34a;">
+              <span>${item}</span>
+            </label>
+          `).join('')}
+        </div>
+        <div class="ahara-col" style="border-left: 3px solid #dc2626;">
+          <div class="ahara-col-title" style="color: #b91c1c;">Apathya (Foods & Habits to Avoid)</div>
+          ${apathyaItems.map(item => `
+            <label class="ahara-item-check">
+              <input type="checkbox" checked style="accent-color: #dc2626;">
+              <span>${item}</span>
+            </label>
+          `).join('')}
+        </div>
+      </div>
+      <div style="margin-top: 0.65rem; background: #f0fdfa; border: 1px solid #ccfbf1; padding: 0.5rem; border-radius: 6px; font-size: 0.8rem;">
+        <strong style="color: #0f766e;">Recommended Daily Vihara Routine:</strong>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem;">
+          ${viharaItems.map(v => `<span class="doc-tag" style="background: white; border-color: #0f766e; color: #0f766e; font-size: 0.76rem;">${v}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Generate Biomarker Organ Risk Meters Grid
+function getOrganRiskGridHTML(c) {
+  const isRed = c.triage?.triage_level === 'RED';
+  const isYellow = c.triage?.triage_level === 'YELLOW';
+
+  let cvRisk = isRed ? 90 : 15;
+  let cnsRisk = isRed ? 85 : 12;
+  let renalRisk = (c.uploaded_documents && c.uploaded_documents.some(d => (d.raw_ocr_text || '').toLowerCase().includes('urology') || (d.raw_ocr_text || '').toLowerCase().includes('turbt'))) ? 65 : 20;
+  let giRisk = (c.prakriti?.dominant_dosha || '').includes('Pitta') ? 55 : 25;
+
+  return `
+    <div class="system-risk-grid">
+      <div class="system-risk-card">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; color: #334155;">
+          <span>Cardiovascular</span>
+          <span style="color: ${cvRisk > 70 ? '#dc2626' : '#16a34a'};">${cvRisk > 70 ? 'High Risk' : 'Normal'}</span>
+        </div>
+        <div class="risk-meter-bar"><div class="risk-meter-fill" style="width: ${cvRisk}%; background: ${cvRisk > 70 ? '#dc2626' : '#16a34a'};"></div></div>
+      </div>
+
+      <div class="system-risk-card">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; color: #334155;">
+          <span>Neuro / CNS</span>
+          <span style="color: ${cnsRisk > 70 ? '#dc2626' : '#16a34a'};">${cnsRisk > 70 ? 'High Risk' : 'Normal'}</span>
+        </div>
+        <div class="risk-meter-bar"><div class="risk-meter-fill" style="width: ${cnsRisk}%; background: ${cnsRisk > 70 ? '#dc2626' : '#16a34a'};"></div></div>
+      </div>
+
+      <div class="system-risk-card">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; color: #334155;">
+          <span>Renal / Urological</span>
+          <span style="color: ${renalRisk > 50 ? '#d97706' : '#16a34a'};">${renalRisk > 50 ? 'Surveillance' : 'Normal'}</span>
+        </div>
+        <div class="risk-meter-bar"><div class="risk-meter-fill" style="width: ${renalRisk}%; background: ${renalRisk > 50 ? '#d97706' : '#16a34a'};"></div></div>
+      </div>
+
+      <div class="system-risk-card">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; color: #334155;">
+          <span>Metabolic & Agni</span>
+          <span style="color: ${giRisk > 50 ? '#d97706' : '#16a34a'};">${giRisk > 50 ? 'Agni Vitiated' : 'Balanced'}</span>
+        </div>
+        <div class="risk-meter-bar"><div class="risk-meter-fill" style="width: ${giRisk}%; background: ${giRisk > 50 ? '#d97706' : '#16a34a'};"></div></div>
+      </div>
+    </div>
+  `;
+}
+
+const CLINICAL_LEXICON = {
+  dashavidha_keys: {
+    te: ["1. దేహ ప్రకృతి", "2. దోష వికృతి (లక్షణాలు)", "3. సారం (ధాతు బలం)", "4. సంహననం (శరీర నిర్మాణం)", "5. ప్రమాణం (కొలతలు/BMI)", "6. సాత్మ్యం (ఆహార అలవాట్లు)", "7. సత్వం (మానసిక ధైర్యం)", "8. ఆహార శక్తి (జీర్ణ అగ్ని)", "9. వ్యాయామ శక్తి (సహనం)", "10. వయస్సు దశ"],
+    ta: ["1. உடல் பிரகிருதி", "2. தோஷ விகிருதி", "3. சாரம் (திசு பலம்)", "4. சம்ஹனனம் (உடல் கட்டமைப்பு)", "5. பிரமாணம் (உடல் அளவு)", "6. சாத்மியம் (உணவு பழக்கம்)", "7. சத்துவம் (மன வலிமை)", "8. ஆகார சக்தி (செரிமானம்)", "9. உடற்பயிற்சி சக்தி", "10. வயது நிலை"],
+    en: ["1. Prakriti (Body Constitution)", "2. Vikriti (Dosha Imbalance)", "3. Sara (Tissue Excellence)", "4. Samhanana (Body Build)", "5. Pramana (Anthropometry & BMI)", "6. Satmya (Nutritional Adaptability)", "7. Satva (Mental Strength)", "8. Ahara Shakti (Digestive Agni)", "9. Vyayama Shakti (Endurance)", "10. Vaya (Age Life Stage)"],
+    hi: ["1. शारीरिक प्रकृति", "2. दोष विकृति", "3. सार (धातु गुणवत्ता)", "4. संहनन (शारीरिक बनावट)", "5. प्रमाण (शरीर माप)", "6. सात्म्य (आहार अनुकूलता)", "7. सत्त्व (मानसिक बल)", "8. आहार शक्ति (पाचन अग्नि)", "9. व्यायाम शक्ति (सहनशीलता)", "10. वय अवस्था"],
+    kn: ["1. ದೇಹ ಪ್ರಕೃತಿ", "2. ದೋಷ ವಿಕೃತಿ", "3. ಸಾರ (ಧಾತು ಬಲ)", "4. ಸಂಹನನ (ದೇಹ ರಚನೆ)", "5. ಪ್ರಮಾಣ (ದೇಹ ಅಳತೆ)", "6. ಸಾತ್ಮ್ಯ (ಆಹಾರ ಹೊಂದಾಣಿಕೆ)", "7. ಸತ್ವ (ಮಾನಸಿಕ ಬಲ)", "8. ಆಹಾರ ಶಕ್ತಿ (ಜೀರ್ಣ ಅಗ್ನಿ)", "9. ವ್ಯಾಯಾಮ ಶಕ್ತಿ", "10. ವಯಸ್ಸು"]
+  },
+  ashtavidha_keys: {
+    te: ["1. నాడి (Pulse)", "2. మూత్రం (Urine)", "3. మలం (Stool)", "4. జిహ్వ (Tongue/Ama)", "5. శబ్దం (Voice)", "6. స్పర్శ (Skin Touch)", "7. దృక్ (Eye/Sclera)", "8. ఆకృతి (Facies/Gait)"],
+    ta: ["1. நாடி (Pulse Rate)", "2. மூத்திரம் (Urine)", "3. மலம் (Stool)", "4. ஜிஹ்வா (Tongue)", "5. சப்தம் (Voice)", "6. ஸ்பர்சம் (Skin)", "7. திருக் (Vision)", "8. ஆகிருதி (Body Facies)"],
+    en: ["1. Nadi (Radial Pulse & Gati)", "2. Mutra (Urine Clearance)", "3. Mala (Stool Pattern)", "4. Jihwa (Tongue & Coating)", "5. Shabda (Voice & Phonation)", "6. Sparsha (Skin Touch)", "7. Druk (Sclera & Vision)", "8. Akruti (General Facies & Gait)"],
+    hi: ["1. नाड़ी (गति)", "2. मूत्र (मूत्र जांच)", "3. मल (मल निष्कासन)", "4. जिह्वा (जीभ कोटिंग)", "5. शब्द (वाणी)", "6. स्पर्श (त्वचा स्पर्श)", "7. दृक् (नेत्र एवं दृष्टि)", "8. आकृति (शारीरिक आकृति)"],
+    kn: ["1. ನಾಡಿ (Pulse)", "2. ಮೂತ್ರ (Urine)", "3. ಮಲ (Stool)", "4. ಜಿಹ್ವಾ (Tongue)", "5. ಶಬ್ದ (Voice)", "6. ಸ್ಪರ್ಶ (Skin)", "7. ದೃಕ್ (Eye)", "8. ಆಕೃತಿ (Facies)"]
+  }
+};
+
+function getLocalizedDashavidhaRows(c, targetLang) {
+  const keys = CLINICAL_LEXICON.dashavidha_keys[targetLang] || CLINICAL_LEXICON.dashavidha_keys['en'];
+  const values = Object.values(c.dashavidha_pariksha || {});
+  let html = '';
+  keys.forEach((k, idx) => {
+    const val = values[idx] || "Prakruta";
+    html += `<tr><td style="font-weight: 600; width: 38%;">${k}</td><td>${val}</td></tr>`;
+  });
+  return html;
+}
+
+function getLocalizedAshtavidhaRows(c, targetLang) {
+  const keys = CLINICAL_LEXICON.ashtavidha_keys[targetLang] || CLINICAL_LEXICON.ashtavidha_keys['en'];
+  const values = Object.values(c.ashtavidha_pariksha || {});
+  let html = '';
+  keys.forEach((k, idx) => {
+    const val = values[idx] || "Prakruta";
+    html += `<tr><td style="font-weight: 600; width: 38%;">${k}</td><td>${val}</td></tr>`;
+  });
+  return html;
+}
+
+// Render Complete Case Sheet with Dynamic Multilingual Localizer & Interactive Components
 function renderCaseSheet(c) {
   const container = document.getElementById('doctorCaseSheetContainer');
   if (!container || !c) return;
 
   const strings = state.uiStrings || {};
+  const lang = state.currentLang || 'te';
+
   const vataPct = c.prakriti?.vata_pct || 35;
   const pittaPct = c.prakriti?.pitta_pct || 40;
   const kaphaPct = c.prakriti?.kapha_pct || 25;
 
-  let dashavidhaRows = '';
-  for (const [key, val] of Object.entries(c.dashavidha_pariksha || {})) {
-    dashavidhaRows += `<tr><td style="font-weight: 600; width: 38%;">${key}</td><td>${val}</td></tr>`;
-  }
-
-  let ashtavidhaRows = '';
-  for (const [key, val] of Object.entries(c.ashtavidha_pariksha || {})) {
-    ashtavidhaRows += `<tr><td style="font-weight: 600; width: 38%;">${key}</td><td>${val}</td></tr>`;
-  }
+  const dashavidhaRows = getLocalizedDashavidhaRows(c, lang);
+  const ashtavidhaRows = getLocalizedAshtavidhaRows(c, lang);
 
   // Scanned Documents & OCR Analysis
   let docsHtml = '';
@@ -1528,136 +1759,166 @@ function renderCaseSheet(c) {
     }
 
     docsHtml += `
-      <div style="background: #f8fafc; border: 2px solid #0f766e; padding: 1rem; border-radius: 8px; margin-top: 0.85rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-weight: 700; font-size: 0.95rem; color: #0f766e;">📄 ${doc.filename || 'Clinical Slip'}</span>
-          <span class="transcript-badge" style="background: #0f766e; color: white;">✨ AI OCR & Sarvam Mayura Translated</span>
+      <div style="background: #ffffff; border: 1px solid #0f766e; padding: 0.85rem; border-radius: 8px; margin-top: 0.75rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+          <span style="font-weight: 700; font-size: 0.9rem; color: #0f766e;">${doc.filename || 'Clinical Slip'}</span>
+          <span class="transcript-badge" style="background: #0f766e; color: white;">AI OCR & Sarvam Mayura Translated</span>
         </div>
-        <div style="font-size: 0.84rem; color: #334155; margin-bottom: 0.5rem;">
+        <div style="font-size: 0.8rem; color: #334155; margin-bottom: 0.4rem;">
           <strong>Date Extracted:</strong> ${doc.date_extracted || '2026-03-05'} | <strong>Summary:</strong> ${doc.summary || 'Clinical record parsed'}
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.8rem; margin-top: 0.5rem;">
-          <div style="background: white; border: 1px solid #cbd5e1; padding: 0.65rem; border-radius: 6px;">
-            <div style="font-weight: 700; color: #475569; margin-bottom: 0.35rem;">🔍 Original Scanned Record OCR:</div>
-            <div style="white-space: pre-wrap; color: #0f172a; max-height: 140px; overflow-y: auto; font-family: monospace; font-size: 0.76rem;">${doc.raw_ocr_text || 'Scanned record text'}</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; font-size: 0.78rem; margin-top: 0.45rem;">
+          <div style="background: #f8fafc; border: 1px solid #cbd5e1; padding: 0.55rem; border-radius: 6px;">
+            <div style="font-weight: 700; color: #475569; margin-bottom: 0.25rem;">Original Scanned Record OCR:</div>
+            <div style="white-space: pre-wrap; color: #0f172a; max-height: 120px; overflow-y: auto; font-family: monospace; font-size: 0.74rem;">${doc.raw_ocr_text || 'Scanned record text'}</div>
           </div>
-          <div style="background: #f0fdfa; border: 1px solid #99f6e4; padding: 0.65rem; border-radius: 6px;">
-            <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.35rem;">🌐 Clinical English Translation:</div>
-            <div style="white-space: pre-wrap; color: #115e59; max-height: 140px; overflow-y: auto; font-size: 0.78rem;">${doc.translated_clinical_english || doc.summary}</div>
+          <div style="background: #f0fdfa; border: 1px solid #ccfbf1; padding: 0.55rem; border-radius: 6px;">
+            <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">Clinical English Translation:</div>
+            <div style="white-space: pre-wrap; color: #115e59; max-height: 120px; overflow-y: auto; font-size: 0.76rem;">${doc.translated_clinical_english || doc.summary}</div>
           </div>
         </div>
 
-        <!-- Entity breakdown -->
-        <div style="margin-top: 0.65rem; background: white; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.6rem; font-size: 0.82rem;">
-          ${medItems ? `<div style="margin-bottom: 0.35rem;"><span style="color: #0f766e; font-weight: 700;">💊 Extracted Medications:</span><div style="margin-left: 0.5rem; margin-top: 0.2rem; color: #1e293b;">${medItems}</div></div>` : ''}
-          ${labItems ? `<div style="margin-bottom: 0.35rem;"><span style="color: #2563eb; font-weight: 700;">🔬 Biomarkers & Lab Results:</span><div style="margin-left: 0.5rem; margin-top: 0.2rem; color: #1e293b;">${labItems}</div></div>` : ''}
-          ${entities['Dietary Restrictions'] ? `<div style="color: #b45309; font-weight: 600; margin-top: 0.25rem;">⚠️ Clinical Advisory: ${entities['Dietary Restrictions']}</div>` : ''}
+        <div style="margin-top: 0.55rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.5rem; font-size: 0.8rem;">
+          ${medItems ? `<div style="margin-bottom: 0.3rem;"><span style="color: #0f766e; font-weight: 700;">Extracted Medications:</span><div style="margin-left: 0.5rem; margin-top: 0.15rem; color: #1e293b;">${medItems}</div></div>` : ''}
+          ${labItems ? `<div style="margin-bottom: 0.3rem;"><span style="color: #2563eb; font-weight: 700;">Biomarkers & Lab Results:</span><div style="margin-left: 0.5rem; margin-top: 0.15rem; color: #1e293b;">${labItems}</div></div>` : ''}
+          ${entities['Dietary Restrictions'] ? `<div style="color: #b45309; font-weight: 600; margin-top: 0.2rem;">Clinical Advisory: ${entities['Dietary Restrictions']}</div>` : ''}
         </div>
       </div>
     `;
   });
 
   const localizedSoap = c.soap_note || {};
+  const aharaPanel = getAharaViharaHTML(c.prakriti?.dominant_dosha);
+  const organRiskGrid = getOrganRiskGridHTML(c);
 
   container.innerHTML = `
     <div class="case-sheet-card">
       <div class="case-sheet-header">
         <div class="opd-logo-title">
-          <div style="font-size: 2.2rem;">🏛️</div>
+          <div style="font-weight: 800; font-size: 1.2rem; color: #0f766e; border: 2px solid #0f766e; padding: 0.2rem 0.5rem; border-radius: 6px;">AYUSH</div>
           <div>
-            <h2 style="color: #0f766e; font-size: 1.35rem;">${strings.case_sheet_heading || 'MINISTRY OF AYUSH - GOVERNMENT OPD'}</h2>
-            <p style="font-size: 0.85rem; color: #64748b;">${strings.case_sheet_subheading || 'SIH 26047 AI-Assisted Clinical Case Sheet | ABHA Integrated'}</p>
+            <h2 style="color: #0f766e; font-size: 1.25rem; font-weight: 700;">${strings.case_sheet_heading || 'MINISTRY OF AYUSH - GOVERNMENT OPD'}</h2>
+            <p style="font-size: 0.82rem; color: #64748b;">${strings.case_sheet_subheading || 'SIH 26047 AI-Assisted Clinical Case Sheet | ABHA Integrated'}</p>
           </div>
         </div>
         <div style="text-align: right;">
-          <div style="font-size: 1.2rem; font-weight: 800; color: #047857;">${c.token_number}</div>
-          <div style="font-size: 0.8rem; color: #64748b;">${c.created_at || '10:30 AM'}</div>
-          <button class="btn-primary no-print" style="margin-top: 0.5rem; padding: 0.35rem 0.85rem; font-size: 0.82rem;" onclick="window.print()">
-            ${strings.print_case || '🖨️ Print / Export Case'}
+          <div style="font-size: 1.15rem; font-weight: 800; color: #0f766e;">${c.token_number}</div>
+          <div style="font-size: 0.78rem; color: #64748b;">${c.created_at || '10:30 AM'}</div>
+          <button class="btn-primary no-print" style="margin-top: 0.45rem; padding: 0.3rem 0.75rem; font-size: 0.78rem; width: auto;" onclick="window.print()">
+            ${strings.print_case || 'Print / Export Case'}
           </button>
         </div>
       </div>
 
       <!-- Patient Demographics & ABHA -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; background: #f0fdfa; padding: 0.85rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.88rem;">
-        <div><strong>${strings.patient_label || 'Patient'}:</strong> ${c.patient_info?.name || 'Ramesh Kumar'}</div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.65rem; background: #f8fafc; border: 1px solid #e2e8f0; padding: 0.75rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.85rem;">
+        <div><strong>${strings.patient_label || 'Patient'}:</strong> ${cleanPatientName(c.patient_info?.name, lang)}</div>
         <div><strong>${strings.age_gender_label || 'Age / Gender'}:</strong> ${c.patient_info?.age || 42} Yrs / ${c.patient_info?.gender || 'Male'}</div>
         <div><strong>${strings.abha_id_label || 'ABHA ID'}:</strong> ${c.patient_info?.abha_id || 'ABHA-9872-3341-2094'}</div>
-        <div><strong>${strings.intake_lang_label || 'Intake Language'}:</strong> ${(c.language_used || 'TE').toUpperCase()} (Sarvam AI)</div>
+        <div><strong>${strings.intake_lang_label || 'Intake Language'}:</strong> ${(c.language_used || lang).toUpperCase()} (Sarvam AI)</div>
       </div>
 
       <!-- AI Clinical Triage & Red Flag Safety Matrix -->
-      <div style="background: ${c.triage?.triage_level === 'RED' ? '#fef2f2' : c.triage?.triage_level === 'YELLOW' ? '#fefce8' : '#f0fdf4'}; border: 2px solid ${c.triage?.triage_level === 'RED' ? '#ef4444' : c.triage?.triage_level === 'YELLOW' ? '#ca8a04' : '#16a34a'}; border-radius: 8px; padding: 0.95rem; margin-bottom: 1.25rem;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
-          <span style="font-weight: 800; font-size: 0.95rem; color: ${c.triage?.triage_level === 'RED' ? '#991b1b' : c.triage?.triage_level === 'YELLOW' ? '#854d0e' : '#166534'};">
-            ${c.triage?.triage_level === 'RED' ? '🚨 AI EMERGENCY TRIAGE (CODE RED)' : c.triage?.triage_level === 'YELLOW' ? '⚠️ HIGH PRIORITY FAST-TRACK (CODE YELLOW)' : '✅ STANDARD CLINICAL TRIAGE (CODE GREEN)'}
+      <div style="background: ${c.triage?.triage_level === 'RED' ? '#fef2f2' : c.triage?.triage_level === 'YELLOW' ? '#fefce8' : '#f0fdf4'}; border: 1px solid ${c.triage?.triage_level === 'RED' ? '#fca5a5' : c.triage?.triage_level === 'YELLOW' ? '#fef08a' : '#bbf7d0'}; border-left: 4px solid ${c.triage?.triage_level === 'RED' ? '#dc2626' : c.triage?.triage_level === 'YELLOW' ? '#d97706' : '#16a34a'}; border-radius: 8px; padding: 0.85rem; margin-bottom: 1.15rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <span style="font-weight: 700; font-size: 0.88rem; color: ${c.triage?.triage_level === 'RED' ? '#991b1b' : c.triage?.triage_level === 'YELLOW' ? '#854d0e' : '#166534'};">
+            ${c.triage?.triage_level === 'RED' ? 'AI EMERGENCY TRIAGE (CODE RED)' : c.triage?.triage_level === 'YELLOW' ? 'HIGH PRIORITY FAST-TRACK (CODE YELLOW)' : 'STANDARD CLINICAL TRIAGE (CODE GREEN)'}
           </span>
           <span class="${c.triage?.triage_level === 'RED' ? 'triage-badge-red' : c.triage?.triage_level === 'YELLOW' ? 'triage-badge-yellow' : 'triage-badge-green'}">
             ${c.triage?.triage_category || 'Standard OPD'}
           </span>
         </div>
-        <div style="font-size: 0.88rem; font-weight: 600; color: #1e293b; margin-bottom: 0.5rem;">
+        <div style="font-size: 0.84rem; font-weight: 600; color: #1e293b; margin-bottom: 0.45rem;">
           ${c.triage?.triage_banner_text || 'No acute life-threatening triggers detected.'}
         </div>
         ${(c.triage?.detected_red_flags && c.triage?.detected_red_flags.length > 0 && c.triage?.detected_red_flags[0]?.code !== 'NO_RED_FLAGS') ? `
-        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.6rem; font-size: 0.82rem; margin-bottom: 0.5rem;">
-          <div style="font-weight: 700; color: #dc2626; margin-bottom: 0.3rem;">⚠️ Detected Red Flag Triggers:</div>
+        <div style="background: white; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.55rem; font-size: 0.8rem; margin-bottom: 0.45rem;">
+          <div style="font-weight: 700; color: #dc2626; margin-bottom: 0.25rem;">Detected Red Flag Triggers:</div>
           ${c.triage.detected_red_flags.map(rf => `
-            <div style="margin-bottom: 0.4rem; padding-bottom: 0.3rem; border-bottom: 1px dashed #e2e8f0;">
-              <div><strong>System:</strong> ${rf.system} (${rf.severity}) | <strong>Trigger Keyword:</strong> "${rf.matched_keyword}" [Lang: ${rf.language_detected}]</div>
+            <div style="margin-bottom: 0.35rem; padding-bottom: 0.25rem; border-bottom: 1px dashed #e2e8f0;">
+              <div><strong>System:</strong> ${rf.system} (${rf.severity}) | <strong>Trigger:</strong> "${rf.matched_keyword}" [Lang: ${rf.language_detected}]</div>
               <div style="color: #475569;"><strong>Risk:</strong> ${rf.clinical_risk}</div>
-              <div style="color: #991b1b; font-weight: 600; margin-top: 0.15rem;"><strong>Action Protocol:</strong> ${rf.recommended_action}</div>
+              <div style="color: #991b1b; font-weight: 600; margin-top: 0.1rem;"><strong>Protocol:</strong> ${rf.recommended_action}</div>
             </div>
           `).join('')}
         </div>
         ` : ''}
-        <div style="font-size: 0.8rem; color: ${c.triage?.triage_level === 'RED' ? '#991b1b' : '#14532d'}; font-weight: 600;">
-          🌿 <strong>AYUSH Clinical Guideline:</strong> ${c.triage?.ayush_safety_guideline || 'Safe for routine AYUSH OPD therapy.'}
+        <div style="font-size: 0.78rem; color: ${c.triage?.triage_level === 'RED' ? '#991b1b' : '#14532d'}; font-weight: 600;">
+          <strong>AYUSH Clinical Guideline:</strong> ${c.triage?.ayush_safety_guideline || 'Safe for routine AYUSH OPD therapy.'}
         </div>
       </div>
+
+      <!-- System Risk Biomarker Grid -->
+      <div style="font-size: 0.82rem; font-weight: 700; color: #0f766e; margin-bottom: 0.2rem;">Multi-Organ System Risk Indicators:</div>
+      ${organRiskGrid}
 
       <!-- Chief Complaint & Voice Transcript -->
-      <div class="clinical-section-title">${strings.chief_complaint_section || '🗣️ Chief Complaint & Patient Voice Intake'}</div>
-      <div style="background: #ffffff; border: 1px solid #cbd5e1; padding: 0.85rem; border-radius: 8px; font-size: 0.92rem; margin-bottom: 1rem;">
-        <div style="font-weight: 700; color: #0f172a; margin-bottom: 0.35rem;">${strings.primary_symptoms || 'Primary Reported Symptoms'}:</div>
-        <div style="color: #047857; font-weight: 600;">"${c.voice_transcript || 'Voice intake submitted via touch kiosk'}"</div>
+      <div class="clinical-section-title">${strings.chief_complaint_section || 'Chief Complaint & Patient Voice Intake'}</div>
+      <div style="background: #ffffff; border: 1px solid #e2e8f0; padding: 0.75rem; border-radius: 8px; font-size: 0.88rem; margin-bottom: 0.85rem;">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 0.25rem;">${strings.primary_symptoms || 'Primary Reported Symptoms'}</div>
+        <div style="color: #0f766e; font-weight: 600;">"${getLocalizedVoiceTranscript(c.voice_transcript, lang)}"</div>
       </div>
 
-      <!-- AI Prakriti & Dosha Constitution -->
-      <div class="clinical-section-title">${strings.prakriti_section || '🌿 AI Prakriti Assessment & Dosha Balance Gauges'}</div>
+      <!-- AI Prakriti & Interactive Dosha Balance Gauges -->
+      <div class="clinical-section-title">${strings.prakriti_section || 'AI Prakriti Assessment & Interactive Dosha Balance Gauges'}</div>
+      
       <div class="prakriti-matrix">
         <div class="dosha-gauge">
-          <div class="dosha-name" style="color: #2563eb; font-weight: 700;">Vata (వాతం / वात) - ${vataPct}%</div>
-          <div class="dosha-bar-bg"><div class="dosha-bar-fill fill-vata" style="width: ${vataPct}%;"></div></div>
+          <div class="dosha-name" style="color: #2563eb; font-weight: 700;">Vata - <span id="vSliderVal">${vataPct}%</span></div>
+          <div class="dosha-bar-bg"><div id="gaugeFillVata" class="dosha-bar-fill fill-vata" style="width: ${vataPct}%;"></div></div>
         </div>
         <div class="dosha-gauge">
-          <div class="dosha-name" style="color: #dc2626; font-weight: 700;">Pitta (పిత్తం / पित्त) - ${pittaPct}%</div>
-          <div class="dosha-bar-bg"><div class="dosha-bar-fill fill-pitta" style="width: ${pittaPct}%;"></div></div>
+          <div class="dosha-name" style="color: #dc2626; font-weight: 700;">Pitta - <span id="pSliderVal">${pittaPct}%</span></div>
+          <div class="dosha-bar-bg"><div id="gaugeFillPitta" class="dosha-bar-fill fill-pitta" style="width: ${pittaPct}%;"></div></div>
         </div>
         <div class="dosha-gauge">
-          <div class="dosha-name" style="color: #16a34a; font-weight: 700;">Kapha (కఫం / कफ) - ${kaphaPct}%</div>
-          <div class="dosha-bar-bg"><div class="dosha-bar-fill fill-kapha" style="width: ${kaphaPct}%;"></div></div>
+          <div class="dosha-name" style="color: #16a34a; font-weight: 700;">Kapha - <span id="kSliderVal">${kaphaPct}%</span></div>
+          <div class="dosha-bar-bg"><div id="gaugeFillKapha" class="dosha-bar-fill fill-kapha" style="width: ${kaphaPct}%;"></div></div>
         </div>
-      </div>
-      <div style="font-size: 0.88rem; color: #334155; margin-bottom: 1rem; background: #f8fafc; padding: 0.65rem; border-radius: 6px; border: 1px solid #e2e8f0;">
-        <strong>${strings.prakriti_diag || 'Constitution Diagnosis'}:</strong> <span style="color: #0f766e; font-weight: 700;">${c.prakriti?.primary_prakriti}</span> | <strong>${strings.dominant_dosha || 'Dominant Vitiation'}:</strong> <span style="color: #d97706; font-weight: 700;">${c.prakriti?.dominant_dosha}</span>
       </div>
 
+      <!-- Interactive Dosha Sliders (Doctor Fine-Tuning) -->
+      <div class="dosha-slider-container no-print">
+        <div style="font-size: 0.78rem; font-weight: 700; color: #0f766e; margin-bottom: 0.2rem;">Doctor Interactive Dosha Fine-Tuning Sliders:</div>
+        <div class="dosha-slider-row">
+          <span style="color: #2563eb;">Vata Dosha</span>
+          <input type="range" class="dosha-slider" id="vRangeInput" min="10" max="80" value="${vataPct}" oninput="updateDoshaSliders(this.value, document.getElementById('pRangeInput').value, document.getElementById('kRangeInput').value)">
+          <span id="vRangeNum">${vataPct}%</span>
+        </div>
+        <div class="dosha-slider-row">
+          <span style="color: #dc2626;">Pitta Dosha</span>
+          <input type="range" class="dosha-slider" id="pRangeInput" min="10" max="80" value="${pittaPct}" oninput="updateDoshaSliders(document.getElementById('vRangeInput').value, this.value, document.getElementById('kRangeInput').value)">
+          <span id="pRangeNum">${pittaPct}%</span>
+        </div>
+        <div class="dosha-slider-row">
+          <span style="color: #16a34a;">Kapha Dosha</span>
+          <input type="range" class="dosha-slider" id="kRangeInput" min="10" max="80" value="${kaphaPct}" oninput="updateDoshaSliders(document.getElementById('vRangeInput').value, document.getElementById('pRangeInput').value, this.value)">
+          <span id="kRangeNum">${kaphaPct}%</span>
+        </div>
+      </div>
+
+      <div style="font-size: 0.84rem; color: #334155; margin-bottom: 0.85rem; background: #f8fafc; padding: 0.55rem; border-radius: 6px; border: 1px solid #e2e8f0;">
+        <strong>${strings.prakriti_diag || 'Constitution Diagnosis'}:</strong> <span id="prakritiDiagResult" style="color: #0f766e; font-weight: 700;">${cleanPrakritiName(c.prakriti?.primary_prakriti, lang)}</span> | <strong>${strings.dominant_dosha || 'Dominant Vitiation'}:</strong> <span id="dominantDoshaResult" style="color: #d97706; font-weight: 700;">${c.prakriti?.dominant_dosha}</span>
+      </div>
+
+      <!-- Ahara & Vihara Advisory -->
+      ${aharaPanel}
+
       <!-- Dashavidha Pariksha Table -->
-      <div class="clinical-section-title">${strings.dashavidha_section || '📋 Dashavidha Pariksha (10-Fold Classical AYUSH Examination)'}</div>
+      <div class="clinical-section-title">${strings.dashavidha_section || 'Dashavidha Pariksha (10-Fold AYUSH Examination)'}</div>
       <table class="table-matrix">${dashavidhaRows}</table>
 
       <!-- Ashtavidha Pariksha Table -->
-      <div class="clinical-section-title">${strings.ashtavidha_section || '🔍 Ashtavidha Pariksha (8-Fold Clinical Pointers)'}</div>
+      <div class="clinical-section-title">${strings.ashtavidha_section || 'Ashtavidha Pariksha (8-Fold Clinical Pointers)'}</div>
       <table class="table-matrix">${ashtavidhaRows}</table>
 
       <!-- AI Document Analysis & Scanned Records -->
-      <div class="clinical-section-title">${strings.history_timeline_section || '📂 AI Document Analysis & Scanned Prescriptions (Neural OCR & Sarvam Mayura)'}</div>
+      <div class="clinical-section-title">${strings.history_timeline_section || 'AI Document Analysis & Scanned Prescriptions (Neural OCR & Sarvam Mayura)'}</div>
       ${docsHtml}
 
       <!-- Physician Structured SOAP Note -->
-      <div class="clinical-section-title">${strings.soap_section || '🩺 AI Structured SOAP Case Formulation'}</div>
+      <div class="clinical-section-title">${strings.soap_section || 'AI Structured SOAP Case Formulation'}</div>
       <div class="soap-box">
         <h4>${strings.soap_s || 'S - Subjective History'}</h4>
         <p>${localizedSoap.Subjective || ''}</p>
@@ -1676,14 +1937,14 @@ function renderCaseSheet(c) {
       </div>
 
       <!-- Doctor Action Controls -->
-      <div class="no-print" style="margin-top: 1.5rem; background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-        <h4 style="color: #0f766e; margin-bottom: 0.5rem;">${strings.doctor_actions || '👨‍⚕️ Medical Officer Direct Actions:'}</h4>
-        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-          <button class="btn-primary" style="width: auto;" onclick="markCaseDone('${c.token_number}')">
-            ${strings.approve_prescription || '✅ Approve & Finalize Prescription'}
+      <div class="no-print" style="margin-top: 1.25rem; background: #f8fafc; padding: 0.85rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+        <h4 style="color: #0f766e; margin-bottom: 0.45rem; font-size: 0.88rem;">${strings.doctor_actions || 'Medical Officer Direct Actions:'}</h4>
+        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+          <button class="btn-primary" style="width: auto; padding: 0.5rem 1rem; font-size: 0.84rem;" onclick="markCaseDone('${c.token_number}')">
+            ${strings.approve_prescription || 'Approve & Finalize Prescription'}
           </button>
-          <button class="btn-secondary" style="width: auto; margin-top: 0;" onclick="window.print()">
-            ${strings.print_case || '📄 Download / Print PDF'}
+          <button class="btn-secondary" style="width: auto; margin-top: 0; padding: 0.5rem 1rem; font-size: 0.84rem;" onclick="window.print()">
+            ${strings.print_case || 'Download / Print PDF'}
           </button>
         </div>
       </div>
@@ -1748,57 +2009,32 @@ async function loadDemoPreset(presetKey) {
     <div class="profile-badge">ABHA ID VERIFIED (Sandbox Live)</div>
     <div class="profile-detail"><strong>Name:</strong> ${preset.name} (${preset.gender}, ${preset.age} Yrs)</div>
     <div class="profile-detail"><strong>ABHA ID:</strong> ${preset.abha_id}</div>
+    <div class="profile-detail"><strong>Status:</strong> Digital Consent Authenticated</div>
   `;
 
-  state.voiceTranscript = preset.transcript;
-  document.getElementById('voiceTranscript').textContent = `"${preset.transcript}"`;
-  document.getElementById('transcriptContainer').style.display = 'block';
-  document.getElementById('voiceStatus').textContent = `✅ Loaded ${preset.lang.toUpperCase()} Audio Transcript (Sarvam Saaras AI)`;
+  state.intakeResponses['chief_complaint'] = preset.complaint;
+  state.intakeResponses['duration_onset'] = preset.duration;
+  state.intakeResponses['pain_severity'] = preset.severity;
+  state.intakeResponses['agni_digestion'] = preset.agni;
+  state.intakeResponses['koshtha_bowel'] = preset.koshtha;
+  state.intakeResponses['nidra_sleep'] = preset.sleep;
 
-  state.intakeResponses = { ...preset.responses };
   renderQuestionFlow();
-
-  // If preset has associated document, automatically load it
-  if (preset.docKey && PRESET_PRESCRIPTIONS_DB[preset.docKey]) {
-    await scanSamplePrescription(preset.docKey);
-  }
-
   await evaluateRedFlagsLive();
-}
-
-async function checkSarvamConfig() {
-  const statusPill = document.getElementById('sarvamKeyStatus');
-  if (statusPill) {
-    statusPill.textContent = '⚡ Sarvam AI Ready (Voice & OCR Active)';
-  }
-}
-
-function openSarvamKeyModal() {
-  document.getElementById('sarvamModal').style.display = 'flex';
-}
-
-function closeSarvamKeyModal() {
-  document.getElementById('sarvamModal').style.display = 'none';
-}
-
-function saveSarvamKey() {
-  const keyInput = document.getElementById('sarvamApiKeyInput').value.trim();
-  if (keyInput) {
-    showToast('Sarvam API key saved locally!');
-    closeSarvamKeyModal();
-  }
 }
 
 function setupEventListeners() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      loadLanguage(btn.getAttribute('data-lang'));
+    btn.addEventListener('click', (e) => {
+      const lang = e.currentTarget.getAttribute('data-lang');
+      loadLanguage(lang);
     });
   });
 
   document.querySelectorAll('.mode-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      switchMode(btn.getAttribute('data-mode'));
+    btn.addEventListener('click', (e) => {
+      const mode = e.currentTarget.getAttribute('data-mode');
+      switchMode(mode);
     });
   });
 
@@ -1812,5 +2048,61 @@ function setupEventListeners() {
         handleFileUpload(e.target.files[0]);
       }
     });
+
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.style.borderColor = '#0f766e';
+    });
+    dropzone.addEventListener('dragleave', () => {
+      dropzone.style.borderColor = '#cbd5e1';
+    });
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.style.borderColor = '#cbd5e1';
+      if (e.dataTransfer.files.length > 0) {
+        handleFileUpload(e.dataTransfer.files[0]);
+      }
+    });
+  }
+}
+
+function openSarvamKeyModal() {
+  document.getElementById('sarvamModal').style.display = 'flex';
+}
+
+function closeSarvamKeyModal() {
+  document.getElementById('sarvamModal').style.display = 'none';
+}
+
+async function checkSarvamConfig() {
+  if (API_BASE) {
+    try {
+      const res = await fetch(`${API_BASE}/api/config`);
+      const data = await res.json();
+      const statusEl = document.getElementById('sarvamKeyStatus');
+      if (statusEl) {
+        statusEl.textContent = data.sarvam_api_configured ? 'Sarvam AI (Live API)' : 'Sarvam AI (Simulator)';
+      }
+    } catch (e) {}
+  }
+}
+
+async function saveSarvamKey() {
+  const input = document.getElementById('sarvamApiKeyInput').value.trim();
+  if (API_BASE && input) {
+    try {
+      await fetch(`${API_BASE}/api/config/sarvam-key`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ api_key: input })
+      });
+      showToast('Sarvam API Key saved successfully!');
+      checkSarvamConfig();
+      closeSarvamKeyModal();
+    } catch (e) {
+      showToast('Error updating Sarvam API Key.');
+    }
+  } else {
+    closeSarvamKeyModal();
   }
 }

@@ -1,0 +1,518 @@
+{
+  "_generated_by": "scripts/export_clinical_data.py",
+  "_purpose": "Golden outputs from the Python engine; web/ asserts byte-equality against these.",
+  "prakriti": [
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 33,
+        "pitta_pct": 33,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 34
+      },
+      "input": {}
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 19,
+        "pitta_pct": 19,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 62
+      },
+      "input": {
+        "agni_digestion": "vishamagni",
+        "chief_complaint": "joint pain and stiffness",
+        "koshtha_bowel": "krura koshtha"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Pitta (पित्त / పిత్తం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 20,
+        "pitta_pct": 60,
+        "primary_prakriti": "Pitta-Kapha (पित्त-कफ / పిత్త-కఫ)",
+        "vata_pct": 20
+      },
+      "input": {
+        "agni_digestion": "tikshnagni",
+        "chief_complaint": "acidity and heartburn"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Kapha (कफ / కఫం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 58,
+        "pitta_pct": 21,
+        "primary_prakriti": "Kapha-Vata (कफ-वात / కఫ-వాత)",
+        "vata_pct": 21
+      },
+      "input": {
+        "agni_digestion": "mandagni",
+        "chief_complaint": "fatigue and cough"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 24,
+        "pitta_pct": 24,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 52
+      },
+      "input": {
+        "chief_complaint": "కీళ్ళ నొప్పులు"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 24,
+        "pitta_pct": 24,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 52
+      },
+      "input": {
+        "chief_complaint": "மூட்டு வலி"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 24,
+        "pitta_pct": 24,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 52
+      },
+      "input": {
+        "chief_complaint": "जोड़ों का दर्द"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 24,
+        "pitta_pct": 24,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 52
+      },
+      "input": {
+        "chief_complaint": "ಕೀಲು ನೋವು"
+      }
+    },
+    {
+      "expected": {
+        "dominant_dosha": "Vata (वात / వాతం)",
+        "dosha_balance_state": "Vitiated (Vikriti Present)",
+        "kapha_pct": 33,
+        "pitta_pct": 27,
+        "primary_prakriti": "Vata-Pitta (वात-पित्त / వాత-పిత్త)",
+        "vata_pct": 40
+      },
+      "input": {
+        "agni_digestion": "mandagni",
+        "chief_complaint": "joint pain",
+        "koshtha_bowel": "mrudu"
+      }
+    }
+  ],
+  "triage": [
+    {
+      "expected": {
+        "ayush_safety_guideline": "🌿 Safe for comprehensive AYUSH intake, Dashavidha Pariksha, and holistic Panchakarma/Shamana therapy.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "No acute life-threatening triggers detected",
+            "code": "NO_RED_FLAGS",
+            "matched_keyword": "None",
+            "recommended_action": "Proceed with standard out-patient AYUSH consultation",
+            "severity": "NORMAL",
+            "system": "All Organ Systems Stable"
+          }
+        ],
+        "is_emergency": false,
+        "total_red_flags_count": 0,
+        "triage_badge_color": "#16a34a",
+        "triage_banner_text": "✅ Routine OPD Case: No acute emergency red flags detected.",
+        "triage_category": "Standard OPD (Green)",
+        "triage_level": "GREEN"
+      },
+      "input": {
+        "chief_complaint": "mild seasonal cough",
+        "pain_severity": "3/10"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "EN",
+            "matched_keyword": "chest pain",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "severe crushing chest pain"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Ischemic Stroke / Intracranial Hemorrhage / Status Epilepticus",
+            "code": "NEUROLOGICAL_STROKE",
+            "language_detected": "EN",
+            "matched_keyword": "sudden weakness",
+            "recommended_action": "🚨 Code Stroke Protocol! Immediate Non-contrast Brain CT scan, NIHSS assessment, airway protection, and Neurologist consultation within Golden Hour.",
+            "severity": "CRITICAL",
+            "system": "Central Nervous System / Neurovascular"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "sudden weakness on the right side"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Active Urological Bleed / Bladder Tamponade / Acute Obstructive Uropathy / Urosepsis",
+            "code": "UROLOGICAL_HEMORRHAGE",
+            "language_detected": "EN",
+            "matched_keyword": "acute urinary retention",
+            "recommended_action": "🚨 Urgent Urologist Evaluation! 3-way Foley catheter continuous bladder irrigation, Stat CBC, Sr. Creatinine, and emergency ultrasound.",
+            "severity": "CRITICAL",
+            "system": "Urological & Nephrological System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "acute urinary retention since morning"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Upper GI Bleed / Peptic Ulcer Perforation / Acute Surgical Abdomen",
+            "code": "GASTROINTESTINAL_BLEED",
+            "language_detected": "EN",
+            "matched_keyword": "vomiting blood",
+            "recommended_action": "🚨 Urgent Surgical/Gastroenterology Triage! NPO (Nil per oral), IV Fluids, Cross-match blood, and emergency endoscopy.",
+            "severity": "CRITICAL",
+            "system": "Gastrointestinal System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "vomiting blood after dinner"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Severe Anaphylactic Shock / Acute Laryngeal Edema",
+            "code": "ANAPHYLAXIS_SEVERE_ALLERGY",
+            "language_detected": "EN",
+            "matched_keyword": "throat tightness",
+            "recommended_action": "🚨 Immediate Intramuscular Epinephrine (Adrenaline 1:1000 0.5mg), IV Corticosteroids, Antihistamines, and Airway support.",
+            "severity": "CRITICAL",
+            "system": "Immunological / Systemic"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "throat tightness and stridor after a new tablet"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "TE",
+            "matched_keyword": "గుండె నొప్పి",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "voice_transcript": "గుండె నొప్పి చాలా ఎక్కువగా ఉంది"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "TA",
+            "matched_keyword": "மார்பு வலி",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "voice_transcript": "மார்பு வலி மற்றும் மூச்சுத் திணறல்"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "KN",
+            "matched_keyword": "ಎದೆ ನೋವು",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "voice_transcript": "ಎದೆ ನೋವು ಮತ್ತು ಉಸಿರಾಟದ ತೊಂದರೆ"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "HI",
+            "matched_keyword": "सीने में दर्द",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "voice_transcript": "सीने में दर्द और सांस फूलना"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⚠️ Monitor vitals closely. Initiate symptomatic pacifying measures (Shamana) alongside diagnostic evaluation.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Severe Pain Crisis requiring rapid analgesia before routine intake",
+            "code": "HIGH_PAIN_SEVERITY",
+            "language_detected": "EN",
+            "matched_keyword": "unbearable pain",
+            "recommended_action": "⚠️ Fast-track OPD consultation within 15 minutes. Administer immediate pain relief / soothing formulation.",
+            "severity": "HIGH_URGENCY",
+            "system": "Acute Symptom Distress"
+          }
+        ],
+        "is_emergency": false,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#ca8a04",
+        "triage_banner_text": "⚠️ HIGH PRIORITY OPD: Patient requires expedited clinical attention within 15 minutes.",
+        "triage_category": "High Discomfort / Fast-Track (Yellow)",
+        "triage_level": "YELLOW"
+      },
+      "input": {
+        "pain_severity": "unbearable pain"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "EN",
+            "matched_keyword": "chest pain",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          },
+          {
+            "clinical_risk": "Acute Severe Pain Crisis requiring rapid analgesia before routine intake",
+            "code": "HIGH_PAIN_SEVERITY",
+            "language_detected": "EN",
+            "matched_keyword": "unbearable pain",
+            "recommended_action": "⚠️ Fast-track OPD consultation within 15 minutes. Administer immediate pain relief / soothing formulation.",
+            "severity": "HIGH_URGENCY",
+            "system": "Acute Symptom Distress"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 2,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "chief_complaint": "chest pain",
+        "pain_severity": "unbearable pain"
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⛔ Emergency Red Flag: Routine non-urgent Ayurvedic procedures must be deferred until vital stabilization.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Acute Coronary Syndrome (ACS) / Myocardial Infarction / Pulmonary Embolism / Acute Respiratory Failure",
+            "code": "CARDIO_RESPIRATORY",
+            "language_detected": "EN",
+            "matched_keyword": "coughing blood",
+            "recommended_action": "🚨 Immediate Emergency Transfer! Stat 12-Lead ECG, High-Flow Oxygen support, IV access, and urgent Cardiologist / Medical Officer review.",
+            "severity": "CRITICAL",
+            "system": "Cardiorespiratory System"
+          }
+        ],
+        "is_emergency": true,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#dc2626",
+        "triage_banner_text": "🚨 CRITICAL RED FLAG DETECTED: Immediate Medical Officer / Emergency Resuscitation Required!",
+        "triage_category": "Priority / Urgent Attention (Red)",
+        "triage_level": "RED"
+      },
+      "input": {
+        "responses": {
+          "associated_symptoms": "coughing blood since morning"
+        }
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "⚠️ Monitor vitals closely. Initiate symptomatic pacifying measures (Shamana) alongside diagnostic evaluation.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "Hematuria under evaluation with history of Papillary Urothelial Ca",
+            "code": "UROLOGICAL_HEMORRHAGE",
+            "language_detected": "EN",
+            "matched_keyword": "Post TURBT Hematuria in Hospital Records",
+            "recommended_action": "⚠️ Close urological surveillance required; ensure repeat cystoscopy follow-up and monitoring of renal labs.",
+            "severity": "HIGH_URGENCY",
+            "system": "Urological Surveillance"
+          }
+        ],
+        "is_emergency": false,
+        "total_red_flags_count": 1,
+        "triage_badge_color": "#ca8a04",
+        "triage_banner_text": "⚠️ HIGH PRIORITY OPD: Patient requires expedited clinical attention within 15 minutes.",
+        "triage_category": "High Discomfort / Fast-Track (Yellow)",
+        "triage_level": "YELLOW"
+      },
+      "input": {
+        "chief_complaint": "routine post-operative review",
+        "uploaded_documents": [
+          {
+            "summary": "Post-TURBT hematuria under evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "expected": {
+        "ayush_safety_guideline": "🌿 Safe for comprehensive AYUSH intake, Dashavidha Pariksha, and holistic Panchakarma/Shamana therapy.",
+        "detected_red_flags": [
+          {
+            "clinical_risk": "No acute life-threatening triggers detected",
+            "code": "NO_RED_FLAGS",
+            "matched_keyword": "None",
+            "recommended_action": "Proceed with standard out-patient AYUSH consultation",
+            "severity": "NORMAL",
+            "system": "All Organ Systems Stable"
+          }
+        ],
+        "is_emergency": false,
+        "total_red_flags_count": 0,
+        "triage_badge_color": "#16a34a",
+        "triage_banner_text": "✅ Routine OPD Case: No acute emergency red flags detected.",
+        "triage_category": "Standard OPD (Green)",
+        "triage_level": "GREEN"
+      },
+      "input": {}
+    }
+  ]
+}
